@@ -4009,15 +4009,18 @@ body.single .pbmit-underline::after{
 .custom.tparrows:hover{
     background:transparent!important
 }
+
 .custom.tparrows:before{
-    font-size:14px!important;
+    font-size:20px!important;
     text-align:left!important;
     font-weight:700;
     color:var(--pbmit-docmet-global-color)!important
 }
+
 .tp-rightarrow.custom.tparrows:before{
     text-align:right!important
 }
+
 .pbmit-animation-01.elementor-widget-image .elementor-widget-container img{
     animation:animation01 2s infinite alternate
 }

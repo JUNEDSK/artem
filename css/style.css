@@ -1230,6 +1230,11 @@ width: 200px;
     font-size: 20px;
 }
 
+.booknow a:hover{
+    background: #2490eb;
+    color: #fff;
+}
+
 
 .achievements .col{
     padding: 0;
@@ -1266,8 +1271,562 @@ margin: 30px 0 0;
     text-align: center;
     }
 
+    .achievements .col:last-child .achive-box{
+        border: none;
+    }
+
+    .hospitalSection{
+        background: #f4f4f4;
+    }
+
+
+
+    .hospitalImgWrap{
+        position: relative;
+    }
+.hospitalImgWrap .hosp-01{
+    position: absolute;
+    z-index: 999;
+    left: 64%;
+    top: 100%;
+}
+.hospitalImgWrap .hosp-02{
+    position: absolute;
+    z-index: 99;
+    left: 33%;
+    top: 40%;
+}
+.hospitalImgWrap .hosp-03{
+    position: absolute;
+    z-index: 9;
+
+}
+
+.hospital-contents .pbmit-heading-subheading h4.pbmit-element-subtitle{
+    color: #002a55;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hospital-contents .pbmit-heading-subheading .pbmit-element-title{
+    color: #044282;
+    font-weight: 500;
+}
+
+.hospital-contents .pbmit-heading-subheading .pbmit-element-title span{
+    color: #f9a73e;
+}
+
+.elementor-1598 .elementor-element.elementor-element-460b866 p{
+    color: #002a55;
+}
+
+.transparentLearnMore.elementor-button{
+    color: #002a55;
+
+}
+
+.transparentLearnMore.elementor-button::before{
+    background-color: #f4f4f4 !important;
+    border: 1px solid #002a55;
+       
+        border: 1px solid #002a55;
+}
+
+.transparentLearnMore {
+    color: #002a55 !important;
+}
+
+.button-flex{
+    display: flex;
+    gap: 20px;
+}
+
+
+.hospitalSection .elementor-widget-container{
+    padding-right: 100px;
+}
+
+.publicHealth{
+    background: #002a55;
+}
+
+.publicHealth .public-contents h4{
+    color: #fff;
+    }
+
+.publicHealth .public-contents  h2{
+    color: #fff;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+.publicHealth .public-contents  h2 span{
+    color: #00a4ff;
+    font-weight: 500;
+}
+
+
+.public-contents .elementor-element.elementor-element-460b866  p{
+    color: #fff;
+}
+
+.CoveredSection{
+    padding: 100px 0;
+}
+
+.CoveredSection h2{
+    font-size: 50px;
+    color: #00a4ff;
+    font-weight: 500;
+    font-family: "Ageo";
+    margin-bottom: 30px;
+}
+
+.CoveredSection p{
+    font-size:20px;
+    color: #002a55;
+    font-weight: 500;
+    font-family: "Ageo";
+    max-width: 550px;
+}
+
+.downloadPdf{
+    width: 140px;
+}
+
+.coveredImg img{
+    width: 80px;
+    text-align: center;
+    margin:0 auto;
+}
+
+
+.coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    border:1px solid #2490eb;
+  }
+  
+  .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(1){
+      border-left: 0;
+  }
+  .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(4){
+      border-right: 0;
+  }
+  .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(5){
+      border-left: 0;
+      border-bottom: 0;
+  }
+  .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(6){
+      border-bottom: 0;
+  }
+  .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(7){
+      border-bottom: 0;
+  }
+  .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(8){
+      border-bottom: 0;
+      border-right: 0;
+  }
+
+  .covered-icons{
+    background-color: #002a55;
+  }
+  
+  .artem-features{
+    background-color: #022243 !important;
+    padding-bottom: 0px !important;
+    position: relative;
+  }
+
+  .artem-features::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -200px;
+    height: 100%;
+    background-image: url(../images/feature-bg.png);
+    background-repeat: no-repeat;
+    background-size: 55%;
+    width: 100%;
+    opacity: 0.2;
+  }
+
+  
+
+  .artemHealthTech{
+    width: 100%;
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .artemHealthTech .pbmit-element-subtitle{
+    color: #f9a73e !important; 
+  }
+  
+  .artemHealthTech h2 {
+    font-weight: bold;
+    padding: 20px 0 0;
+    font-size: 60px !important;
+    line-height: 1.2 !important;
+    font-weight: 500 !important;
+  }
+
+  .artemHealthTech .pbmit-element-title span{
+    color: #2490eb !important; 
+
+  }
+  
+  .numss .pbmit-day-wrap{
+    color: #f9a73e !important; 
+    font-size: 20px !important;
+    position: relative;
+    top: -20px;
+  }
+
+  .artemFeatureCol .pbmit-post-title{
+    padding-left: 30px;
+
+  }
+
+  .artemFeatureCol .post-item{
+    border-bottom: 1px solid #2490eb !important;
+  }
+
+  .artemFeatureCol .pbmit-content-wrapper{
+flex: 100% !important;  }
+.artemFeaturesUp .col-sm-6:nth-child(1){
+    border-right:1px solid #525252;
+    padding-right: 50px;
+}
+
+.artemFeaturesUp .col-sm-6:nth-child(2){
+    padding-left: 50px;
+}
+
+.artemFeatureColIn .post-item{
+    padding: 22px 0 !important;
+}
+
+.artemFeatureColIn .post-item:nth-child(1){
+border-top: none !important;
+}
+
+.ourTeam{
+    background-color: #f4f4f4;
+    padding: 100px 0 0px !important;
+}
+
+.teamSection{
+ padding-bottom: 50px !important;
+}
+
+.meet-team{
+    text-align: left !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.meet-team h2{
+color: #000;
+font-size: 60px;
+
+}
+.meet-team h2 span{
+    color: #2490eb;
+    font-size: 250px;
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 120px;
+    }
+
+    .teamImages{
+        margin-top: 80px !important;
+    }
+
+    .openPosition{
+        width: 140px;
+        text-align: center;
+    }
+
+    .teamImages .pbminfotech-box-social-links{
+        display: none;
+    }
+
+    /* .pbmit-team-style-1:hover .pbminfotech-box-content .pbmit-team-title, .pbmit-team-style-1:hover .pbminfotech-box-content .pbminfotech-box-team-position{
+        transform: translateY(-170px)!important;
+    } */
+
+       .teamImages  .pbmit-team-style-1 .pbminfotech-box-content .pbminfotech-box-team-position {
+        font-size:12px;
+        transform: translateY(400px)!important;
+        text-transform: lowercase !important;
+        padding-top: 84px;
+    }
+
+       .teamImages  .pbmit-team-style-1 .pbmit-team-title{
+        transform: translateY(450px) !important;
+    }
+
+
+       .teamImages  .pbmit-team-style-1:hover .pbminfotech-box-content .pbmit-team-title, .pbmit-team-style-1:hover .pbminfotech-box-content .pbminfotech-box-team-position {
+        transform: translateY(0px) !important;
+    }
+
+    .teamImages .pbmit-team-style-1 .pbminfotech-box-content .pbmit-titlebox {
+        padding: 23px 25px !important;
+    }
+
+
+    .teamSpecs{
+        padding-top: 50px;
+    }
+
+
+    .artem-certificates{
+        padding: 100px 0;
+    }
+    .certificatesIn{
+        display: flex;
+        flex-wrap: wrap ;
+        gap: 20px 20px;
+
+    }
+
+    .artem-certificates h2{
+        font-weight: 600 !important;
+        margin-bottom: 50px !important;
+    }
+
+    .ClientWrap{
+        border: 1px solid #ccc;
+    width: 23.88%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    }
+
+    /* .ClientWrap img{
+        width: 280px;
+        aspect-ratio: 3/2;
+    } */
+
+    .mainclientsIn{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainclientsIn .ClientWrap{
+        border: none;
+    }
+
+    .borderDivider{
+        border-bottom: 1px solid #00a4ff;
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+
+    .pbmit-footer-style-2 .pbmit-main-logo{
+        max-height: 75px !important;
+    }
+
+    .emailIN{
+        display: flex;
+    }
+
+    .emailIN input{
+        border:none !important;
+        border-bottom: 1px solid #f9a73e !important;
+        padding: 30px 0 !important;
+
+    }
+    .emailIN button{
+        background: #f9a73e;
+    }
+
+    .pbmit-footer-style-2 .pbmit-footer-big-area .pbmit-footer-right .pbmit-social-links{
+        text-align: left !important;
+    }
+
+    footer .widget-title{
+        color: #00a4ff !important;
+        font-size: 30px !important;
+    }
+
+    .contactIn a{
+        color: #a1a1a1 !important;
+    }
+
+    .contactIn .addresss{
+        color: #a1a1a1 !important;
+    }
+
+    .contactIn .pbmit-contact-widget-lines{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .redefining{
+        color: #002a55 !important;
+        position: relative;
+        top: -70px;
+        font-size: 72px;
+
+    }
+    .testimonial-title h4{
+        font-size: 25px !important;
+    }
+
+    .testimonial-title h2{
+        font-family: 'Ageo';
+        font-weight: normal;
+        font-size: 60px !important;
+        line-height: 58px;
+        letter-spacing: 0;
+        color: #ffffff !important;
+        text-transform: none;
+        font-weight: 500 !important;
+        margin-top: 30px;
+    }
+
+.testimonial-headarea{
+    border-bottom: 1px solid #ffffff;
+    margin-bottom: 30px;
+}
+
+.testimonial-body h2{
+    font-size: 48px;
+    color: #f9a73e;
+    font-weight: 500;
+    font-family: "Ageo";
+
+}
+
+.testimonial-body p{
+    color: #ffffff;
+    padding-right: 80px;
+    margin: 40px 0;
+    font-size: 18px;
+}
+
+.testimonial-body span{
+    color: #00a4ff;
+    font-size: 20px;
+
+}
+
+.testimonial-body .swiper-slide-active .pbminfotech-post-item:first-child {
+    position: relative;
+}
+
+.testimonial-body .swiper-slide-active .pbminfotech-post-item:first-child::before{
+    content:'';
+    position: absolute;
+    right: 37px;
+    top: 0;
+    background: #fff;
+    height: 100%;
+    width: 1px;
+}
+
+.pbmit-social-links i {
+    font-size: 28px;
+}
+
+.pbmit-social-links li{
+    margin: 30px 0 !important; 
+}
+
+.artem-banner-title{
+    font-size: 24px;
+color: #ffffff;
+font-weight: 600;
+font-family: "Ageo";
+}
+
+.artem-banner-subtitle{
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Ageo";
+    line-height:1.2 !important ;
+}
+
+.artem-banner-paragraph{
+    font-size: 28px;
+line-height: 37px !important;
+color: #ffffff;
+font-weight: 300;
+font-family: "Ageo";
+}
+
+.seeMore{
+    font-size: 24px;
+line-height: 37px;
+color: #f9a73e;
+font-weight: 500;
+font-family: "Ageo";
+}
+
+.marquemain{
+    padding:30px 0px !important;
+}
+
+.marquemain .pbmit-tag-wrapper {
+    position: relative;
+    margin-left: 60px !important;
+    margin-right: 60px !important;
+}
+
+.CoveredSection .elementor-widget-container{
+    margin-top: 0px !important;
+}
 
 
 
 
-   
+footer .pbmit-social-links i{
+    font-size: 50px;
+    margin: 0!important;
+}
+
+footer .pbmit-social-li{
+padding-right: 30px !important;
+}
+
+footer [class^="pbmit-base-icon-"]:before{
+    margin: 0 !important; 
+}
+
+.pbmit-footer-style-2 .pbmit-footer-big-area .pbmit-footer-right .pbmit-social-links li a{
+color: #00b1ef;
+}
+.desktopSlider{
+    display: block;
+}
+.mobileSlider{
+    display: none;
+}
+.desktopButton{
+    display: block;
+}
+.mobileButton{
+    display: none;
+}
+
+.desktopSocialIcons{
+    display: block;
+}
+.mobileSocialIcons{
+    display: none;
+}
+
