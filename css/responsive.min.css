@@ -13,67 +13,204 @@
     padding: 0 30px;
   }
 }
-@media (max-width: 1200px) {
-  #page.site {
-    overflow: hidden;
-  }
-  .elementor-section.elementor-section-stretched {
-    width: 100% !important;
-    left: 0 !important;
-  }
-  .elementor-section.elementor-section-boxed > .elementor-container,
-  .container {
-    max-width: none;
-  }
-  .page.pbmit-sidebar-no.elementor-page #content {
-    padding: 0;
-  }
-  .pbmit-footer-section > .pbmit-footer-big-area > .container,
-  .pbmit-footer-section > .container,
-  .pbmit-sticky-header > .container,
-  .pbmit-header-menu-area-wrapper > .container,
-  .pbmit-title-bar-wrapper > .container,
-  .pbmit-header-wrapper > .container,
-  body:not(.elementor-page) .site-content.container,
-  .single.elementor-page .site-content.container {
-    padding: 0 30px;
-  }
-  .pbmit-heading-subheading .pbmit-heading-desc br {
-    display: none;
-  }
-  .pbmit-heading-subheading .pbmit-element-title {
-    font-size: 46px;
-    line-height: 56px;
-  }
-  .pbmit-bg-img-hide.pbmit-bgimage-yes {
-    background-image: none !important;
-  }
-  .pbmit-bg-img-hide.pbmit-bgimage-yes .pbmit-stretched-div {
-    background-image: none !important;
-  }
-  .pbmit-header-search-form-wrapper.open .search-form {
-    position: absolute;
-    left: 50px;
-    right: 50px;
-  }
-  .pbmit-blog-classic .wp-block-columns {
-    display: block;
-  }
-  .pbmit-blog-classic .wp-block-columns .wp-block-image img {
-    width: 100%;
-  }
-  .pbmit-blog-classic .wp-block-columns .wp-block-column {
-    -ms-flex: 0 0 100%;
+
+
+
+
+
+@media screen and (min-width: 768px) {
+  .pbmit-empty-sidebar #primary {
     flex: 0 0 100%;
     max-width: 100%;
   }
-  .pbmit-blog-classic .wp-block-columns .wp-block-column:not(:first-child) {
-    margin-top: 30px;
-    margin-left: 0;
+  .col-md-20percent {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
   }
-  .pbminfotech-sidebar .pbmit-author-detail {
-    padding: 30px !important;
+  .pbmit-blog-meta-bottom.pbmit-blog-meta-no-social
+    .pbmit-blog-meta-bottom-left {
+    width: 100%;
   }
+}
+@media screen and (min-width: 992px) {
+  .pbmit-sidebar-left #secondary,
+  .pbmit-sidebar-right #secondary {
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
+  .pbmit-sidebar-left #primary,
+  .pbmit-sidebar-right #primary {
+    flex: 0 0 72%;
+    max-width: 72%;
+  }
+  .pbmit-team-single-style-1 .col-md-8,
+  .pbmit-sidebar-left #primary {
+    padding-left: 28px;
+  }
+  .rtl .pbmit-team-single-style-1 .col-md-8,
+  .rtl.pbmit-sidebar-left #primary {
+    padding-right: 28px;
+    padding-left: inherit;
+  }
+  .pbmit-sidebar-right #primary {
+    padding-right: 28px;
+  }
+  .rtl.pbmit-sidebar-right #primary {
+    padding-left: 28px;
+    padding-right: inherit;
+  }
+  .pbmit-team-single-style-1
+    .pbmit-team-single
+    .pbmit-team-single-info
+    .pbmit-teammember-detail {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+  .pbmit-team-single-style-1 .pbmit-team-single .col-md-8 {
+    flex: 0 0 70%;
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .pbmit-team-single-style-1 .col-md-8,
+  .pbmit-sidebar-left #primary {
+    padding-left: 38px;
+  }
+  .rtl .pbmit-team-single-style-1 .col-md-8,
+  .rtl.pbmit-sidebar-left #primary {
+    padding-right: 38px;
+    padding-left: inherit;
+  }
+  .pbmit-sidebar-right #primary {
+    padding-right: 38px;
+  }
+  .rtl.pbmit-sidebar-right #primary {
+    padding-left: 38px;
+    padding-right: inherit;
+  }
+}
+@media (min-width: 1200px) {
+  .elementor-section.elementor-section-boxed > .elementor-container,
+  .container {
+    max-width: 1440px;
+  }
+  .pbmit-team-single-style-1 .col-md-8,
+  .pbmit-sidebar-left #primary {
+    padding-left: 48px;
+  }
+  .rtl .pbmit-team-single-style-1 .col-md-8,
+  .rtl.pbmit-sidebar-left #primary {
+    padding-right: 48px;
+    padding-left: inherit;
+  }
+  .pbmit-sidebar-right #primary {
+    padding-right: 48px;
+  }
+  .rtl.pbmit-sidebar-right #primary {
+    padding-left: 48px;
+    padding-right: inherit;
+  }
+}
+@media (min-width: 1201px) {
+  .pbmit-team-single-style-1 .col-md-8,
+  .pbmit-sidebar-left #primary {
+    padding-left: 58px;
+  }
+  .rtl .pbmit-team-single-style-1 .col-md-8,
+  .rtl.pbmit-sidebar-left #primary {
+    padding-right: 58px;
+    padding-left: inherit;
+  }
+  .pbmit-sidebar-right #primary {
+    padding-right: 58px;
+  }
+  .rtl.pbmit-sidebar-right #primary {
+    padding-left: 58px;
+    padding-right: inherit;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hospitalImgWrap .hosp-02 {
+    top: 10%;
+  }
+  .hospitalImgWrap .hosp-02 img {
+    width: 80%;
+  }
+  .hospitalImgWrap .hosp-01 {
+    top: 20%;
+  }
+  .hospitalImgWrap .hosp-03 img {
+    width: 80%;
+  }
+  .pbmit-header-height-wrapper {
+    min-height: auto !important;
+  }
+  /* .achievements .row{
+        flex-direction: column;
+    } */
+    #page.site {
+      overflow: hidden;
+    }
+    .elementor-section.elementor-section-stretched {
+      width: 100% !important;
+      left: 0 !important;
+    }
+    .elementor-section.elementor-section-boxed > .elementor-container,
+    .container {
+      max-width: none;
+    }
+    .page.pbmit-sidebar-no.elementor-page #content {
+      padding: 0;
+    }
+    .pbmit-footer-section > .pbmit-footer-big-area > .container,
+    .pbmit-footer-section > .container,
+    .pbmit-sticky-header > .container,
+    .pbmit-header-menu-area-wrapper > .container,
+    .pbmit-title-bar-wrapper > .container,
+    .pbmit-header-wrapper > .container,
+    body:not(.elementor-page) .site-content.container,
+    .single.elementor-page .site-content.container {
+      padding: 0 30px;
+    }
+    .pbmit-heading-subheading .pbmit-heading-desc br {
+      display: none;
+    }
+    .pbmit-heading-subheading .pbmit-element-title {
+      font-size: 46px;
+      line-height: 56px;
+    }
+    .pbmit-bg-img-hide.pbmit-bgimage-yes {
+      background-image: none !important;
+    }
+    .pbmit-bg-img-hide.pbmit-bgimage-yes .pbmit-stretched-div {
+      background-image: none !important;
+    }
+    .pbmit-header-search-form-wrapper.open .search-form {
+      position: absolute;
+      left: 50px;
+      right: 50px;
+    }
+    .pbmit-blog-classic .wp-block-columns {
+      display: block;
+    }
+    .pbmit-blog-classic .wp-block-columns .wp-block-image img {
+      width: 100%;
+    }
+    .pbmit-blog-classic .wp-block-columns .wp-block-column {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .pbmit-blog-classic .wp-block-columns .wp-block-column:not(:first-child) {
+      margin-top: 30px;
+      margin-left: 0;
+    }
+    .pbminfotech-sidebar .pbmit-author-detail {
+      padding: 30px !important;
+    }
 }
 @media (max-width: 1024px) {
   .pbmit-col-stretched-left .pbmit-stretched-div {
@@ -109,7 +246,27 @@
     margin-bottom: 30px;
   }
 }
+@media (max-width: 992px) {
+  .pbmit-timeline .pbmit-content:before {
+    top: 140px;
+    height: 40px;
+  }
+  .pbmit-timeline .pbmit-content.even:before {
+    top: 0;
+  }
+}
 @media (max-width: 991px) {
+  .public-content-desktop{
+    display: none;
+}
+.public-content-mobile{
+    display: block;
+    padding-bottom: 60px;
+    padding-left: 30px;
+}
+.artemFeaturesUp .col-sm-6:nth-child(1){
+  padding-left: 0;
+}
   .pbmit-sortable-list-ul li {
     margin-bottom: 25px;
   }
@@ -154,7 +311,226 @@
     margin-bottom: 30px;
   }
 }
+@media (max-width: 981px) {
+  .desktopSlider {
+    display: none;
+  }
+  .mobileSlider {
+    display: block;
+  }
+
+  .desktopButton {
+    display: none;
+  }
+  .mobileButton {
+    display: block;
+  }
+
+  .mobileButton button {
+    background-color: #00a4ff;
+  }
+
+  .ResponsivebannerImage {
+    background: url(../images/mobile-banner.png);
+    height: 1800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .ResponsivebannerImage h4 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Ageo";
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+
+  .ResponsivebannerImage h2 {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Ageo";
+    line-height: 1.4;
+    padding-left: 30px;
+  }
+
+  .lowContent p {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Ageo";
+  }
+
+  .lowContent {
+    padding-left: 30px;
+    position: relative;
+    top: -200px;
+  }
+
+  .seeMore {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: transparent;
+    padding: 0;
+  }
+
+  .revv-btns {
+    flex-direction: column;
+    display: flex;
+    width: 200px;
+    gap: 20px;
+    padding-top: 40px;
+  }
+
+  .revv-btns button {
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .revv-btns .contact-sales {
+    background-color: #00a4ff;
+  }
+
+  .revv-btns .learn-more {
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+
+  .seeMore img {
+    width: 60px !important;
+  }
+
+  .pbmit-timeline .pbmit-content:before {
+    top: 154px;
+    height: 40px;
+  }
+  .pbmit-timeline .pbmit-content.even:before {
+    top: 15px;
+  }
+  .artem-banner-subtitle {
+    font-size: 40px;
+    padding: 50px 0;
+    text-align: left;
+  }
+  .contactAction {
+    top: 80px !important;
+  }
+
+  .slider-nav {
+    position: absolute;
+    bottom: 200px;
+    z-index: 9;
+    right: 60px;
+  }
+
+  .slide-count {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 10px;
+    font-size: 30px;
+  }
+
+  .slider-nav button {
+    background: transparent;
+  }
+
+  .slider-nav button img {
+    width: 25px;
+  }
+
+  .slider-nav .prev-arrow {
+    left: -20px;
+    z-index: 99;
+  }
+
+  .slider-nav .next-arrow {
+    right: -20px;
+  }
+
+  .slider-nav button i {
+    font-size: 20px;
+  }
+
+  .hospitalImgWrap .hosp-01 {
+    display: none;
+  }
+
+  .hospitalImgWrap .hosp-02 {
+    display: none;
+  }
+
+  .hospitalImgWrap .hosp-03 {
+    display: none;
+  }
+
+  .mobileSlider {
+    position: relative;
+  }
+  .hospitalSection {
+    background: url(../images/hospi-bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1700px;
+    background-position: 0% 50%;
+  }
+  .maximize-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1700px;
+  }
+
+  .covered-responsive {
+    position: absolute;
+    bottom: -260%;
+  }
+  .publicHealth {
+    min-height: 1500px;
+  }
+
+  .publicHealth img {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: -50px;
+  }
+
+  .CoveredSection {
+    padding-left: 30px;
+  }
+}
 @media (max-width: 767px) {
+  .pbmit-timeline .pbmit-timeline-post-items.d-flex {
+    display: block !important;
+  }
+  .pbmit-timeline .pbmit-timeline-post-items:after,
+  .pbmit-timeline .pbmit-content:before {
+    content: unset;
+  }
+  .pbmit-timeline .pbmit-timeline-inner .pbmit-content.even {
+    margin-top: 0;
+    padding: 0 0 55px;
+  }
+  .pbmit-timeline
+    .pbmit-timeline-post-items
+    .pbmit-ourhistory-row
+    .pbmit-hover-img {
+    height: 150px;
+    width: 150px;
+    margin-top: -100px;
+    margin-left: 0;
+  }
+  .pbmit-timeline .pbmit-timeline-inner:last-child .pbmit-content.odd {
+    padding: 0;
+  }
   .pbmit-heading-subheading .pbmit-element-title {
     font-size: 40px;
     line-height: 50px;
@@ -221,6 +597,211 @@
     justify-content: right;
   }
 }
+
+@media (max-width: 600px) {
+  .booknow a {
+    background: #f9a73e;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+  }
+  .ResponsivebannerImage h2 {
+    padding-left: 25px;
+  }
+  .ResponsivebannerImage {
+    background-size: cover;
+    height: 1200px;
+    background-position: center;
+  }
+  .lowContent p {
+    font-size: 20px;
+  }
+  .lowContent {
+    top: -110px;
+  }
+  .slider-nav {
+    position: absolute;
+    bottom: 110px;
+    z-index: 9;
+    right: -30px;
+  }
+  .slider-nav .prev-arrow {
+    left: 0px;
+  }
+  .slider-nav .next-arrow {
+    right: 0px;
+  }
+  .slider-nav button img {
+    width: 15px;
+  }
+  .slide-count {
+    color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 6px;
+    font-size: 30px;
+  }
+  .ResponsivebannerImage h2 {
+    font-size: 40px;
+  }
+  .ResponsivebannerImage h4 {
+    margin-bottom: 0;
+  }
+  .achievements .row{
+    flex-direction: column;
+  }
+  .achive-box{
+    border:none;
+    padding: 30px 0;
+  }
+  .hospitalSection .elementor-widget-container {
+    padding-right: 0;
+}
+.hospitalSection .elementor-widget-container br{
+    display: none;
+}
+.hospital-contents .pbmit-heading-subheading h4.pbmit-element-subtitle {
+    color: #002a55;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.hospitalSection {
+    background: #f4f4f4 url(../images/hospi-bg-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 1300px;
+    background-position: center -70px;
+  }
+  .maximize-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1300px;
+  }
+  .transparentLearnMore{
+    display: none;
+  }
+
+  .maxi-responsive p{
+    font-size: 14px;
+  }
+  .publicHealth img{
+    height: 100%;
+  }
+  .publicHealth .public-contents h2 br{
+    display: none;
+  }
+  .publicHealth {
+    min-height: auto;
+}
+  .pbmit-heading-subheading .pbmit-element-subtitle{
+    font-size: 14px;
+  }
+  .pbmit-heading-subheading .pbmit-element-title {
+    font-size: 40px !important;
+    line-height: 45px;
+}
+.covered-responsive {
+    position: absolute;
+    bottom: -158%;
+}
+.covered-responsive p{
+    font-size: 14px;
+}
+.CoveredSection p {
+    font-size: 16px;
+    color: #002a55;
+    font-weight: 500;
+    font-family: "Ageo";
+    max-width: 100%;
+    padding-right: 30px;
+}
+.CoveredSection h2 {
+    font-size: 50px;
+    color: #00a4ff;
+    font-weight: 500;
+    font-family: "Ageo";
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+.artemFeaturesUp h2{
+    font-size: 40px !important;
+}
+.artemFeaturesUp h2 br{
+display: none !important;}
+
+.artemFeaturesUp .col-sm-6:nth-child(1){
+    border:none;
+    padding-right: 0px;
+}
+.numss .pbmit-day-wrap{
+    top: 0;
+}
+.artemFeatureCol .pbmit-post-title{
+    font-size: 18px;
+}
+.artemFeaturesUp .col-sm-6:nth-child(2) {
+    padding-left: 0;
+}
+.artemFeaturesUp .pbmit-blog-style-2 .pbmit-meta-date .pbmit-day-wrap{
+    line-height: 38px;
+}
+.meet-team h2 span{
+    font-size: 120px;
+    margin-top: 50px;
+
+}
+.meet-team h2 {
+    color: #000;
+    font-size: 40px;
+    
+}
+.teamImages {
+    margin-top: 0px !important;
+}
+.ClientWrap{
+    width: 43.88%;
+}
+.certificatesIn{
+    justify-content: center;
+}
+.testimonial-body h2{
+    font-size: 30px;
+}
+.testimonial-body p{
+    font-size: 16px;
+    padding-right: 0px;
+}
+.testimonial-body .swiper-slide-active .pbminfotech-post-item:first-child::before{
+    content: none;
+}
+.desktopSocialIcons{
+    display: none;
+}
+.mobileSocialIcons{
+    display: block;
+}
+footer .pbmit-social-links i{
+    color:#2490eb;
+}
+.pbmit-newsletter-title .pbmit-news-title {
+    font-size: 32px;
+    line-height: 42px;
+    padding-top: 30px;
+}
+
+.pbmit-footer-style-2.site-footer .widget p{
+    position: relative;
+    top: -40px;
+}
+
+}
+
 @media (max-width: 575px) {
   .pbmit-heading-subheading .pbmit-element-title {
     font-size: 38px;
@@ -477,572 +1058,4 @@
     font-size: 35px;
     line-height: 45px;
   }
-}
-@media screen and (min-width: 768px) {
-  .pbmit-empty-sidebar #primary {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .col-md-20percent {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 20%;
-    flex: 0 0 20%;
-    max-width: 20%;
-  }
-  .pbmit-blog-meta-bottom.pbmit-blog-meta-no-social
-    .pbmit-blog-meta-bottom-left {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .pbmit-sidebar-left #secondary,
-  .pbmit-sidebar-right #secondary {
-    flex: 0 0 28%;
-    max-width: 28%;
-  }
-  .pbmit-sidebar-left #primary,
-  .pbmit-sidebar-right #primary {
-    flex: 0 0 72%;
-    max-width: 72%;
-  }
-  .pbmit-team-single-style-1 .col-md-8,
-  .pbmit-sidebar-left #primary {
-    padding-left: 28px;
-  }
-  .rtl .pbmit-team-single-style-1 .col-md-8,
-  .rtl.pbmit-sidebar-left #primary {
-    padding-right: 28px;
-    padding-left: inherit;
-  }
-  .pbmit-sidebar-right #primary {
-    padding-right: 28px;
-  }
-  .rtl.pbmit-sidebar-right #primary {
-    padding-left: 28px;
-    padding-right: inherit;
-  }
-  .pbmit-team-single-style-1
-    .pbmit-team-single
-    .pbmit-team-single-info
-    .pbmit-teammember-detail {
-    flex: 0 0 30%;
-    max-width: 30%;
-  }
-  .pbmit-team-single-style-1 .pbmit-team-single .col-md-8 {
-    flex: 0 0 70%;
-    max-width: 70%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .pbmit-team-single-style-1 .col-md-8,
-  .pbmit-sidebar-left #primary {
-    padding-left: 38px;
-  }
-  .rtl .pbmit-team-single-style-1 .col-md-8,
-  .rtl.pbmit-sidebar-left #primary {
-    padding-right: 38px;
-    padding-left: inherit;
-  }
-  .pbmit-sidebar-right #primary {
-    padding-right: 38px;
-  }
-  .rtl.pbmit-sidebar-right #primary {
-    padding-left: 38px;
-    padding-right: inherit;
-  }
-}
-@media (min-width: 1200px) {
-  .elementor-section.elementor-section-boxed > .elementor-container,
-  .container {
-    max-width: 1440px;
-  }
-  .pbmit-team-single-style-1 .col-md-8,
-  .pbmit-sidebar-left #primary {
-    padding-left: 48px;
-  }
-  .rtl .pbmit-team-single-style-1 .col-md-8,
-  .rtl.pbmit-sidebar-left #primary {
-    padding-right: 48px;
-    padding-left: inherit;
-  }
-  .pbmit-sidebar-right #primary {
-    padding-right: 48px;
-  }
-  .rtl.pbmit-sidebar-right #primary {
-    padding-left: 48px;
-    padding-right: inherit;
-  }
-}
-@media (min-width: 1201px) {
-  .pbmit-team-single-style-1 .col-md-8,
-  .pbmit-sidebar-left #primary {
-    padding-left: 58px;
-  }
-  .rtl .pbmit-team-single-style-1 .col-md-8,
-  .rtl.pbmit-sidebar-left #primary {
-    padding-right: 58px;
-    padding-left: inherit;
-  }
-  .pbmit-sidebar-right #primary {
-    padding-right: 58px;
-  }
-  .rtl.pbmit-sidebar-right #primary {
-    padding-left: 58px;
-    padding-right: inherit;
-  }
-}
-
-@media (max-width: 1200px) {
-  .hospitalImgWrap .hosp-02 {
-    top: 10%;
-  }
-  .hospitalImgWrap .hosp-02 img {
-    width: 80%;
-  }
-  .hospitalImgWrap .hosp-01 {
-    top: 20%;
-  }
-  .hospitalImgWrap .hosp-03 img {
-    width: 80%;
-  }
-  .pbmit-header-height-wrapper {
-    min-height: auto !important;
-  }
-  /* .achievements .row{
-        flex-direction: column;
-    } */
-}
-@media (max-width: 992px) {
-  .pbmit-timeline .pbmit-content:before {
-    top: 140px;
-    height: 40px;
-  }
-  .pbmit-timeline .pbmit-content.even:before {
-    top: 0;
-  }
-}
-@media (max-width: 981px) {
-  .desktopSlider {
-    display: none;
-  }
-  .mobileSlider {
-    display: block;
-  }
-
-  .desktopButton {
-    display: none;
-  }
-  .mobileButton {
-    display: block;
-  }
-
-  .mobileButton button {
-    background-color: #00a4ff;
-  }
-
-  .ResponsivebannerImage {
-    background: url(../images/mobile-banner.png);
-    height: 1800px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .ResponsivebannerImage h4 {
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Ageo";
-    padding-left: 30px;
-    padding-top: 40px;
-  }
-
-  .ResponsivebannerImage h2 {
-    font-size: 60px;
-    color: #ffffff;
-    font-weight: 500;
-    font-family: "Ageo";
-    line-height: 1.4;
-    padding-left: 30px;
-  }
-
-  .lowContent p {
-    font-size: 30px;
-    color: #ffffff;
-    font-weight: 300;
-    font-family: "Ageo";
-  }
-
-  .lowContent {
-    padding-left: 30px;
-    position: relative;
-    top: -200px;
-  }
-
-  .seeMore {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: transparent;
-    padding: 0;
-  }
-
-  .revv-btns {
-    flex-direction: column;
-    display: flex;
-    width: 200px;
-    gap: 20px;
-    padding-top: 40px;
-  }
-
-  .revv-btns button {
-    cursor: pointer;
-    font-size: 20px;
-  }
-
-  .revv-btns .contact-sales {
-    background-color: #00a4ff;
-  }
-
-  .revv-btns .learn-more {
-    background-color: transparent;
-    border: 1px solid #fff;
-  }
-
-  .seeMore img {
-    width: 60px !important;
-  }
-
-  .pbmit-timeline .pbmit-content:before {
-    top: 154px;
-    height: 40px;
-  }
-  .pbmit-timeline .pbmit-content.even:before {
-    top: 15px;
-  }
-  .artem-banner-subtitle {
-    font-size: 40px;
-    padding: 50px 0;
-    text-align: left;
-  }
-  .contactAction {
-    top: 80px !important;
-  }
-
-  .slider-nav {
-    position: absolute;
-    bottom: 200px;
-    z-index: 9;
-    right: 60px;
-  }
-
-  .slide-count {
-    color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 10px;
-    font-size: 30px;
-  }
-
-  .slider-nav button {
-    background: transparent;
-  }
-
-  .slider-nav button img {
-    width: 25px;
-  }
-
-  .slider-nav .prev-arrow {
-    left: -20px;
-    z-index: 99;
-  }
-
-  .slider-nav .next-arrow {
-    right: -20px;
-  }
-
-  .slider-nav button i {
-    font-size: 20px;
-  }
-
-  .hospitalImgWrap .hosp-01 {
-    display: none;
-  }
-
-  .hospitalImgWrap .hosp-02 {
-    display: none;
-  }
-
-  .hospitalImgWrap .hosp-03 {
-    display: none;
-  }
-
-  .mobileSlider {
-    position: relative;
-  }
-  .hospitalSection {
-    background: url(../images/hospi-bg-mobile.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 1700px;
-    background-position: 0% 50%;
-  }
-  .maximize-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 1700px;
-  }
-
-  .covered-responsive {
-    position: absolute;
-    bottom: -260%;
-  }
-  .publicHealth {
-    min-height: 1500px;
-  }
-
-  .publicHealth img {
-    width: 100%;
-    height: 800px;
-    position: relative;
-    top: -50px;
-  }
-
-  .CoveredSection {
-    padding-left: 30px;
-  }
-}
-@media (max-width: 767px) {
-  .pbmit-timeline .pbmit-timeline-post-items.d-flex {
-    display: block !important;
-  }
-  .pbmit-timeline .pbmit-timeline-post-items:after,
-  .pbmit-timeline .pbmit-content:before {
-    content: unset;
-  }
-  .pbmit-timeline .pbmit-timeline-inner .pbmit-content.even {
-    margin-top: 0;
-    padding: 0 0 55px;
-  }
-  .pbmit-timeline
-    .pbmit-timeline-post-items
-    .pbmit-ourhistory-row
-    .pbmit-hover-img {
-    height: 150px;
-    width: 150px;
-    margin-top: -100px;
-    margin-left: 0;
-  }
-  .pbmit-timeline .pbmit-timeline-inner:last-child .pbmit-content.odd {
-    padding: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .booknow a {
-    background: #f9a73e;
-    color: #fff;
-    padding: 10px 30px;
-    display: inline-block;
-    width: 100px;
-    text-align: center;
-    font-size: 14px;
-  }
-  .ResponsivebannerImage h2 {
-    padding-left: 25px;
-  }
-  .ResponsivebannerImage {
-    background-size: cover;
-    height: 1200px;
-    background-position: center;
-  }
-  .lowContent p {
-    font-size: 20px;
-  }
-  .lowContent {
-    top: -110px;
-  }
-  .slider-nav {
-    position: absolute;
-    bottom: 110px;
-    z-index: 9;
-    right: -30px;
-  }
-  .slider-nav .prev-arrow {
-    left: 0px;
-  }
-  .slider-nav .next-arrow {
-    right: 0px;
-  }
-  .slider-nav button img {
-    width: 15px;
-  }
-  .slide-count {
-    color: #fff;
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    top: 6px;
-    font-size: 30px;
-  }
-  .ResponsivebannerImage h2 {
-    font-size: 40px;
-  }
-  .ResponsivebannerImage h4 {
-    margin-bottom: 0;
-  }
-  .achievements .row{
-    flex-direction: column;
-  }
-  .achive-box{
-    border:none;
-    padding: 30px 0;
-  }
-  .hospitalSection .elementor-widget-container {
-    padding-right: 0;
-}
-.hospitalSection .elementor-widget-container br{
-    display: none;
-}
-.hospital-contents .pbmit-heading-subheading h4.pbmit-element-subtitle {
-    color: #002a55;
-    font-weight: 500;
-    margin-bottom: 20px;
-}
-.hospitalSection {
-    background: #f4f4f4 url(../images/hospi-bg-mobile.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 1300px;
-    background-position: center -70px;
-  }
-  .maximize-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 1300px;
-  }
-  .transparentLearnMore{
-    display: none;
-  }
-
-  .maxi-responsive p{
-    font-size: 14px;
-  }
-  .publicHealth img{
-    height: 100%;
-  }
-  .publicHealth .public-contents h2 br{
-    display: none;
-  }
-  .publicHealth {
-    min-height: 1120px;
-}
-  .pbmit-heading-subheading .pbmit-element-subtitle{
-    font-size: 14px;
-  }
-  .pbmit-heading-subheading .pbmit-element-title {
-    font-size: 33px;
-    line-height: 45px;
-}
-.covered-responsive {
-    position: absolute;
-    bottom: -158%;
-}
-.covered-responsive p{
-    font-size: 14px;
-}
-.CoveredSection p {
-    font-size: 16px;
-    color: #002a55;
-    font-weight: 500;
-    font-family: "Ageo";
-    max-width: 100%;
-    padding-right: 30px;
-}
-.CoveredSection h2 {
-    font-size: 50px;
-    color: #00a4ff;
-    font-weight: 500;
-    font-family: "Ageo";
-    margin-bottom: 30px;
-    line-height: 1.2;
-}
-.artemFeaturesUp h2{
-    font-size: 40px !important;
-}
-.artemFeaturesUp h2 br{
-display: none !important;}
-
-.artemFeaturesUp .col-sm-6:nth-child(1){
-    border:none;
-    padding-right: 0px;
-}
-.numss .pbmit-day-wrap{
-    top: 0;
-}
-.artemFeatureCol .pbmit-post-title{
-    font-size: 18px;
-}
-.artemFeaturesUp .col-sm-6:nth-child(2) {
-    padding-left: 0;
-}
-.artemFeaturesUp .pbmit-blog-style-2 .pbmit-meta-date .pbmit-day-wrap{
-    line-height: 38px;
-}
-.meet-team h2 span{
-    font-size: 120px;
-    margin-top: 50px;
-
-}
-.meet-team h2 {
-    color: #000;
-    font-size: 40px;
-    
-}
-.teamImages {
-    margin-top: 0px !important;
-}
-.ClientWrap{
-    width: 43.88%;
-}
-.certificatesIn{
-    justify-content: center;
-}
-.testimonial-body h2{
-    font-size: 30px;
-}
-.testimonial-body p{
-    font-size: 16px;
-    padding-right: 0px;
-}
-.testimonial-body .swiper-slide-active .pbminfotech-post-item:first-child::before{
-    content: none;
-}
-.desktopSocialIcons{
-    display: none;
-}
-.mobileSocialIcons{
-    display: block;
-}
-footer .pbmit-social-links i{
-    color:#2490eb;
-}
-.pbmit-newsletter-title .pbmit-news-title {
-    font-size: 32px;
-    line-height: 42px;
-    padding-top: 30px;
-}
-
-.pbmit-footer-style-2.site-footer .widget p{
-    position: relative;
-    top: -40px;
-}
-
 }

@@ -1283,6 +1283,7 @@ margin: 30px 0 0;
 
     .hospitalImgWrap{
         position: relative;
+        flex-direction: column;
     }
 .hospitalImgWrap .hosp-01{
     position: absolute;
@@ -1827,6 +1828,13 @@ color: #00b1ef;
     display: block;
 }
 .mobileSocialIcons{
+    display: none;
+}
+
+.public-content-desktop{
+    display: block;
+}
+.public-content-mobile{
     display: none;
 }
 
