@@ -1235,6 +1235,9 @@ width: 200px;
     color: #fff;
 }
 
+.achivement .container{
+    max-width: 1580px !important;
+}
 
 .achievements .col{
     padding: 0;
@@ -1276,7 +1279,11 @@ margin: 30px 0 0;
     }
 
     .hospitalSection{
-        background: #f4f4f4;
+        background: #f4f4f4 url(../images/hospital-03.png);
+        background-size:contain ;
+        background-position: left;
+        background-repeat: no-repeat;
+        padding: 150px 0 200px;
     }
 
 
@@ -1288,19 +1295,22 @@ margin: 30px 0 0;
 .hospitalImgWrap .hosp-01{
     position: absolute;
     z-index: 999;
-    left: 64%;
+    left:270px;
     top: 100%;
 }
 .hospitalImgWrap .hosp-02{
     position: absolute;
     z-index: 99;
-    left: 33%;
+    left: 10px;
     top: 40%;
 }
 .hospitalImgWrap .hosp-03{
-    position: absolute;
+    position: relative;
     z-index: 9;
+}
 
+.hospitalImgWrapIn{
+    position: relative;
 }
 
 .hospital-contents .pbmit-heading-subheading h4.pbmit-element-subtitle{
@@ -1347,6 +1357,10 @@ margin: 30px 0 0;
 .hospitalSection .elementor-widget-container{
     padding-right: 100px;
 }
+
+/* .hospitalSection .elementor-column.elementor-col-50, .elementor-column[data-col="50"]{
+    height: 610px;
+} */
 
 .publicHealth{
     background: #002a55;
@@ -1838,3 +1852,19 @@ color: #00b1ef;
     display: none;
 }
 
+.pbmit-main-header-area{
+    padding: 20px 0;
+}
+
+.hospInn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    max-width: 665px;
+
+}
+
+.hospInn .elementor-element.pbmit-align-left.elementor-widget.elementor-widget-pbmit_heading{
+    width: 100%;
+}
