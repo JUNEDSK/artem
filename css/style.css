@@ -1235,9 +1235,7 @@ width: 200px;
     color: #fff;
 }
 
-.achivement .container{
-    max-width: 1580px !important;
-}
+
 
 .achievements .col{
     padding: 0;
@@ -1263,11 +1261,13 @@ width: 200px;
 
 
 .achive-box h2{
-margin: 30px 0 0;   
+margin: 30px 0 20px;   
+font-size: 55px;
 }
 
 .achive-box p{
-    font-size: 16px;
+    font-size: 22px;
+    line-height: 31px;
     color: #00b1ef;
     font-weight: 500;
     font-family: "Ageo";
@@ -1292,6 +1292,11 @@ margin: 30px 0 0;
         position: relative;
         flex-direction: column;
     }
+
+    .publicImg img{
+        width: 100%;
+    }
+    
 .hospitalImgWrap .hosp-01{
     position: absolute;
     z-index: 999;
@@ -1314,14 +1319,26 @@ margin: 30px 0 0;
 }
 
 .hospital-contents .pbmit-heading-subheading h4.pbmit-element-subtitle{
+    font-size: 24px;
+    letter-spacing: 8px;
     color: #002a55;
-    font-weight: 700;
-    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: "Ageo";
+    margin-bottom: 50px;
+}
+
+.hospInn .pbmit-heading-subheading h4.pbmit-element-subtitle{
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: "Ageo";
 }
 
 .hospital-contents .pbmit-heading-subheading .pbmit-element-title{
     color: #044282;
     font-weight: 500;
+    font-size: 50px;
 }
 
 .hospital-contents .pbmit-heading-subheading .pbmit-element-title span{
@@ -1330,6 +1347,7 @@ margin: 30px 0 0;
 
 .elementor-1598 .elementor-element.elementor-element-460b866 p{
     color: #002a55;
+    font-size: 22px;
 }
 
 .transparentLearnMore.elementor-button{
@@ -1355,7 +1373,7 @@ margin: 30px 0 0;
 
 
 .hospitalSection .elementor-widget-container{
-    padding-right: 100px;
+    padding-right: 0px;
 }
 
 /* .hospitalSection .elementor-column.elementor-col-50, .elementor-column[data-col="50"]{
@@ -1489,6 +1507,7 @@ margin: 30px 0 0;
     font-size: 60px !important;
     line-height: 1.2 !important;
     font-weight: 500 !important;
+    color: #ffffff!important;
   }
 
   .artemHealthTech .pbmit-element-title span{
@@ -1508,12 +1527,25 @@ margin: 30px 0 0;
 
   }
 
+  .artemFeatureCol a{
+    color: #ffffff;
+
+  }
+
   .artemFeatureCol .post-item{
     border-bottom: 1px solid #2490eb !important;
   }
 
   .artemFeatureCol .pbmit-content-wrapper{
 flex: 100% !important;  }
+
+.artemFeaturesUp{
+    margin-top: 100px !important;
+    margin-bottom: 100px;
+
+}
+
+
 .artemFeaturesUp .col-sm-6:nth-child(1){
     border-right:1px solid #525252;
     padding-right: 50px;
@@ -1603,6 +1635,10 @@ font-size: 60px;
         padding-top: 50px;
     }
 
+    .teamSpecs h4{
+        font-size: 20px;
+        font-weight: 600;
+    }
 
     .artem-certificates{
         padding: 100px 0;
@@ -1611,7 +1647,7 @@ font-size: 60px;
         display: flex;
         flex-wrap: wrap ;
         gap: 20px 20px;
-
+        justify-content: center;
     }
 
     .artem-certificates h2{
@@ -1625,6 +1661,14 @@ font-size: 60px;
     align-items: center;
     justify-content: center;
     display: flex;
+    }
+
+    .mainclientsInFinal{
+        display: flex;
+        flex-wrap: wrap;
+       justify-content: space-between;
+       gap: 10px 100px;
+
     }
 
     /* .ClientWrap img{
@@ -1650,7 +1694,7 @@ font-size: 60px;
     }
 
     .pbmit-footer-style-2 .pbmit-main-logo{
-        max-height: 75px !important;
+        max-height: 95px !important;
     }
 
     .emailIN{
@@ -1715,7 +1759,7 @@ font-size: 60px;
 
 .testimonial-headarea{
     border-bottom: 1px solid #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 .testimonial-body h2{
@@ -1726,9 +1770,17 @@ font-size: 60px;
 
 }
 
+.pbmit-col-oddSeciton:nth-child(1){
+    padding-right: 70px !important;
+}
+
+.pbmit-col-oddSeciton:nth-child(2){
+    padding-left: 80px !important;
+    border-left: 1px solid #ccc;
+}
+
 .testimonial-body p{
     color: #ffffff;
-    padding-right: 80px;
     margin: 40px 0;
     font-size: 18px;
 }
@@ -1841,6 +1893,15 @@ color: #00b1ef;
 .desktopSocialIcons{
     display: block;
 }
+.desktopSocialIcons i{
+    color: #00b1ef;
+}
+
+.desktopSocialIcons i:hover{
+    color: #000000;
+}
+
+
 .mobileSocialIcons{
     display: none;
 }
@@ -1862,9 +1923,34 @@ color: #00b1ef;
     justify-content: center;
     flex-direction: column; 
     max-width: 665px;
+    position: relative;
+    left: -50px;
+}
 
+.public-contents{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column; 
 }
 
 .hospInn .elementor-element.pbmit-align-left.elementor-widget.elementor-widget-pbmit_heading{
     width: 100%;
+}
+
+.coveredArticles .pbmit-ele{
+    min-height: 250px !important;
+}
+
+.secondTestimonial{
+    border-left: 1px solid #ccc;
+    padding-left:100px !important;
+}
+
+.covered-responsive{
+    display: block;
+}
+
+.covered-mobile{
+    display: none;
 }

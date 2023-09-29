@@ -100,14 +100,7 @@
     background-size:cover;
     background-attachment:scroll
 }
-.site-footer,.site-footer.pbmit-bg-color-custom:before{
-    background-color:#0a1d35;
-    background-image:url(../images/footer-bg-img.png);
-    background-repeat:no-repeat;
-    background-position:center top;
-    background-size:auto;
-    background-attachment:scroll
-}
+
 .pbmit-footer-widget-area,.pbmit-footer-widget-area.pbmit-bg-color-custom:before{
     background-color:#969696;
     background-repeat:repeat;

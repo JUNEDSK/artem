@@ -256,6 +256,17 @@
   }
 }
 @media (max-width: 991px) {
+
+    
+.covered-responsive{
+    display: none;
+}
+
+.covered-mobile{
+    display: block;
+}
+
+
   .public-content-desktop{
     display: none;
 }

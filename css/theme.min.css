@@ -3887,8 +3887,8 @@ body.single .pbmit-underline::after{
 }
 .pbmit-search-results-back-global-btn a span,.pbmit-search-results-load-btn a span,.pbmit-blog-classic .pbmit-read-more-link a span,.rev-btn .pbmit-button-wrapper .pbmit-button-text,.pbminfotech-ele-ptable-style-1 .pbmit-ptable-btn a span .pbmit-button-text,.pbmit-team-form .input-button button span .pbmit-button-text,.Pbmit-contact-form .input-button button span .pbmit-button-text,.pbmit-element-service-style-3 .swiper-hover-slide-nav .pbmit-service-btn a span .pbmit-button-text,.elementor-widget-button .elementor-button-wrapper .elementor-button .elementor-button-text{
     position:relative;
-    padding-right:25px;
-    overflow:hidden
+    overflow:hidden;
+    font-size: 24px;
 }
 .pbmit-search-results-back-global-btn a span::after,.pbmit-search-results-load-btn a span::after,.pbmit-blog-classic .pbmit-read-more-link a span::after,.rev-btn .pbmit-button-wrapper span::after,.pbminfotech-ele-ptable-style-1 .pbmit-ptable-btn a span .pbmit-button-text::after,.pbmit-team-form .input-button button span .pbmit-button-text::after,.Pbmit-contact-form .input-button button span .pbmit-button-text::after,.pbmit-element-service-style-3 .swiper-hover-slide-nav .pbmit-service-btn a span .pbmit-button-text::after,.elementor-widget-button .elementor-button-wrapper .elementor-button .elementor-button-text::after{
     content:"\e884";
@@ -3901,7 +3901,8 @@ body.single .pbmit-underline::after{
     -moz-transform:translateX(0%) translateY(-48%);
     -ms-transform:translateX(0%) translateY(-48%);
     -o-transform:translateX(0%) translateY(-48%);
-    transform:translateX(0%) translateY(-48%)
+    transform:translateX(0%) translateY(-48%);
+    display:none;
 }
 .pbminfotech-ele-ptable-style-1 .pbmit-ptable-btn a:hover span span,.pbmit-team-form .input-button button:hover span span,.Pbmit-contact-form .input-button button:hover span span,.pbmit-element-service-style-3 .swiper-hover-slide-nav .pbmit-service-btn a:hover span span,.elementor-widget-button:not(.pbmit-btn-style-text) .elementor-button-wrapper .elementor-button:hover .elementor-button-text{
     animation:MoveUpInitial 0.3s forwards,MoveUpEnd 0.3s forwards 0.3s
