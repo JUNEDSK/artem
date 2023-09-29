@@ -1253,6 +1253,16 @@ width: 200px;
 }
 
 
+.achiveflex{
+    align-items: center;
+    gap: 8px;
+}
+
+.achiveflex span{
+    font-size: 55px;
+    color: #07366a;
+}
+
 .achive-box img{
     width: 100px;
     aspect-ratio: 3/2;
@@ -1425,7 +1435,12 @@ font-size: 55px;
 }
 
 .downloadPdf{
-    width: 140px;
+    width: 150px;
+    text-align: center;
+}
+
+.pdfbutton{
+    width: 250px;
 }
 
 .coveredImg img{
@@ -1511,7 +1526,7 @@ font-size: 55px;
   }
 
   .artemHealthTech .pbmit-element-title span{
-    color: #2490eb !important; 
+    color: #02b1ef !important; 
 
   }
   
@@ -1653,6 +1668,7 @@ font-size: 60px;
     .artem-certificates h2{
         font-weight: 600 !important;
         margin-bottom: 50px !important;
+        font-size: 60px;
     }
 
     .ClientWrap{
@@ -1748,7 +1764,7 @@ font-size: 60px;
     .testimonial-title h2{
         font-family: 'Ageo';
         font-weight: normal;
-        font-size: 60px !important;
+        font-size: 72px !important;
         line-height: 58px;
         letter-spacing: 0;
         color: #ffffff !important;
@@ -1952,5 +1968,55 @@ color: #00b1ef;
 }
 
 .covered-mobile{
+    display: none;
+}
+
+.service-element .pbmit-service-content{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.open-position{
+    width: 230px;
+}
+
+.open-position span{
+    width: 160px;
+}
+
+.site-footer .widget.widget_nav_menu ul li>a{
+    font-size: 18px;
+}
+
+.pbmit-contact-widget-line a{
+    font-size: 18px;
+
+}
+
+.contactIn .addresss{
+    font-size: 18px;
+}
+
+.pbmit-newsletter-title .pbmit-news-title {
+    font-size: 62px !important;
+    line-height: 70px !important;
+    text-transform: capitalize !important;
+    color: #044282 !important;
+    position: relative;
+    top: -130px;
+    margin-bottom: 0;
+
+}
+
+.site-footer .widget {
+    padding-top: 115px !important;
+    position: relative !important;
+}
+
+.stayInTouch{
+    font-size: 18px;
+}
+
+.maxiImage{
     display: none;
 }

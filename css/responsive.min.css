@@ -8,10 +8,56 @@
     padding: 80px !important;
   }
 }
+
+@media (max-width: 1400px){
+
+
+    .hospInn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+        position: relative;
+        left: 0;
+        padding-left: 20px;
+    }
+    .pbmit-max-mega-menu-override #page .pbmit-header-style-2 #site-navigation .mega-menu-wrap>ul>li.mega-menu-item, body:not(.pbmit-max-mega-menu-override) .pbmit-header-style-2 .pbmit-navbar div>ul>li {
+        margin: 0 15px;
+    }
+    .booknow{
+        padding-right: 0px !important;
+      }
+      .custom.tparrows {
+        background: transparent!important;
+        width: 35px!important;
+        top: 55% !important;
+    }
+}
 @media (max-width: 1366px) {
   .pbmit-element-timeline-style-1 .pbmit-element-inner .container {
     padding: 0 30px;
   }
+  .custom.tparrows {
+    background: transparent!important;
+    width: 35px!important;
+    top: 54% !important;
+}
+ 
+
+}
+
+@media (max-width: 1280px){
+    .custom.tparrows {
+        background: transparent!important;
+        width: 35px!important;
+        top: 52% !important;
+    }
+
+    .elementor-1598 .elementor-element.elementor-element-460b866 p{
+        font-size: 18px;
+    }
+     
 }
 
 
@@ -211,8 +257,66 @@
     .pbminfotech-sidebar .pbmit-author-detail {
       padding: 30px !important;
     }
+    .custom.tparrows {
+        background: transparent!important;
+        width: 35px!important;
+        top: 49% !important;
+    }
+
+    .achive-box h2 {
+        margin: 30px 0 20px;
+        font-size: 45px;
+    }
+
+    .achive-box p {
+        font-size: 18px;
+    }
+    .pbmit-footer-style-2 .pbmit-footer-big-area .pbmit-footer-right .pbmit-social-links{
+        padding-right: 0px;
+    }
 }
 @media (max-width: 1024px) {
+
+    
+    .artem-banner-title{
+        position: relative;
+        top:-30px !important;
+        font-size: 20px;
+        width: 300px;
+    }
+    .artem-banner-subtitle{
+        position: relative;
+        top: -20px !important;
+        font-size: 45px;
+        width: 300px;
+    }
+
+.banner-btn{
+    font-size: 18px !important;
+}
+
+.custom.tparrows {
+    background: transparent!important;
+    width: 35px!important;
+    top: 43% !important;
+    left: -16px !important;
+}
+.hospInn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    position: relative;
+    left: 0;
+    padding-left: 20px;
+    padding: 60px 20px;
+}
+
+    .booknow{
+        padding-right: 20px !important;
+    }
+
   .pbmit-col-stretched-left .pbmit-stretched-div {
     margin: 0 !important;
   }
@@ -257,6 +361,42 @@
 }
 @media (max-width: 991px) {
 
+    .achievements .col{
+    width: 33.33% !important;
+    flex: initial;
+  }
+
+  .achiveflex span{
+    font-size: 45px;
+  }
+
+
+  .maxiImage{
+    display: block;
+    margin-bottom: 50px;
+    position: relative;
+    top: -50px;
+  }
+
+  .elementor-1598 .elementor-element.elementor-element-8faa753{
+    margin-top: 0px !important;
+  }
+
+  .covered-mobile p{
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .hospInn{width: 100%;}
+
+  .publicHealth .public-contents h2 br{
+    display: none;
+  }
+
+  .achievements .achive-box{
+    width: 100%;
+    border: none;
+  }
     
 .covered-responsive{
     display: none;
@@ -610,6 +750,76 @@
 }
 
 @media (max-width: 600px) {
+    
+  .hospitalSection{
+    padding-bottom: 60px;
+  }
+
+  .covered-mobile  p{
+    color: #fff !important;
+    font-size: 16px;
+  }
+
+  .CoveredSection .col-lg-3{
+    justify-content: flex-start !important;
+  }
+
+  .artem-certificates h2{
+    font-size: 40px;
+  }
+  .mainclientsInFinal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0px 0px;
+    flex-direction: row;
+}
+
+.ClientWrapNew{width: 50%;}
+.ClientWrapNew img{
+    width: 80%;
+    margin: 0 auto;
+}
+    .achievements .col {
+        width: 100% !important;
+        flex: initial;
+    }
+
+    .pbmit-col-oddSeciton:nth-child(1){
+        padding-right: 0 !important;
+    }
+
+    .pbmit-col-oddSeciton:nth-child(2){
+        padding-left: 0 !important;
+        border: none;
+    }
+
+    .testimonial-headarea {
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 40px;
+    }
+
+    .site-footer .widget {
+        padding-top: 60px !important;
+        position: relative 
+    }
+
+    .site-footer .widget.widget_nav_menu ul li>a {
+        font-size: 14px;
+    }
+
+    .pbmit-newsletter-title .pbmit-news-title {
+        font-size: 52px !important;
+        line-height: 60px !important;
+        text-transform: capitalize !important;
+        color: #044282 !important;
+        position: relative;
+        top: -80px;
+        margin-bottom: 0;
+    }
+    
+    
+
   .booknow a {
     background: #f9a73e;
     color: #fff;
@@ -666,6 +876,7 @@
   .achievements .row{
     flex-direction: column;
   }
+  
   .achive-box{
     border:none;
     padding: 30px 0;
@@ -691,7 +902,6 @@
   .maximize-wrap {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     height: 1300px;
   }
   .transparentLearnMore{
