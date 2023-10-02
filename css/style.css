@@ -10,6 +10,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 .woocommerce form .form-row .required { visibility: visible; }
 
+p{
+    font-family: "Ageo";
+}
+
+a{
+    font-family: "Ageo";
+}
 
 img.wp-smiley,
 img.emoji {
@@ -1220,6 +1227,16 @@ img.emoji {
 width: 200px;
 }
 
+
+.booknow {
+    padding-right: 0px !important;
+}
+
+.resonsivebr{
+    margin: 0;
+
+}
+
 .booknow a{
     background: #f9a73e;
     color: #fff;
@@ -1358,6 +1375,8 @@ font-size: 55px;
 .elementor-1598 .elementor-element.elementor-element-460b866 p{
     color: #002a55;
     font-size: 22px;
+    font-family: Ageo;
+
 }
 
 .transparentLearnMore.elementor-button{
@@ -1429,7 +1448,6 @@ font-size: 55px;
 .CoveredSection p{
     font-size:20px;
     color: #002a55;
-    font-weight: 500;
     font-family: "Ageo";
     max-width: 550px;
 }
@@ -1742,6 +1760,7 @@ font-size: 60px;
 
     .contactIn .addresss{
         color: #a1a1a1 !important;
+        font-family: 'Aego';
     }
 
     .contactIn .pbmit-contact-widget-lines{
@@ -2019,4 +2038,20 @@ color: #00b1ef;
 
 .maxiImage{
     display: none;
+}
+.maxiPara p{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.hospital-contents .pbmit-reverse-heading-yes{
+    margin-bottom: 30px;
+}
+
+.createRevBtn{
+    padding: 13px 40px!important;
+}
+
+.bannerLearnMore{
+    left: -30px !important;
 }

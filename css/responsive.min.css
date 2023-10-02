@@ -1,64 +1,21 @@
-@media only screen and (max-width: 1600px) and (min-width: 1400px) {
+
+
+
+@media screen and (max-width: 1600px) and (min-width: 1400px) {
   .pbmit-counter-section > .elementor-widget-wrap.elementor-element-populated {
     padding: 100px !important;
   }
 }
-@media only screen and (max-width: 1400px) and (min-width: 1367px) {
+@media screen and (max-width: 1400px) and (min-width: 1367px) {
   .pbmit-counter-section > .elementor-widget-wrap.elementor-element-populated {
     padding: 80px !important;
   }
-}
-
-@media (max-width: 1400px){
-
-
-    .hospInn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        max-width: 100%;
-        position: relative;
-        left: 0;
-        padding-left: 20px;
-    }
-    .pbmit-max-mega-menu-override #page .pbmit-header-style-2 #site-navigation .mega-menu-wrap>ul>li.mega-menu-item, body:not(.pbmit-max-mega-menu-override) .pbmit-header-style-2 .pbmit-navbar div>ul>li {
-        margin: 0 15px;
-    }
-    .booknow{
-        padding-right: 0px !important;
-      }
-      .custom.tparrows {
-        background: transparent!important;
-        width: 35px!important;
-        top: 55% !important;
-    }
-}
-@media (max-width: 1366px) {
-  .pbmit-element-timeline-style-1 .pbmit-element-inner .container {
-    padding: 0 30px;
+  .achive-box h2{
+    font-size: 40px;
   }
-  .custom.tparrows {
-    background: transparent!important;
-    width: 35px!important;
-    top: 54% !important;
-}
- 
-
 }
 
-@media (max-width: 1280px){
-    .custom.tparrows {
-        background: transparent!important;
-        width: 35px!important;
-        top: 52% !important;
-    }
 
-    .elementor-1598 .elementor-element.elementor-element-460b866 p{
-        font-size: 18px;
-    }
-     
-}
 
 
 
@@ -137,7 +94,10 @@
     padding-right: inherit;
   }
 }
+
 @media (min-width: 1200px) {
+
+    
   .elementor-section.elementor-section-boxed > .elementor-container,
   .container {
     max-width: 1440px;
@@ -178,7 +138,238 @@
   }
 }
 
-@media (max-width: 1200px) {
+
+/* maxWidth */
+
+@media  (max-width: 1400px){
+
+    .hospInn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        max-width: 100%;
+        position: relative;
+        left: 0;
+        padding-left: 20px;
+    }
+    .pbmit-max-mega-menu-override #page .pbmit-header-style-2 #site-navigation .mega-menu-wrap>ul>li.mega-menu-item, body:not(.pbmit-max-mega-menu-override) .pbmit-header-style-2 .pbmit-navbar div>ul>li {
+        margin: 0 15px;
+    }
+    .custom.tparrows {
+    background: transparent!important;
+    width: 35px!important;
+    top: 55% !important;
+    }
+}
+@media (min-width: 1366px) and (max-width: 1440px){
+
+    .testimonialSection{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .teamSection{
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .artem-certificates{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .CoveredSection {
+        padding: 100px 20px;
+    }
+    .hospInn{
+        left: -25px;
+    }
+    .hospitalImgWrap .hosp-02{
+        left: 20px;
+    }
+    .achive-box h2{
+        font-size: 45px;
+    }
+
+    .achiveflex span{
+        font-size: 45px;
+    }
+
+    .achive-box p{
+        font-size: 18px;
+    }
+
+    .hospital-contents .pbmit-heading-subheading h4.pbmit-element-subtitle {
+        font-size: 20px;
+        letter-spacing: 7px;
+    }
+
+    .elementor-1598 .elementor-element.elementor-element-460b866 p{
+        font-size: 20px;
+    }
+    .hospital-contents .pbmit-heading-subheading .pbmit-element-title{
+        font-size: 45px;
+    }
+    .elementor-widget-button .elementor-button-wrapper .elementor-button .elementor-button-text{
+        font-size: 20px !important;
+    }
+    .pbmit-heading-subheading h4.pbmit-element-subtitle {
+        font-size: 20px !important;
+    }
+    .pbmit-heading-subheading .pbmit-element-title{
+        font-size: 45px;
+    }
+    .service-element .pbmit-service-content{
+        font-size: 20px ;
+    }
+
+    .pbmit-blog-style-2 .pbmit-post-title {
+        font-size: 20px;
+        line-height: 26px;
+    }    
+    .artemHealthTech h2{
+        font-size: 45px !important;
+    }
+    .artemFeatureColIn .post-item {
+        padding: 20px 0 !important;
+    }
+    .meet-team h2 span{
+        font-size: 220px;
+    }
+    .meet-team h2{
+        font-size: 50px;
+        line-height: 30px;
+
+
+    }
+
+    .artem-certificates h2{
+        font-size: 45px;
+    }
+    .testimonial-title h2{
+        font-size: 45px;
+    }
+    .testimonial-body h2{
+        font-size: 30px;
+    }
+    .testimonial-body p{
+        font-size: 20px;
+    }
+    .hospInn h2 br{
+display: none !important;    }
+.publicHealth .public-contents h2 span{
+    display: inline-block;
+}
+  .pbmit-element-timeline-style-1 .pbmit-element-inner .container {
+    padding: 0 30px; 
+  }
+  .custom.tparrows {
+    background: transparent!important;
+    width: 35px!important;
+    top: 55.55% !important;
+}
+
+.testimonial-body span{
+    font-size: 18px;
+}
+
+.site-footer.pbmit-footer-style-2 {
+    padding: 35px 0 30px 0;
+}
+
+/* .slideContent{
+    position: absolute;
+    top: -50px !important;
+} */
+
+.artem-banner-title{
+    position: relative;
+    top:-30px !important;
+    font-size: 20px;
+    width: 300px;
+}
+.artem-banner-subtitle{
+    position: relative;
+    top: -40px !important;
+    font-size: 45px;
+    width: 300px;
+}
+
+.artem-banner-paragraph{
+    position: relative;
+    top: -40px !important;
+}
+
+.seeMore{
+    position: relative;
+    top: -40px !important;  
+}
+
+
+
+.maxiPara p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-right: 40px;
+}
+
+.bannerLearnMore{
+    left: -20px !important;
+}
+
+.banner-btn{
+font-size: 20px !important;
+}
+ 
+
+}
+
+@media (min-width: 1200px) and (max-width: 1280px){
+    
+    .booknow {
+        padding-right: 20px !important;
+    }
+
+    .custom.tparrows {
+        background: transparent!important;
+        width: 35px!important;
+        top: 52% !important;
+    }
+
+    .elementor-1598 .elementor-element.elementor-element-460b866 p{
+        font-size: 18px;
+    }
+     
+} 
+
+
+@media (min-width: 1200px) and (max-width: 1024px){
+
+    .bannerLearnMore{
+        left: -20px !important;
+    }
+
+   
+    
+.artem-banner-paragraph{
+    position: relative;
+    top: -20px !important;
+}
+
+.seeMore{
+    position: relative;
+    top: -20px !important;  
+}
+
+.createRevBtn{
+    position: relative;
+    top: -20px !important;  
+    font-size: 16px !important;
+
+}
+
+
+    
   .hospitalImgWrap .hosp-02 {
     top: 10%;
   }
@@ -260,7 +451,7 @@
     .custom.tparrows {
         background: transparent!important;
         width: 35px!important;
-        top: 49% !important;
+        top: 54% !important;
     }
 
     .achive-box h2 {
@@ -275,26 +466,29 @@
         padding-right: 0px;
     }
 }
-@media (max-width: 1024px) {
 
-    
+@media (max-width: 1024px) {
+    .booknow {
+        padding-right: 20px !important;
+    }
+
     .artem-banner-title{
         position: relative;
-        top:-30px !important;
+        top:-40px !important;
         font-size: 20px;
         width: 300px;
     }
     .artem-banner-subtitle{
         position: relative;
-        top: -20px !important;
+        top: -30px !important;
         font-size: 45px;
         width: 300px;
     }
 
-.banner-btn{
-    font-size: 18px !important;
-}
-
+    .bannerLearnMore{
+        left: 20px !important;
+    }
+    
 .custom.tparrows {
     background: transparent!important;
     width: 35px!important;
@@ -313,9 +507,7 @@
     padding: 60px 20px;
 }
 
-    .booknow{
-        padding-right: 20px !important;
-    }
+ 
 
   .pbmit-col-stretched-left .pbmit-stretched-div {
     margin: 0 !important;
@@ -350,17 +542,17 @@
     margin-bottom: 30px;
   }
 }
-@media (max-width: 992px) {
-  .pbmit-timeline .pbmit-content:before {
-    top: 140px;
-    height: 40px;
-  }
-  .pbmit-timeline .pbmit-content.even:before {
-    top: 0;
-  }
-}
-@media (max-width: 991px) {
 
+
+
+@media (max-width: 991px){
+    .pbmit-timeline .pbmit-content:before {
+        top: 140px;
+        height: 40px;
+      }
+      .pbmit-timeline .pbmit-content.even:before {
+        top: 0;
+      }
     .achievements .col{
     width: 33.33% !important;
     flex: initial;
@@ -462,7 +654,8 @@
     margin-bottom: 30px;
   }
 }
-@media (max-width: 981px) {
+
+@media (max-width: 981px){
   .desktopSlider {
     display: none;
   }
@@ -631,6 +824,7 @@
     background-repeat: no-repeat;
     min-height: 1700px;
     background-position: 0% 50%;
+    padding-bottom: 0;
   }
   .maximize-wrap {
     display: flex;
@@ -658,6 +852,7 @@
     padding-left: 30px;
   }
 }
+
 @media (max-width: 767px) {
   .pbmit-timeline .pbmit-timeline-post-items.d-flex {
     display: block !important;
@@ -750,6 +945,225 @@
 }
 
 @media (max-width: 600px) {
+
+    .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(1){
+        border: none;
+    }
+
+    .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(2){
+        border-right: none;
+    }
+
+    
+    .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(3){
+        border-left: none;
+    }
+
+    
+    
+
+    .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(4){
+        border: none;
+    }
+
+    .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(5){
+        border: none;
+        border-right:1px solid #00a4ff;
+    }
+
+    .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(6){
+        border-bottom:1px solid #2490eb;
+        border-right: none;
+        border-left: none;
+    }
+
+    
+    .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(7){
+        border-left: none;
+    }
+
+    .coveredArticles.pbmit-element-posts-wrapper.row .pbmit-ele:nth-child(8){
+        border: none;
+    }
+
+    .pbmit-header-style-2 .pbmit-main-header-area>.container{
+        padding: 20px 0px;
+    }
+
+    .pbmit-header-style-2 .pbmit-header-content{
+        padding: 0px 20px;
+    }
+
+    .testimonial-title h2{
+        margin-top: 0px;
+    }
+
+    .testimonial-body{
+        margin: 0px !important;
+    }
+    .testimonial-body h2{
+        font-size: 25px;
+        padding-right: 0px;
+    }
+    .testimonial-body p{
+        font-size: 14px;
+        padding-right: 0px;
+        margin: 0 0 20px;
+
+    }
+    .testimonial-body span {
+        font-size: 16px;
+    }
+    
+    
+    .testimonial-body .swiper-slide-active .pbminfotech-post-item:first-child::before{
+        content: none;
+    }
+    .testimonial-headarea{
+        padding-left: 0;
+    }
+.testimonial-body article{
+ padding-left: 0px;
+}  
+
+.testimonial-body article:nth-child(1){
+    border-bottom: 1px solid #fff;
+    padding-bottom: 30px;
+}
+  .pbminfotech-gap-30px .pbmit-element-posts-wrapper.row .pbmit-ele{
+        padding-left: 0;
+    }
+    .artem-features::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -200px;
+        height: 100%;
+        background-image: url(../images/feature-bg.png);
+        background-repeat: no-repeat;
+        background-size: 55%;
+        width: 100%;
+        opacity: 0.2;
+        background-size:contain ;
+      }
+
+      .artemFeatureCol .post-item{
+        padding: 30px 0 20px;
+      }
+
+      .artemHealthTech{
+        border-bottom: 1px solid #2490eb;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+      }
+
+      .elementor-1598 .elementor-element.elementor-element-895b43b:not(.elementor-motion-effects-element-type-background){
+        background: #002a55;
+        background-image: inherit !important;
+      }
+
+      .mobileButton button {
+        background-color: #00a4ff;
+        padding: 10px 20px;
+    }
+
+      .artemFeaturesUp .pbmit-blog-style-2 .pbmit-meta-date .pbmit-day-wrap {
+        line-height: 0 !important;
+    }
+
+    
+
+    .artemFeaturesUp{
+        align-items: center;
+        justify-content: center;
+        padding: 0 7px;
+
+    }
+
+    .ourTeam .elementor-element-populated{
+        padding:0 17px !important;
+    }
+    
+    .artem-certificates {
+        padding: 100px 14px;
+    }
+
+    .service-element .pbmit-service-content {
+        right: 0;
+        font-size: 20px;
+        z-index: 99;
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+    }
+    .coveredImg img{
+        margin: 0 !important;
+    }
+    .CoveredSection{
+        padding: 50px 20px;
+
+    }
+
+    .elementor-button.elementor-size-md {
+        padding: 11px 20px;
+        font-size: 12px !important;
+    }
+
+    .elementor-widget-button .elementor-button-wrapper .elementor-button .elementor-button-text {
+        font-size: 16px !important;
+    }
+
+    .pbmit-heading-subheading h4.pbmit-element-subtitle {
+        font-size: 14px !important;
+    }
+
+    .hospInn{
+        background: #022243;
+        padding: 60px 27px;
+
+    }
+
+    .publicHealth .public-contents h2{
+        font-size: 30px !important;
+        line-height: 40px;
+    }
+    .maxiPara{
+        margin-top: 40px;
+    }
+ 
+    .maxiImage{
+        top: 0;
+        margin-bottom: 0;
+    }
+    .achiveflex{
+        padding-top: 30px;
+    }
+
+    .achive-box p {
+        font-size: 16px;
+        padding: 0 78px;
+    }
+
+    .achive-box img {
+        width: 80px;
+    }
+    .achive-box{
+        gap: 1px;
+    }
+    .achievements .achive-box{
+        border-bottom: 1px solid #eee;
+    }
+    .achive-box p br{
+        display: none;
+    }
+
+    .achive-box h2{
+        line-height: 0;
+    }
+
+    .achiveflex span {
+        line-height: 0;
+    }
     
   .hospitalSection{
     padding-bottom: 60px;
@@ -809,51 +1223,93 @@
     }
 
     .pbmit-newsletter-title .pbmit-news-title {
-        font-size: 52px !important;
-        line-height: 60px !important;
+        font-size: 40px !important;
+        line-height: 50px !important;
         text-transform: capitalize !important;
         color: #044282 !important;
         position: relative;
         top: -80px;
         margin-bottom: 0;
     }
+    .pbmit-footer-style-2 .pbmit-footer-big-area-wrapper .pbmit-footer-big-area {
+        padding: 15px 0 0;
+    }
+    .stayInTouch {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
     
-    
+    .booknow {
+        padding-right: 30px !important;
+    }
 
   .booknow a {
     background: #f9a73e;
     color: #fff;
-    padding: 10px 30px;
+    padding: 4px 30px;
     display: inline-block;
     width: 100px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: bold;
   }
+  .pbmit-header-style-2 .pbmit-logo-area {
+    padding: 0 25px;
+    padding-left: 0;
+    padding-right: 20px;
+}
+
+.pbmit-contact-widget-line a {
+    font-size: 16px;
+}
+
+.contactIn .addresss {
+    font-size: 16px;
+}
+
+.pbmit-footer-style-2 .pbmit-main-logo {
+    max-height: 55px !important;
+}
   .ResponsivebannerImage h2 {
     padding-left: 25px;
   }
   .ResponsivebannerImage {
     background-size: cover;
-    height: 1200px;
+    height: 960px;
     background-position: center;
   }
   .lowContent p {
     font-size: 20px;
   }
   .lowContent {
-    top: -110px;
+    top: -80px;
+  }
+  .seeMore{
+    top: 0px !important;
+    font-size: 18px;
+  }
+  .lowContent p{
+    font-size: 16px;
+  }
+  .revv-btns button{
+    font-size: 16px;
+    padding: 8px 0;
+    width: 180px;
   }
   .slider-nav {
     position: absolute;
-    bottom: 110px;
+    bottom: 70px;
     z-index: 9;
-    right: -30px;
+    right: -20px;
   }
   .slider-nav .prev-arrow {
-    left: 0px;
+    left: 5px;
+    top: -5px;
   }
   .slider-nav .next-arrow {
-    right: 0px;
+    right: 5px;
+    top: -5px;
+
   }
   .slider-nav button img {
     width: 15px;
@@ -865,10 +1321,11 @@
     right: 0;
     text-align: center;
     top: 6px;
-    font-size: 30px;
+    font-size: 24px;
   }
   .ResponsivebannerImage h2 {
     font-size: 40px;
+    margin-bottom: 0;
   }
   .ResponsivebannerImage h4 {
     margin-bottom: 0;
@@ -896,13 +1353,35 @@
     background: #f4f4f4 url(../images/hospi-bg-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 1300px;
-    background-position: center -70px;
+    min-height: auto;
+    background-position: center -5px;
+    padding: 100px 18px 60px;
+
   }
+
+  .hospitalSection h2 br{
+    display: none !important;
+}
+
+.resonsivebrnone{
+    display: none !important;
+}
+
+.hospital-contents .pbmit-heading-subheading .pbmit-element-title span {
+    display: initial !important;
+}
+
+.elementor-1598 .elementor-element.elementor-element-460b866 p {
+    font-size: 14px;
+}
+
+.hospital-contents .pbmit-heading-subheading .pbmit-element-title span{
+    display: inline-block;
+}
   .maximize-wrap {
     display: flex;
     flex-direction: column;
-    height: 1300px;
+    height: auto;
   }
   .transparentLearnMore{
     display: none;
@@ -910,6 +1389,8 @@
 
   .maxi-responsive p{
     font-size: 14px;
+
+    color: #002a55;
   }
   .publicHealth img{
     height: 100%;
@@ -943,7 +1424,7 @@
     padding-right: 30px;
 }
 .CoveredSection h2 {
-    font-size: 50px;
+    font-size: 40px;
     color: #00a4ff;
     font-weight: 500;
     font-family: "Ageo";
@@ -965,6 +1446,7 @@ display: none !important;}
 }
 .artemFeatureCol .pbmit-post-title{
     font-size: 18px;
+
 }
 .artemFeaturesUp .col-sm-6:nth-child(2) {
     padding-left: 0;
@@ -990,17 +1472,10 @@ display: none !important;}
 }
 .certificatesIn{
     justify-content: center;
+    gap: 30px 30px;
+
 }
-.testimonial-body h2{
-    font-size: 30px;
-}
-.testimonial-body p{
-    font-size: 16px;
-    padding-right: 0px;
-}
-.testimonial-body .swiper-slide-active .pbminfotech-post-item:first-child::before{
-    content: none;
-}
+
 .desktopSocialIcons{
     display: none;
 }
