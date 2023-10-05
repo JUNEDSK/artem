@@ -1,0 +1,169 @@
+/*****************************************/
+/* Custom Properties */
+:root {
+  --blue-black: #002246;
+  --blue: #07366a;
+  --blue-light: #00b1ef;
+  --white: #fff;
+  --orange: #f9a73e;
+}
+
+/* Vertical page */
+.vertical-hero-img-container {
+  height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--blue);
+}
+
+.vertical-hero-img {
+  width: 100%;
+  max-width: 600px !important;
+  margin: auto;
+}
+
+.driven-technology {
+  margin-top: 60px;
+  background-color: var(--blue);
+  position: relative;
+}
+
+.driven-technology .row {
+  position: relative;
+  z-index: 10;
+}
+
+.pattern {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  border-top: 80px solid var(--white);
+  border-right: 80px solid var(--white);
+  opacity: 0.05;
+}
+
+@media (min-width: 992px) {
+  .pattern {
+    border-top: 120px solid var(--white);
+    border-right: 120px solid var(--white);
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (min-width: 992px) {
+  .driven-technology {
+    margin-top: 100px;
+  }
+}
+
+.driven-technology .full-bleed-padding {
+  padding-top: 100px;
+}
+
+.driven-technology-img-container {
+  padding: 20px;
+  height: 235px;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .driven-technology-img-container {
+    padding: 0;
+    height: 400px;
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .driven-technology-img {
+    height: 600px !important;
+  }
+}
+
+/*****************************************/
+/* Util Classes */
+
+/* Text colors */
+.text-orange {
+  color: var(--orange);
+}
+
+.text-white {
+  color: var(--white) !important;
+}
+
+.text-blue {
+  color: var(--blue);
+}
+
+.text-blue-light {
+  color: var(--blue-light);
+}
+
+/* Background colors */
+.bg-blue-black {
+  background-color: var(--blue-black);
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-blue-light {
+  background-color: var(--blue-light);
+}
+
+/* Font weight */
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-200 {
+  font-weight: 200;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+/* Padding */
+
+.full-bleed-padding {
+  padding: 20px;
+}
+
+@media (min-width: 1200px) {
+  .full-bleed-padding {
+    padding-left: 100px !important;
+  }
+}
