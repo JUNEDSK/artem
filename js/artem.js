@@ -8,3 +8,11 @@ ScrollTrigger.create({
   pin: ".section-scroll-gallery",
   pinSpacing: false,
 });
+
+ScrollTrigger.create({
+  trigger: ".overview",
+  start: "top top",
+  end: "bottom bottom",
+  pin: ".overview-side",
+  pinSpacing: false,
+});
