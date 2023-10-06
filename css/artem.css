@@ -7,7 +7,7 @@
   --white: #fff;
   --orange: #f9a73e;
 }
-
+/*****************************************/
 /* Vertical page */
 .vertical-hero-img-container {
   height: calc(100vh - 120px);
@@ -200,6 +200,9 @@
     padding: 0 120px;
   }
 }
+
+/*****************************************/
+/* EHIS page */
 
 /*****************************************/
 /* Util Classes */
