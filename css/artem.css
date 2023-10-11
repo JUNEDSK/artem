@@ -10,6 +10,17 @@
   --gray-dark: #232323;
   --gray-light: #ebebeb;
 }
+
+/*****************************************/
+/* Reusable components */
+.btn-artem {
+  padding: 13px 40px !important;
+}
+
+.btn-artem span {
+  font-size: 18px !important;
+  line-height: 1;
+}
 /*****************************************/
 /* Vertical page */
 .vertical-hero-img-container {
