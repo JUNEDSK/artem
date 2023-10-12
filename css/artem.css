@@ -11,6 +11,17 @@
   --gray-light: #ebebeb;
 }
 
+body {
+  font-size: 16px;
+  color: #002a55;
+}
+
+@media (min-width: 576px) {
+  body {
+    font-size: 20px;
+  }
+}
+
 /*****************************************/
 /* Reusable components */
 .btn-artem {
