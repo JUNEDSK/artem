@@ -7721,7 +7721,7 @@
             "oMatchesSelector",
             "webkitMatchesSelector",
           ],
-          key => key in Element.prototype
+          (key) => key in Element.prototype
         );
       });
       exports.ELEMENT_MATCHES = ELEMENT_MATCHES;
@@ -8365,7 +8365,7 @@
         exports.createPluginInstance =
         exports.clearPlugin =
           void 0;
-      var getPluginConfig = actionItemConfig => {
+      var getPluginConfig = (actionItemConfig) => {
         return actionItemConfig.value;
       };
       exports.getPluginConfig = getPluginConfig;
@@ -8380,7 +8380,7 @@
         return parseFloat(element.getAttribute("data-default-duration")) * 1e3;
       };
       exports.getPluginDuration = getPluginDuration;
-      var getPluginOrigin = refState => {
+      var getPluginOrigin = (refState) => {
         return (
           refState || {
             value: 0,
@@ -8388,13 +8388,13 @@
         );
       };
       exports.getPluginOrigin = getPluginOrigin;
-      var getPluginDestination = actionItemConfig => {
+      var getPluginDestination = (actionItemConfig) => {
         return {
           value: actionItemConfig.value,
         };
       };
       exports.getPluginDestination = getPluginDestination;
-      var createPluginInstance = element => {
+      var createPluginInstance = (element) => {
         const instance =
           window.Webflow.require("lottie").createInstance(element);
         instance.stop();
@@ -8410,7 +8410,7 @@
         pluginInstance.goToFrame(pluginInstance.frames * percent);
       };
       exports.renderPlugin = renderPlugin;
-      var clearPlugin = element => {
+      var clearPlugin = (element) => {
         const instance =
           window.Webflow.require("lottie").createInstance(element);
         instance.stop();
@@ -8434,10 +8434,10 @@
         exports.createPluginInstance =
         exports.clearPlugin =
           void 0;
-      var queryContainerElement = elementId =>
+      var queryContainerElement = (elementId) =>
         document.querySelector(`[data-w-id="${elementId}"]`);
       var getFrontendModule = () => window.Webflow.require("spline");
-      var difference = (arr1, arr2) => arr1.filter(x => !arr2.includes(x));
+      var difference = (arr1, arr2) => arr1.filter((x) => !arr2.includes(x));
       var getPluginConfig = (actionItemConfig, key) => {
         return actionItemConfig.value[key];
       };
@@ -8479,7 +8479,7 @@
         return origin;
       };
       exports.getPluginOrigin = getPluginOrigin;
-      var getPluginDestination = actionItemConfig => {
+      var getPluginDestination = (actionItemConfig) => {
         return actionItemConfig.value;
       };
       exports.getPluginDestination = getPluginDestination;
@@ -8594,7 +8594,7 @@
       function isPluginType(actionTypeId) {
         return _plugins.pluginMethodMap.has(actionTypeId);
       }
-      var pluginMethod = methodName => actionTypeId => {
+      var pluginMethod = (methodName) => (actionTypeId) => {
         if (!_IX2BrowserSupport.IS_BROWSER_ENV) {
           return () => null;
         }
@@ -8956,7 +8956,7 @@
         GENERAL_DISPLAY,
         OBJECT_VALUE,
       } = _constants.ActionTypeConsts;
-      var trim = v => v.trim();
+      var trim = (v) => v.trim();
       var colorStyleProps = Object.freeze({
         [STYLE_BACKGROUND_COLOR]: BACKGROUND_COLOR,
         [STYLE_BORDER]: BORDER_COLOR,
@@ -9006,7 +9006,7 @@
         let mediaQueries = site && site.mediaQueries;
         let mediaQueryKeys = [];
         if (mediaQueries) {
-          mediaQueryKeys = mediaQueries.map(mq => mq.key);
+          mediaQueryKeys = mediaQueries.map((mq) => mq.key);
         } else {
           mediaQueries = [];
           console.warn(`IX2 missing mediaQueries in site data`);
@@ -9175,22 +9175,22 @@
               : queryDocument(eventTargetSelector);
           if (finalSelector) {
             if (useEventTarget === PARENT) {
-              return queryDocument(finalSelector).filter(parentElement =>
-                eventTargets.some(targetElement =>
+              return queryDocument(finalSelector).filter((parentElement) =>
+                eventTargets.some((targetElement) =>
                   elementContains(parentElement, targetElement)
                 )
               );
             }
             if (useEventTarget === CHILDREN) {
-              return queryDocument(finalSelector).filter(childElement =>
-                eventTargets.some(targetElement =>
+              return queryDocument(finalSelector).filter((childElement) =>
+                eventTargets.some((targetElement) =>
                   elementContains(targetElement, childElement)
                 )
               );
             }
             if (useEventTarget === SIBLINGS) {
-              return queryDocument(finalSelector).filter(siblingElement =>
-                eventTargets.some(targetElement =>
+              return queryDocument(finalSelector).filter((siblingElement) =>
+                eventTargets.some((targetElement) =>
                   isSiblingNode(targetElement, siblingElement)
                 )
               );
@@ -9202,7 +9202,7 @@
           return [];
         }
         if (_IX2BrowserSupport.IS_BROWSER_ENV && elementRoot) {
-          return queryDocument(finalSelector).filter(element =>
+          return queryDocument(finalSelector).filter((element) =>
             elementRoot.contains(element)
           );
         }
@@ -9597,7 +9597,7 @@
         elementApi
       ) {
         const newTransform = transformKeys
-          .map(actionTypeId => {
+          .map((actionTypeId) => {
             const defaults = transformDefaults[actionTypeId];
             const {
               xValue = defaults.xValue,
@@ -9832,14 +9832,14 @@
           value
             .split(COMMA_DELIMITER)
             .map(trim)
-            .filter(v => v !== validProp)
+            .filter((v) => v !== validProp)
             .join(COMMA_DELIMITER)
         );
       }
       function clearAllStyles({ store, elementApi }) {
         const { ixData } = store.getState();
         const { events = {}, actionLists = {} } = ixData;
-        Object.keys(events).forEach(eventId => {
+        Object.keys(events).forEach((eventId) => {
           const event = events[eventId];
           const { config } = event.action;
           const { actionListId } = config;
@@ -9852,7 +9852,7 @@
             });
           }
         });
-        Object.keys(actionLists).forEach(actionListId => {
+        Object.keys(actionLists).forEach((actionListId) => {
           clearActionListStyles({
             actionList: actionLists[actionListId],
             elementApi,
@@ -9862,7 +9862,7 @@
       function clearActionListStyles({ actionList = {}, event, elementApi }) {
         const { actionItemGroups, continuousParameterGroups } = actionList;
         actionItemGroups &&
-          actionItemGroups.forEach(actionGroup => {
+          actionItemGroups.forEach((actionGroup) => {
             clearActionGroupStyles({
               actionGroup,
               event,
@@ -9870,9 +9870,9 @@
             });
           });
         continuousParameterGroups &&
-          continuousParameterGroups.forEach(paramGroup => {
+          continuousParameterGroups.forEach((paramGroup) => {
             const { continuousActionGroups } = paramGroup;
-            continuousActionGroups.forEach(actionGroup => {
+            continuousActionGroups.forEach((actionGroup) => {
               clearActionGroupStyles({
                 actionGroup,
                 event,
@@ -9923,7 +9923,7 @@
       }
       var processElementByType =
         ({ effect, actionTypeId, elementApi }) =>
-        element => {
+        (element) => {
           switch (actionTypeId) {
             case TRANSFORM_MOVE:
             case TRANSFORM_SCALE:
@@ -10007,7 +10007,7 @@
       function reduceListToGroup({ actionList, actionItemId, rawData }) {
         const { actionItemGroups, continuousParameterGroups } = actionList;
         const newActionItems = [];
-        const takeItemUntilMatch = actionItem => {
+        const takeItemUntilMatch = (actionItem) => {
           newActionItems.push(
             (0, _timm.mergeIn)(actionItem, ["config"], {
               delay: 0,
@@ -10021,7 +10021,7 @@
             return actionItems.some(takeItemUntilMatch);
           });
         continuousParameterGroups &&
-          continuousParameterGroups.some(paramGroup => {
+          continuousParameterGroups.some((paramGroup) => {
             const { continuousActionGroups } = paramGroup;
             return continuousActionGroups.some(({ actionItems }) => {
               return actionItems.some(takeItemUntilMatch);
@@ -10338,7 +10338,7 @@
             const renderType = getRenderType(actionTypeId);
             const styleProp = getStyleProp(renderType, actionTypeId);
             const destinationKeys = Object.keys(destination).filter(
-              key => destination[key] != null
+              (key) => destination[key] != null
             );
             const { easing } = actionItem.config;
             return (0, _timm.set)(state, instanceId, {
@@ -11278,7 +11278,7 @@
         IX2_MEDIA_QUERIES_DEFINED,
       } = _constants.IX2EngineActionTypes;
       var { reifyState } = _shared.IX2VanillaUtils;
-      var rawDataImported = rawData => ({
+      var rawDataImported = (rawData) => ({
         type: IX2_RAW_DATA_IMPORTED,
         payload: (0, _extends2.default)({}, reifyState(rawData)),
       });
@@ -11332,7 +11332,7 @@
         },
       });
       exports.playbackRequested = playbackRequested;
-      var stopRequested = actionListId => ({
+      var stopRequested = (actionListId) => ({
         type: IX2_STOP_REQUESTED,
         payload: {
           actionListId,
@@ -11382,7 +11382,7 @@
         },
       });
       exports.parameterChanged = parameterChanged;
-      var instanceAdded = options => ({
+      var instanceAdded = (options) => ({
         type: IX2_INSTANCE_ADDED,
         payload: (0, _extends2.default)({}, options),
       });
@@ -11395,7 +11395,7 @@
         },
       });
       exports.instanceStarted = instanceStarted;
-      var instanceRemoved = instanceId => ({
+      var instanceRemoved = (instanceId) => ({
         type: IX2_INSTANCE_REMOVED,
         payload: {
           instanceId,
@@ -11475,7 +11475,7 @@
         return element[prop];
       }
       function matchSelector(selector) {
-        return element => element[ELEMENT_MATCHES](selector);
+        return (element) => element[ELEMENT_MATCHES](selector);
       }
       function getQuerySelector({ id, selector }) {
         if (id) {
@@ -12174,7 +12174,7 @@
       var COMPONENT_INACTIVE = "COMPONENT_INACTIVE";
       var { COLON_DELIMITER } = _constants.IX2EngineConstants;
       var { getNamespacedParameterId } = _shared.IX2VanillaUtils;
-      var composableFilter = predicate => options => {
+      var composableFilter = (predicate) => (options) => {
         if (typeof options === "object" && predicate(options)) {
           return true;
         }
@@ -12332,7 +12332,7 @@
         }
         return false;
       };
-      var isElementVisible = options => {
+      var isElementVisible = (options) => {
         const {
           element,
           event: { config },
@@ -12351,7 +12351,7 @@
           bottom: clientHeight - offsetPadding,
         });
       };
-      var whenComponentActiveChange = handler => (options, oldState) => {
+      var whenComponentActiveChange = (handler) => (options, oldState) => {
         const { type } = options.nativeEvent;
         const isActive =
           [COMPONENT_ACTIVE, COMPONENT_INACTIVE].indexOf(type) !== -1
@@ -12365,7 +12365,7 @@
         }
         return newState;
       };
-      var whenElementHoverChange = handler => (options, oldState) => {
+      var whenElementHoverChange = (handler) => (options, oldState) => {
         const newState = {
           elementHovered: isElementHovered(options),
         };
@@ -12378,7 +12378,7 @@
         }
         return newState;
       };
-      var whenElementVisibiltyChange = handler => (options, oldState) => {
+      var whenElementVisibiltyChange = (handler) => (options, oldState) => {
         const newState = (0, _extends2.default)({}, oldState, {
           elementVisible: isElementVisible(options),
         });
@@ -12392,7 +12392,7 @@
         return newState;
       };
       var whenScrollDirectionChange =
-        handler =>
+        (handler) =>
         // $FlowFixMe
         (options, oldState = {}) => {
           const {
@@ -12451,7 +12451,7 @@
         point.left < rect.right &&
         point.top > rect.top &&
         point.top < rect.bottom;
-      var whenPageLoadFinish = handler => (options, oldState) => {
+      var whenPageLoadFinish = (handler) => (options, oldState) => {
         const newState = {
           finished: document.readyState === "complete",
         };
@@ -12460,7 +12460,7 @@
         }
         return newState;
       };
-      var whenPageLoadStart = handler => (options, oldState) => {
+      var whenPageLoadStart = (handler) => (options, oldState) => {
         const newState = {
           started: true,
         };
@@ -12470,7 +12470,7 @@
         return newState;
       };
       var whenClickCountChange =
-        handler =>
+        (handler) =>
         (
           options,
           oldState = {
@@ -12891,7 +12891,7 @@
       );
       var _excluded = ["store", "computedStyle"];
       var QuickEffectsIdList = Object.keys(_constants.QuickEffectIds);
-      var isQuickEffect = actionTypeId =>
+      var isQuickEffect = (actionTypeId) =>
         QuickEffectsIdList.includes(actionTypeId);
       var {
         COLON_DELIMITER,
@@ -12970,7 +12970,7 @@
         const unsubscribe = observeStore({
           store,
           select: ({ ixSession }) => ixSession.tick,
-          onChange: tick => {
+          onChange: (tick) => {
             onTick(tick);
             unsubscribe();
           },
@@ -13105,7 +13105,7 @@
         }
       }
       function startRenderLoop(store, testManual) {
-        const handleFrame = now => {
+        const handleFrame = (now) => {
           const { ixSession, ixParameters } = store.getState();
           if (ixSession.active) {
             store.dispatch(
@@ -13159,9 +13159,9 @@
           ixSession.hasBoundaryNodes && eventTarget
             ? elementApi.getClosestElement(eventTarget, BOUNDARY_SELECTOR)
             : null;
-        continuousActionGroups.forEach(actionGroup => {
+        continuousActionGroups.forEach((actionGroup) => {
           const { keyframe, actionItems } = actionGroup;
-          actionItems.forEach(actionItem => {
+          actionItems.forEach((actionItem) => {
             const { actionTypeId } = actionItem;
             const { target } = actionItem.config;
             if (!target) {
@@ -13184,7 +13184,7 @@
                 eventTarget,
                 elementRoot,
                 elementApi,
-              }).forEach(element => {
+              }).forEach((element) => {
                 instanceConfigs.push({
                   element,
                   key,
@@ -13276,7 +13276,7 @@
         const handleResize = () => {
           updateViewportWidth(store);
         };
-        WINDOW_RESIZE_EVENTS.forEach(type => {
+        WINDOW_RESIZE_EVENTS.forEach((type) => {
           window.addEventListener(type, handleResize);
           store.dispatch(
             (0, _IX2EngineActions.eventListenerAdded)(window, [
@@ -13313,7 +13313,7 @@
           });
         });
       };
-      var getAffectedForEvent = event => {
+      var getAffectedForEvent = (event) => {
         const config = {
           target: event.target,
           targets: event.targets,
@@ -13350,7 +13350,7 @@
             const configs = Array.isArray(event.config)
               ? event.config
               : [event.config];
-            configs.forEach(eventConfig => {
+            configs.forEach((eventConfig) => {
               const { continuousParameterGroupId } = eventConfig;
               const paramGroups = (0, _get.default)(
                 actionLists,
@@ -13394,7 +13394,7 @@
             });
           }
         });
-        const handleEvent = nativeEvent => {
+        const handleEvent = (nativeEvent) => {
           const { ixSession } = store.getState();
           forEachEventTarget(
             eventTargets,
@@ -13457,7 +13457,7 @@
           types
             .split(" ")
             .filter(Boolean)
-            .forEach(type => {
+            .forEach((type) => {
               const handlerFunc = shouldThrottle
                 ? handleEventThrottled
                 : handleEvent;
@@ -13522,7 +13522,7 @@
           if (!shouldAllowMediaQuery(mediaQueries, ixSession.mediaQueryKey)) {
             return;
           }
-          initialStateItems.forEach(actionItem => {
+          initialStateItems.forEach((actionItem) => {
             var _itemConfig$target;
             const { config: itemConfig, actionTypeId } = actionItem;
             const config =
@@ -13544,7 +13544,7 @@
               elementApi,
             });
             const shouldUsePlugin = isPluginType(actionTypeId);
-            itemElements.forEach(element => {
+            itemElements.forEach((element) => {
               const pluginInstance = shouldUsePlugin
                 ? // $FlowFixMe
                   createPluginInstance(actionTypeId)(element, actionItem)
@@ -13573,7 +13573,7 @@
       }
       function stopAllActionGroups({ store }) {
         const { ixInstances } = store.getState();
-        (0, _forEach.default)(ixInstances, instance => {
+        (0, _forEach.default)(ixInstances, (instance) => {
           if (!instance.continuous) {
             const { actionListId, verbose } = instance;
             removeInstance(instance, store);
@@ -13603,7 +13603,7 @@
           ixSession.hasBoundaryNodes && eventTarget
             ? elementApi.getClosestElement(eventTarget, BOUNDARY_SELECTOR)
             : null;
-        (0, _forEach.default)(ixInstances, instance => {
+        (0, _forEach.default)(ixInstances, (instance) => {
           const boundaryMode = (0, _get.default)(
             instance,
             "actionItem.config.target.boundaryMode"
@@ -14830,566 +14830,566 @@
   });
 
   // shared/render/plugins/Form/webflow-forms.js
-  var require_webflow_forms = __commonJS({
-    "shared/render/plugins/Form/webflow-forms.js"(exports, module) {
-      var Webflow = require_webflow_lib();
-      Webflow.define(
-        "forms",
-        (module.exports = function ($, _) {
-          var api = {};
-          var $doc = $(document);
-          var $forms;
-          var loc = window.location;
-          var retro = window.XDomainRequest && !window.atob;
-          var namespace = ".w-form";
-          var siteId;
-          var emailField = /e(-)?mail/i;
-          var emailValue = /^\S+@\S+$/;
-          var alert = window.alert;
-          var inApp = Webflow.env();
-          var listening;
-          var formUrl;
-          var signFileUrl;
-          var chimpRegex = /list-manage[1-9]?.com/i;
-          var disconnected = _.debounce(function () {
-            alert(
-              "Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue."
-            );
-          }, 100);
-          api.ready =
-            api.design =
-            api.preview =
-              function () {
-                init();
-                if (!inApp && !listening) {
-                  addListeners();
-                }
-              };
-          function init() {
-            siteId = $("html").attr("data-wf-site");
-            formUrl = "https://webflow.com/api/v1/form/" + siteId;
-            if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
-              formUrl = formUrl.replace(
-                "https://webflow.com",
-                "https://formdata.webflow.com"
-              );
-            }
-            signFileUrl = `${formUrl}/signFile`;
-            $forms = $(namespace + " form");
-            if (!$forms.length) {
-              return;
-            }
-            $forms.each(build);
-          }
-          function build(i, el) {
-            var $el = $(el);
-            var data = $.data(el, namespace);
-            if (!data) {
-              data = $.data(el, namespace, {
-                form: $el,
-              });
-            }
-            reset(data);
-            var wrap = $el.closest("div.w-form");
-            data.done = wrap.find("> .w-form-done");
-            data.fail = wrap.find("> .w-form-fail");
-            data.fileUploads = wrap.find(".w-file-upload");
-            data.fileUploads.each(function (j) {
-              initFileUpload(j, data);
-            });
-            var formName =
-              data.form.attr("aria-label") ||
-              data.form.attr("data-name") ||
-              "Form";
-            if (!data.done.attr("aria-label")) {
-              data.form.attr("aria-label", formName);
-            }
-            data.done.attr("tabindex", "-1");
-            data.done.attr("role", "region");
-            if (!data.done.attr("aria-label")) {
-              data.done.attr("aria-label", formName + " success");
-            }
-            data.fail.attr("tabindex", "-1");
-            data.fail.attr("role", "region");
-            if (!data.fail.attr("aria-label")) {
-              data.fail.attr("aria-label", formName + " failure");
-            }
-            var action = (data.action = $el.attr("action"));
-            data.handler = null;
-            data.redirect = $el.attr("data-redirect");
-            if (chimpRegex.test(action)) {
-              data.handler = submitMailChimp;
-              return;
-            }
-            if (action) {
-              return;
-            }
-            if (siteId) {
-              data.handler = true
-                ? exportedSubmitWebflow
-                : (() => {
-                    const hostedSubmitHandler = null.default;
-                    return hostedSubmitHandler(
-                      reset,
-                      loc,
-                      Webflow,
-                      collectEnterpriseTrackingCookies,
-                      preventDefault,
-                      findFields,
-                      alert,
-                      findFileUploads,
-                      disableBtn,
-                      siteId,
-                      afterSubmit,
-                      $,
-                      formUrl
-                    );
-                  })();
-              return;
-            }
-            disconnected();
-          }
-          function addListeners() {
-            listening = true;
-            $doc.on("submit", namespace + " form", function (evt) {
-              var data = $.data(this, namespace);
-              if (data.handler) {
-                data.evt = evt;
-                data.handler(data);
-              }
-            });
-            const CHECKBOX_CLASS_NAME = ".w-checkbox-input";
-            const RADIO_INPUT_CLASS_NAME = ".w-radio-input";
-            const CHECKED_CLASS = "w--redirected-checked";
-            const FOCUSED_CLASS = "w--redirected-focus";
-            const FOCUSED_VISIBLE_CLASS = "w--redirected-focus-visible";
-            const focusVisibleSelectors =
-              ":focus-visible, [data-wf-focus-visible]";
-            const CUSTOM_CONTROLS = [
-              ["checkbox", CHECKBOX_CLASS_NAME],
-              ["radio", RADIO_INPUT_CLASS_NAME],
-            ];
-            $doc.on(
-              "change",
-              namespace +
-                ` form input[type="checkbox"]:not(` +
-                CHECKBOX_CLASS_NAME +
-                ")",
-              evt => {
-                $(evt.target)
-                  .siblings(CHECKBOX_CLASS_NAME)
-                  .toggleClass(CHECKED_CLASS);
-              }
-            );
-            $doc.on("change", namespace + ` form input[type="radio"]`, evt => {
-              $(
-                `input[name="${evt.target.name}"]:not(${CHECKBOX_CLASS_NAME})`
-              ).map((i, el) =>
-                $(el)
-                  .siblings(RADIO_INPUT_CLASS_NAME)
-                  .removeClass(CHECKED_CLASS)
-              );
-              const $target = $(evt.target);
-              if (!$target.hasClass("w-radio-input")) {
-                $target
-                  .siblings(RADIO_INPUT_CLASS_NAME)
-                  .addClass(CHECKED_CLASS);
-              }
-            });
-            CUSTOM_CONTROLS.forEach(([controlType, customControlClassName]) => {
-              $doc.on(
-                "focus",
-                namespace +
-                  ` form input[type="${controlType}"]:not(` +
-                  customControlClassName +
-                  ")",
-                evt => {
-                  $(evt.target)
-                    .siblings(customControlClassName)
-                    .addClass(FOCUSED_CLASS);
-                  $(evt.target)
-                    .filter(focusVisibleSelectors)
-                    .siblings(customControlClassName)
-                    .addClass(FOCUSED_VISIBLE_CLASS);
-                }
-              );
-              $doc.on(
-                "blur",
-                namespace +
-                  ` form input[type="${controlType}"]:not(` +
-                  customControlClassName +
-                  ")",
-                evt => {
-                  $(evt.target)
-                    .siblings(customControlClassName)
-                    .removeClass(`${FOCUSED_CLASS} ${FOCUSED_VISIBLE_CLASS}`);
-                }
-              );
-            });
-          }
-          function reset(data) {
-            var btn = (data.btn = data.form.find(':input[type="submit"]'));
-            data.wait = data.btn.attr("data-wait") || null;
-            data.success = false;
-            btn.prop("disabled", false);
-            data.label && btn.val(data.label);
-          }
-          function disableBtn(data) {
-            var btn = data.btn;
-            var wait = data.wait;
-            btn.prop("disabled", true);
-            if (wait) {
-              data.label = btn.val();
-              btn.val(wait);
-            }
-          }
-          function findFields(form, result) {
-            var status = null;
-            result = result || {};
-            form
-              .find(':input:not([type="submit"]):not([type="file"])')
-              .each(function (i, el) {
-                var field = $(el);
-                var type = field.attr("type");
-                var name =
-                  field.attr("data-name") ||
-                  field.attr("name") ||
-                  "Field " + (i + 1);
-                var value = field.val();
-                if (type === "checkbox") {
-                  value = field.is(":checked");
-                } else if (type === "radio") {
-                  if (
-                    result[name] === null ||
-                    typeof result[name] === "string"
-                  ) {
-                    return;
-                  }
-                  value =
-                    form
-                      .find('input[name="' + field.attr("name") + '"]:checked')
-                      .val() || null;
-                }
-                if (typeof value === "string") {
-                  value = $.trim(value);
-                }
-                result[name] = value;
-                status = status || getStatus(field, type, name, value);
-              });
-            return status;
-          }
-          function findFileUploads(form) {
-            var result = {};
-            form.find(':input[type="file"]').each(function (i, el) {
-              var field = $(el);
-              var name =
-                field.attr("data-name") ||
-                field.attr("name") ||
-                "File " + (i + 1);
-              var value = field.attr("data-value");
-              if (typeof value === "string") {
-                value = $.trim(value);
-              }
-              result[name] = value;
-            });
-            return result;
-          }
-          const trackingCookieNameMap = {
-            _mkto_trk: "marketo",
-            // __hstc: 'hubspot',
-          };
-          function collectEnterpriseTrackingCookies() {
-            const cookies = document.cookie
-              .split("; ")
-              .reduce(function (acc, cookie) {
-                const splitCookie = cookie.split("=");
-                const name = splitCookie[0];
-                if (name in trackingCookieNameMap) {
-                  const mappedName = trackingCookieNameMap[name];
-                  const value = splitCookie.slice(1).join("=");
-                  acc[mappedName] = value;
-                }
-                return acc;
-              }, {});
-            return cookies;
-          }
-          function getStatus(field, type, name, value) {
-            var status = null;
-            if (type === "password") {
-              status = "Passwords cannot be submitted.";
-            } else if (field.attr("required")) {
-              if (!value) {
-                status = "Please fill out the required field: " + name;
-              } else if (emailField.test(field.attr("type"))) {
-                if (!emailValue.test(value)) {
-                  status = "Please enter a valid email address for: " + name;
-                }
-              }
-            } else if (name === "g-recaptcha-response" && !value) {
-              status = "Please confirm you\u2019re not a robot.";
-            }
-            return status;
-          }
-          function exportedSubmitWebflow(data) {
-            preventDefault(data);
-            afterSubmit(data);
-          }
-          function submitMailChimp(data) {
-            reset(data);
-            var form = data.form;
-            var payload = {};
-            if (/^https/.test(loc.href) && !/^https/.test(data.action)) {
-              form.attr("method", "post");
-              return;
-            }
-            preventDefault(data);
-            var status = findFields(form, payload);
-            if (status) {
-              return alert(status);
-            }
-            disableBtn(data);
-            var fullName;
-            _.each(payload, function (value, key) {
-              if (emailField.test(key)) {
-                payload.EMAIL = value;
-              }
-              if (/^((full[ _-]?)?name)$/i.test(key)) {
-                fullName = value;
-              }
-              if (/^(first[ _-]?name)$/i.test(key)) {
-                payload.FNAME = value;
-              }
-              if (/^(last[ _-]?name)$/i.test(key)) {
-                payload.LNAME = value;
-              }
-            });
-            if (fullName && !payload.FNAME) {
-              fullName = fullName.split(" ");
-              payload.FNAME = fullName[0];
-              payload.LNAME = payload.LNAME || fullName[1];
-            }
-            var url = data.action.replace("/post?", "/post-json?") + "&c=?";
-            var userId = url.indexOf("u=") + 2;
-            userId = url.substring(userId, url.indexOf("&", userId));
-            var listId = url.indexOf("id=") + 3;
-            listId = url.substring(listId, url.indexOf("&", listId));
-            payload["b_" + userId + "_" + listId] = "";
-            $.ajax({
-              url,
-              data: payload,
-              dataType: "jsonp",
-            })
-              .done(function (resp) {
-                data.success =
-                  resp.result === "success" || /already/.test(resp.msg);
-                if (!data.success) {
-                  console.info("MailChimp error: " + resp.msg);
-                }
-                afterSubmit(data);
-              })
-              .fail(function () {
-                afterSubmit(data);
-              });
-          }
-          function afterSubmit(data) {
-            var form = data.form;
-            var redirect = data.redirect;
-            var success = data.success;
-            if (success && redirect) {
-              Webflow.location(redirect);
-              return;
-            }
-            data.done.toggle(success);
-            data.fail.toggle(!success);
-            if (success) {
-              data.done.focus();
-            } else {
-              data.fail.focus();
-            }
-            form.toggle(!success);
-            reset(data);
-          }
-          function preventDefault(data) {
-            data.evt && data.evt.preventDefault();
-            data.evt = null;
-          }
-          function initFileUpload(i, form) {
-            if (!form.fileUploads || !form.fileUploads[i]) {
-              return;
-            }
-            var file;
-            var $el = $(form.fileUploads[i]);
-            var $defaultWrap = $el.find("> .w-file-upload-default");
-            var $uploadingWrap = $el.find("> .w-file-upload-uploading");
-            var $successWrap = $el.find("> .w-file-upload-success");
-            var $errorWrap = $el.find("> .w-file-upload-error");
-            var $input = $defaultWrap.find(".w-file-upload-input");
-            var $label = $defaultWrap.find(".w-file-upload-label");
-            var $labelChildren = $label.children();
-            var $errorMsgEl = $errorWrap.find(".w-file-upload-error-msg");
-            var $fileEl = $successWrap.find(".w-file-upload-file");
-            var $removeEl = $successWrap.find(".w-file-remove-link");
-            var $fileNameEl = $fileEl.find(".w-file-upload-file-name");
-            var sizeErrMsg = $errorMsgEl.attr("data-w-size-error");
-            var typeErrMsg = $errorMsgEl.attr("data-w-type-error");
-            var genericErrMsg = $errorMsgEl.attr("data-w-generic-error");
-            if (!inApp) {
-              $label.on("click keydown", function (e) {
-                if (e.type === "keydown" && e.which !== 13 && e.which !== 32) {
-                  return;
-                }
-                e.preventDefault();
-                $input.click();
-              });
-            }
-            $label.find(".w-icon-file-upload-icon").attr("aria-hidden", "true");
-            $removeEl
-              .find(".w-icon-file-upload-remove")
-              .attr("aria-hidden", "true");
-            if (!inApp) {
-              $removeEl.on("click keydown", function (e) {
-                if (e.type === "keydown") {
-                  if (e.which !== 13 && e.which !== 32) {
-                    return;
-                  }
-                  e.preventDefault();
-                }
-                $input.removeAttr("data-value");
-                $input.val("");
-                $fileNameEl.html("");
-                $defaultWrap.toggle(true);
-                $successWrap.toggle(false);
-                $label.focus();
-              });
-              $input.on("change", function (e) {
-                file = e.target && e.target.files && e.target.files[0];
-                if (!file) {
-                  return;
-                }
-                $defaultWrap.toggle(false);
-                $errorWrap.toggle(false);
-                $uploadingWrap.toggle(true);
-                $uploadingWrap.focus();
-                $fileNameEl.text(file.name);
-                if (!isUploading()) {
-                  disableBtn(form);
-                }
-                form.fileUploads[i].uploading = true;
-                signFile(file, afterSign);
-              });
-              var height = $label.outerHeight();
-              $input.height(height);
-              $input.width(1);
-            } else {
-              $input.on("click", function (e) {
-                e.preventDefault();
-              });
-              $label.on("click", function (e) {
-                e.preventDefault();
-              });
-              $labelChildren.on("click", function (e) {
-                e.preventDefault();
-              });
-            }
-            function parseError(err) {
-              var errorMsg = err.responseJSON && err.responseJSON.msg;
-              var userError = genericErrMsg;
-              if (
-                typeof errorMsg === "string" &&
-                errorMsg.indexOf("InvalidFileTypeError") === 0
-              ) {
-                userError = typeErrMsg;
-              } else if (
-                typeof errorMsg === "string" &&
-                errorMsg.indexOf("MaxFileSizeError") === 0
-              ) {
-                userError = sizeErrMsg;
-              }
-              $errorMsgEl.text(userError);
-              $input.removeAttr("data-value");
-              $input.val("");
-              $uploadingWrap.toggle(false);
-              $defaultWrap.toggle(true);
-              $errorWrap.toggle(true);
-              $errorWrap.focus();
-              form.fileUploads[i].uploading = false;
-              if (!isUploading()) {
-                reset(form);
-              }
-            }
-            function afterSign(err, data) {
-              if (err) {
-                return parseError(err);
-              }
-              var fileName = data.fileName;
-              var postData = data.postData;
-              var fileId = data.fileId;
-              var s3Url = data.s3Url;
-              $input.attr("data-value", fileId);
-              uploadS3(s3Url, postData, file, fileName, afterUpload);
-            }
-            function afterUpload(err) {
-              if (err) {
-                return parseError(err);
-              }
-              $uploadingWrap.toggle(false);
-              $successWrap.css("display", "inline-block");
-              $successWrap.focus();
-              form.fileUploads[i].uploading = false;
-              if (!isUploading()) {
-                reset(form);
-              }
-            }
-            function isUploading() {
-              var uploads =
-                (form.fileUploads && form.fileUploads.toArray()) || [];
-              return uploads.some(function (value) {
-                return value.uploading;
-              });
-            }
-          }
-          function signFile(file, cb) {
-            var payload = new URLSearchParams({
-              name: file.name,
-              size: file.size,
-            });
-            $.ajax({
-              type: "GET",
-              url: `${signFileUrl}?${payload}`,
-              crossDomain: true,
-            })
-              .done(function (data) {
-                cb(null, data);
-              })
-              .fail(function (err) {
-                cb(err);
-              });
-          }
-          function uploadS3(url, data, file, fileName, cb) {
-            var formData = new FormData();
-            for (var k in data) {
-              formData.append(k, data[k]);
-            }
-            formData.append("file", file, fileName);
-            $.ajax({
-              type: "POST",
-              url,
-              data: formData,
-              processData: false,
-              contentType: false,
-            })
-              .done(function () {
-                cb(null);
-              })
-              .fail(function (err) {
-                cb(err);
-              });
-          }
-          return api;
-        })
-      );
-    },
-  });
+  // var require_webflow_forms = __commonJS({
+  //   "shared/render/plugins/Form/webflow-forms.js"(exports, module) {
+  //     var Webflow = require_webflow_lib();
+  //     Webflow.define(
+  //       "forms",
+  //       (module.exports = function ($, _) {
+  //         var api = {};
+  //         var $doc = $(document);
+  //         var $forms;
+  //         var loc = window.location;
+  //         var retro = window.XDomainRequest && !window.atob;
+  //         var namespace = ".w-form";
+  //         var siteId;
+  //         var emailField = /e(-)?mail/i;
+  //         var emailValue = /^\S+@\S+$/;
+  //         var alert = window.alert;
+  //         var inApp = Webflow.env();
+  //         var listening;
+  //         var formUrl;
+  //         var signFileUrl;
+  //         var chimpRegex = /list-manage[1-9]?.com/i;
+  //         var disconnected = _.debounce(function () {
+  //           alert(
+  //             "Oops! This page has improperly configured forms. Please contact your website administrator to fix this issue."
+  //           );
+  //         }, 100);
+  //         api.ready =
+  //           api.design =
+  //           api.preview =
+  //             function () {
+  //               init();
+  //               if (!inApp && !listening) {
+  //                 addListeners();
+  //               }
+  //             };
+  //         function init() {
+  //           siteId = $("html").attr("data-wf-site");
+  //           formUrl = "https://webflow.com/api/v1/form/" + siteId;
+  //           if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
+  //             formUrl = formUrl.replace(
+  //               "https://webflow.com",
+  //               "https://formdata.webflow.com"
+  //             );
+  //           }
+  //           signFileUrl = `${formUrl}/signFile`;
+  //           $forms = $(namespace + " form");
+  //           if (!$forms.length) {
+  //             return;
+  //           }
+  //           $forms.each(build);
+  //         }
+  //         function build(i, el) {
+  //           var $el = $(el);
+  //           var data = $.data(el, namespace);
+  //           if (!data) {
+  //             data = $.data(el, namespace, {
+  //               form: $el,
+  //             });
+  //           }
+  //           reset(data);
+  //           var wrap = $el.closest("div.w-form");
+  //           data.done = wrap.find("> .w-form-done");
+  //           data.fail = wrap.find("> .w-form-fail");
+  //           data.fileUploads = wrap.find(".w-file-upload");
+  //           data.fileUploads.each(function (j) {
+  //             initFileUpload(j, data);
+  //           });
+  //           var formName =
+  //             data.form.attr("aria-label") ||
+  //             data.form.attr("data-name") ||
+  //             "Form";
+  //           if (!data.done.attr("aria-label")) {
+  //             data.form.attr("aria-label", formName);
+  //           }
+  //           data.done.attr("tabindex", "-1");
+  //           data.done.attr("role", "region");
+  //           if (!data.done.attr("aria-label")) {
+  //             data.done.attr("aria-label", formName + " success");
+  //           }
+  //           data.fail.attr("tabindex", "-1");
+  //           data.fail.attr("role", "region");
+  //           if (!data.fail.attr("aria-label")) {
+  //             data.fail.attr("aria-label", formName + " failure");
+  //           }
+  //           var action = (data.action = $el.attr("action"));
+  //           data.handler = null;
+  //           data.redirect = $el.attr("data-redirect");
+  //           if (chimpRegex.test(action)) {
+  //             data.handler = submitMailChimp;
+  //             return;
+  //           }
+  //           if (action) {
+  //             return;
+  //           }
+  //           if (siteId) {
+  //             data.handler = true
+  //               ? exportedSubmitWebflow
+  //               : (() => {
+  //                   const hostedSubmitHandler = null.default;
+  //                   return hostedSubmitHandler(
+  //                     reset,
+  //                     loc,
+  //                     Webflow,
+  //                     collectEnterpriseTrackingCookies,
+  //                     preventDefault,
+  //                     findFields,
+  //                     alert,
+  //                     findFileUploads,
+  //                     disableBtn,
+  //                     siteId,
+  //                     afterSubmit,
+  //                     $,
+  //                     formUrl
+  //                   );
+  //                 })();
+  //             return;
+  //           }
+  //           disconnected();
+  //         }
+  //         function addListeners() {
+  //           listening = true;
+  //           $doc.on("submit", namespace + " form", function (evt) {
+  //             var data = $.data(this, namespace);
+  //             if (data.handler) {
+  //               data.evt = evt;
+  //               data.handler(data);
+  //             }
+  //           });
+  //           const CHECKBOX_CLASS_NAME = ".w-checkbox-input";
+  //           const RADIO_INPUT_CLASS_NAME = ".w-radio-input";
+  //           const CHECKED_CLASS = "w--redirected-checked";
+  //           const FOCUSED_CLASS = "w--redirected-focus";
+  //           const FOCUSED_VISIBLE_CLASS = "w--redirected-focus-visible";
+  //           const focusVisibleSelectors =
+  //             ":focus-visible, [data-wf-focus-visible]";
+  //           const CUSTOM_CONTROLS = [
+  //             ["checkbox", CHECKBOX_CLASS_NAME],
+  //             ["radio", RADIO_INPUT_CLASS_NAME],
+  //           ];
+  //           $doc.on(
+  //             "change",
+  //             namespace +
+  //               ` form input[type="checkbox"]:not(` +
+  //               CHECKBOX_CLASS_NAME +
+  //               ")",
+  //             evt => {
+  //               $(evt.target)
+  //                 .siblings(CHECKBOX_CLASS_NAME)
+  //                 .toggleClass(CHECKED_CLASS);
+  //             }
+  //           );
+  //           $doc.on("change", namespace + ` form input[type="radio"]`, evt => {
+  //             $(
+  //               `input[name="${evt.target.name}"]:not(${CHECKBOX_CLASS_NAME})`
+  //             ).map((i, el) =>
+  //               $(el)
+  //                 .siblings(RADIO_INPUT_CLASS_NAME)
+  //                 .removeClass(CHECKED_CLASS)
+  //             );
+  //             const $target = $(evt.target);
+  //             if (!$target.hasClass("w-radio-input")) {
+  //               $target
+  //                 .siblings(RADIO_INPUT_CLASS_NAME)
+  //                 .addClass(CHECKED_CLASS);
+  //             }
+  //           });
+  //           CUSTOM_CONTROLS.forEach(([controlType, customControlClassName]) => {
+  //             $doc.on(
+  //               "focus",
+  //               namespace +
+  //                 ` form input[type="${controlType}"]:not(` +
+  //                 customControlClassName +
+  //                 ")",
+  //               evt => {
+  //                 $(evt.target)
+  //                   .siblings(customControlClassName)
+  //                   .addClass(FOCUSED_CLASS);
+  //                 $(evt.target)
+  //                   .filter(focusVisibleSelectors)
+  //                   .siblings(customControlClassName)
+  //                   .addClass(FOCUSED_VISIBLE_CLASS);
+  //               }
+  //             );
+  //             $doc.on(
+  //               "blur",
+  //               namespace +
+  //                 ` form input[type="${controlType}"]:not(` +
+  //                 customControlClassName +
+  //                 ")",
+  //               evt => {
+  //                 $(evt.target)
+  //                   .siblings(customControlClassName)
+  //                   .removeClass(`${FOCUSED_CLASS} ${FOCUSED_VISIBLE_CLASS}`);
+  //               }
+  //             );
+  //           });
+  //         }
+  //         function reset(data) {
+  //           var btn = (data.btn = data.form.find(':input[type="submit"]'));
+  //           data.wait = data.btn.attr("data-wait") || null;
+  //           data.success = false;
+  //           btn.prop("disabled", false);
+  //           data.label && btn.val(data.label);
+  //         }
+  //         function disableBtn(data) {
+  //           var btn = data.btn;
+  //           var wait = data.wait;
+  //           btn.prop("disabled", true);
+  //           if (wait) {
+  //             data.label = btn.val();
+  //             btn.val(wait);
+  //           }
+  //         }
+  //         function findFields(form, result) {
+  //           var status = null;
+  //           result = result || {};
+  //           form
+  //             .find(':input:not([type="submit"]):not([type="file"])')
+  //             .each(function (i, el) {
+  //               var field = $(el);
+  //               var type = field.attr("type");
+  //               var name =
+  //                 field.attr("data-name") ||
+  //                 field.attr("name") ||
+  //                 "Field " + (i + 1);
+  //               var value = field.val();
+  //               if (type === "checkbox") {
+  //                 value = field.is(":checked");
+  //               } else if (type === "radio") {
+  //                 if (
+  //                   result[name] === null ||
+  //                   typeof result[name] === "string"
+  //                 ) {
+  //                   return;
+  //                 }
+  //                 value =
+  //                   form
+  //                     .find('input[name="' + field.attr("name") + '"]:checked')
+  //                     .val() || null;
+  //               }
+  //               if (typeof value === "string") {
+  //                 value = $.trim(value);
+  //               }
+  //               result[name] = value;
+  //               status = status || getStatus(field, type, name, value);
+  //             });
+  //           return status;
+  //         }
+  //         function findFileUploads(form) {
+  //           var result = {};
+  //           form.find(':input[type="file"]').each(function (i, el) {
+  //             var field = $(el);
+  //             var name =
+  //               field.attr("data-name") ||
+  //               field.attr("name") ||
+  //               "File " + (i + 1);
+  //             var value = field.attr("data-value");
+  //             if (typeof value === "string") {
+  //               value = $.trim(value);
+  //             }
+  //             result[name] = value;
+  //           });
+  //           return result;
+  //         }
+  //         const trackingCookieNameMap = {
+  //           _mkto_trk: "marketo",
+  //           // __hstc: 'hubspot',
+  //         };
+  //         function collectEnterpriseTrackingCookies() {
+  //           const cookies = document.cookie
+  //             .split("; ")
+  //             .reduce(function (acc, cookie) {
+  //               const splitCookie = cookie.split("=");
+  //               const name = splitCookie[0];
+  //               if (name in trackingCookieNameMap) {
+  //                 const mappedName = trackingCookieNameMap[name];
+  //                 const value = splitCookie.slice(1).join("=");
+  //                 acc[mappedName] = value;
+  //               }
+  //               return acc;
+  //             }, {});
+  //           return cookies;
+  //         }
+  //         function getStatus(field, type, name, value) {
+  //           var status = null;
+  //           if (type === "password") {
+  //             status = "Passwords cannot be submitted.";
+  //           } else if (field.attr("required")) {
+  //             if (!value) {
+  //               status = "Please fill out the required field: " + name;
+  //             } else if (emailField.test(field.attr("type"))) {
+  //               if (!emailValue.test(value)) {
+  //                 status = "Please enter a valid email address for: " + name;
+  //               }
+  //             }
+  //           } else if (name === "g-recaptcha-response" && !value) {
+  //             status = "Please confirm you\u2019re not a robot.";
+  //           }
+  //           return status;
+  //         }
+  //         function exportedSubmitWebflow(data) {
+  //           preventDefault(data);
+  //           afterSubmit(data);
+  //         }
+  //         function submitMailChimp(data) {
+  //           reset(data);
+  //           var form = data.form;
+  //           var payload = {};
+  //           if (/^https/.test(loc.href) && !/^https/.test(data.action)) {
+  //             form.attr("method", "post");
+  //             return;
+  //           }
+  //           preventDefault(data);
+  //           var status = findFields(form, payload);
+  //           if (status) {
+  //             return alert(status);
+  //           }
+  //           disableBtn(data);
+  //           var fullName;
+  //           _.each(payload, function (value, key) {
+  //             if (emailField.test(key)) {
+  //               payload.EMAIL = value;
+  //             }
+  //             if (/^((full[ _-]?)?name)$/i.test(key)) {
+  //               fullName = value;
+  //             }
+  //             if (/^(first[ _-]?name)$/i.test(key)) {
+  //               payload.FNAME = value;
+  //             }
+  //             if (/^(last[ _-]?name)$/i.test(key)) {
+  //               payload.LNAME = value;
+  //             }
+  //           });
+  //           if (fullName && !payload.FNAME) {
+  //             fullName = fullName.split(" ");
+  //             payload.FNAME = fullName[0];
+  //             payload.LNAME = payload.LNAME || fullName[1];
+  //           }
+  //           var url = data.action.replace("/post?", "/post-json?") + "&c=?";
+  //           var userId = url.indexOf("u=") + 2;
+  //           userId = url.substring(userId, url.indexOf("&", userId));
+  //           var listId = url.indexOf("id=") + 3;
+  //           listId = url.substring(listId, url.indexOf("&", listId));
+  //           payload["b_" + userId + "_" + listId] = "";
+  //           $.ajax({
+  //             url,
+  //             data: payload,
+  //             dataType: "jsonp",
+  //           })
+  //             .done(function (resp) {
+  //               data.success =
+  //                 resp.result === "success" || /already/.test(resp.msg);
+  //               if (!data.success) {
+  //                 console.info("MailChimp error: " + resp.msg);
+  //               }
+  //               afterSubmit(data);
+  //             })
+  //             .fail(function () {
+  //               afterSubmit(data);
+  //             });
+  //         }
+  //         function afterSubmit(data) {
+  //           var form = data.form;
+  //           var redirect = data.redirect;
+  //           var success = data.success;
+  //           if (success && redirect) {
+  //             Webflow.location(redirect);
+  //             return;
+  //           }
+  //           data.done.toggle(success);
+  //           data.fail.toggle(!success);
+  //           if (success) {
+  //             data.done.focus();
+  //           } else {
+  //             data.fail.focus();
+  //           }
+  //           form.toggle(!success);
+  //           reset(data);
+  //         }
+  //         function preventDefault(data) {
+  //           data.evt && data.evt.preventDefault();
+  //           data.evt = null;
+  //         }
+  //         function initFileUpload(i, form) {
+  //           if (!form.fileUploads || !form.fileUploads[i]) {
+  //             return;
+  //           }
+  //           var file;
+  //           var $el = $(form.fileUploads[i]);
+  //           var $defaultWrap = $el.find("> .w-file-upload-default");
+  //           var $uploadingWrap = $el.find("> .w-file-upload-uploading");
+  //           var $successWrap = $el.find("> .w-file-upload-success");
+  //           var $errorWrap = $el.find("> .w-file-upload-error");
+  //           var $input = $defaultWrap.find(".w-file-upload-input");
+  //           var $label = $defaultWrap.find(".w-file-upload-label");
+  //           var $labelChildren = $label.children();
+  //           var $errorMsgEl = $errorWrap.find(".w-file-upload-error-msg");
+  //           var $fileEl = $successWrap.find(".w-file-upload-file");
+  //           var $removeEl = $successWrap.find(".w-file-remove-link");
+  //           var $fileNameEl = $fileEl.find(".w-file-upload-file-name");
+  //           var sizeErrMsg = $errorMsgEl.attr("data-w-size-error");
+  //           var typeErrMsg = $errorMsgEl.attr("data-w-type-error");
+  //           var genericErrMsg = $errorMsgEl.attr("data-w-generic-error");
+  //           if (!inApp) {
+  //             $label.on("click keydown", function (e) {
+  //               if (e.type === "keydown" && e.which !== 13 && e.which !== 32) {
+  //                 return;
+  //               }
+  //               e.preventDefault();
+  //               $input.click();
+  //             });
+  //           }
+  //           $label.find(".w-icon-file-upload-icon").attr("aria-hidden", "true");
+  //           $removeEl
+  //             .find(".w-icon-file-upload-remove")
+  //             .attr("aria-hidden", "true");
+  //           if (!inApp) {
+  //             $removeEl.on("click keydown", function (e) {
+  //               if (e.type === "keydown") {
+  //                 if (e.which !== 13 && e.which !== 32) {
+  //                   return;
+  //                 }
+  //                 e.preventDefault();
+  //               }
+  //               $input.removeAttr("data-value");
+  //               $input.val("");
+  //               $fileNameEl.html("");
+  //               $defaultWrap.toggle(true);
+  //               $successWrap.toggle(false);
+  //               $label.focus();
+  //             });
+  //             $input.on("change", function (e) {
+  //               file = e.target && e.target.files && e.target.files[0];
+  //               if (!file) {
+  //                 return;
+  //               }
+  //               $defaultWrap.toggle(false);
+  //               $errorWrap.toggle(false);
+  //               $uploadingWrap.toggle(true);
+  //               $uploadingWrap.focus();
+  //               $fileNameEl.text(file.name);
+  //               if (!isUploading()) {
+  //                 disableBtn(form);
+  //               }
+  //               form.fileUploads[i].uploading = true;
+  //               signFile(file, afterSign);
+  //             });
+  //             var height = $label.outerHeight();
+  //             $input.height(height);
+  //             $input.width(1);
+  //           } else {
+  //             $input.on("click", function (e) {
+  //               e.preventDefault();
+  //             });
+  //             $label.on("click", function (e) {
+  //               e.preventDefault();
+  //             });
+  //             $labelChildren.on("click", function (e) {
+  //               e.preventDefault();
+  //             });
+  //           }
+  //           function parseError(err) {
+  //             var errorMsg = err.responseJSON && err.responseJSON.msg;
+  //             var userError = genericErrMsg;
+  //             if (
+  //               typeof errorMsg === "string" &&
+  //               errorMsg.indexOf("InvalidFileTypeError") === 0
+  //             ) {
+  //               userError = typeErrMsg;
+  //             } else if (
+  //               typeof errorMsg === "string" &&
+  //               errorMsg.indexOf("MaxFileSizeError") === 0
+  //             ) {
+  //               userError = sizeErrMsg;
+  //             }
+  //             $errorMsgEl.text(userError);
+  //             $input.removeAttr("data-value");
+  //             $input.val("");
+  //             $uploadingWrap.toggle(false);
+  //             $defaultWrap.toggle(true);
+  //             $errorWrap.toggle(true);
+  //             $errorWrap.focus();
+  //             form.fileUploads[i].uploading = false;
+  //             if (!isUploading()) {
+  //               reset(form);
+  //             }
+  //           }
+  //           function afterSign(err, data) {
+  //             if (err) {
+  //               return parseError(err);
+  //             }
+  //             var fileName = data.fileName;
+  //             var postData = data.postData;
+  //             var fileId = data.fileId;
+  //             var s3Url = data.s3Url;
+  //             $input.attr("data-value", fileId);
+  //             uploadS3(s3Url, postData, file, fileName, afterUpload);
+  //           }
+  //           function afterUpload(err) {
+  //             if (err) {
+  //               return parseError(err);
+  //             }
+  //             $uploadingWrap.toggle(false);
+  //             $successWrap.css("display", "inline-block");
+  //             $successWrap.focus();
+  //             form.fileUploads[i].uploading = false;
+  //             if (!isUploading()) {
+  //               reset(form);
+  //             }
+  //           }
+  //           function isUploading() {
+  //             var uploads =
+  //               (form.fileUploads && form.fileUploads.toArray()) || [];
+  //             return uploads.some(function (value) {
+  //               return value.uploading;
+  //             });
+  //           }
+  //         }
+  //         function signFile(file, cb) {
+  //           var payload = new URLSearchParams({
+  //             name: file.name,
+  //             size: file.size,
+  //           });
+  //           $.ajax({
+  //             type: "GET",
+  //             url: `${signFileUrl}?${payload}`,
+  //             crossDomain: true,
+  //           })
+  //             .done(function (data) {
+  //               cb(null, data);
+  //             })
+  //             .fail(function (err) {
+  //               cb(err);
+  //             });
+  //         }
+  //         function uploadS3(url, data, file, fileName, cb) {
+  //           var formData = new FormData();
+  //           for (var k in data) {
+  //             formData.append(k, data[k]);
+  //           }
+  //           formData.append("file", file, fileName);
+  //           $.ajax({
+  //             type: "POST",
+  //             url,
+  //             data: formData,
+  //             processData: false,
+  //             contentType: false,
+  //           })
+  //             .done(function () {
+  //               cb(null);
+  //             })
+  //             .fail(function (err) {
+  //               cb(err);
+  //             });
+  //         }
+  //         return api;
+  //       })
+  //     );
+  //   },
+  // });
 
   // shared/render/plugins/Lightbox/webflow-lightbox.js
   var require_webflow_lightbox = __commonJS({
@@ -17410,7 +17410,7 @@
             var tab = data.current;
             return Array.prototype.findIndex.call(
               data.links,
-              t => {
+              (t) => {
                 return t.getAttribute(tabAttr) === tab;
               },
               null

@@ -2404,7 +2404,7 @@ footer .widget-title {
 }
 
 footer .pbmit-social-links i {
-  font-size: 50px;
+  font-size: 30px;
   margin: 0 !important;
 }
 
@@ -2538,7 +2538,7 @@ footer [class^="pbmit-base-icon-"]:before {
 }
 
 .site-footer .widget {
-  padding-top: 115px !important;
+  padding-top: 30px !important;
   position: relative !important;
 }
 
