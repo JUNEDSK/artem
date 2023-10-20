@@ -16,10 +16,26 @@ body {
   color: #002a55;
 }
 
-@media (min-width: 576px) {
-  body {
-    font-size: 20px;
+.menu-main-menu-container a {
+  font-size: 16px !important;
+}
+
+.brand-logo {
+  width: 160px !important;
+}
+
+.mobile-menu {
+  padding-bottom: 15px !important;
+}
+
+@media (min-width: 1200px) {
+  .mobile-menu {
+    padding-bottom: 0 !important;
   }
+}
+
+.mobile-cta {
+  margin-left: 40px;
 }
 
 /*****************************************/
