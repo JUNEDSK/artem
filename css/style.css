@@ -1783,9 +1783,9 @@ img.emoji {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 0px;
   border-right: 1px solid #ccc;
-  padding: 80px 0;
+  padding: 40px 0;
 }
 
 .achiveflex {
@@ -1794,7 +1794,6 @@ img.emoji {
 }
 
 .achiveflex span {
-  font-size: 55px;
   color: #07366a;
 }
 
@@ -1806,11 +1805,10 @@ img.emoji {
 
 .achive-box h2 {
   margin: 30px 0 20px;
-  font-size: 55px;
 }
 
 .achive-box p {
-  font-size: 22px;
+  /* font-size: 22px; */
   line-height: 31px;
   color: #00b1ef;
   font-weight: 500;
@@ -1827,7 +1825,7 @@ img.emoji {
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
-  padding: 150px 0 200px;
+  padding: 80px 0;
 }
 
 .hospitalImgWrap {
@@ -1836,7 +1834,7 @@ img.emoji {
 }
 
 .publicImg img {
-  width: 100%;
+  width: 50%;
 }
 
 .hospitalImgWrap .hosp-01 {

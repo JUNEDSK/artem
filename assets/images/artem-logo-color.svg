@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 305.96" style="enable-background:new 0 0 1000 305.96;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0052A5;}
+	.st1{fill:#00A4FF;}
+	.st2{fill:#F9A73E;}
+	.st3{fill:#0052A5;}
+</style>
+<rect x="111.23" y="10.01" class="st0" width="79.63" height="24.4"/>
+<rect x="138.84" y="37.62" transform="matrix(6.123234e-17 -1 1 6.123234e-17 128.8334 228.4825)" class="st1" width="79.63" height="24.4"/>
+<rect x="111.23" y="111.9" class="st0" width="79.63" height="24.4"/>
+<rect x="138.84" y="139.51" transform="matrix(6.123234e-17 -1 1 6.123234e-17 26.9451 330.3708)" class="st1" width="79.63" height="24.4"/>
+<rect x="212.26" y="111.9" class="st0" width="79.63" height="24.4"/>
+<rect x="239.88" y="139.51" transform="matrix(6.123234e-17 -1 1 6.123234e-17 127.9772 431.403)" class="st1" width="79.63" height="24.4"/>
+<rect x="13.62" y="111.9" class="st2" width="79.63" height="24.4"/>
+<rect x="41.24" y="139.51" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -70.6622 232.7635)" class="st2" width="79.63" height="24.4"/>
+<rect x="111.23" y="213.79" class="st0" width="79.63" height="24.4"/>
+<rect x="138.84" y="241.4" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -74.9433 432.2592)" class="st1" width="79.63" height="24.4"/>
+<g>
+	<g>
+		<path class="st3" d="M444.64,101.59l41.6,89.93h-11.32l-30.27-65.64l-30.15,65.64H403.3L444.64,101.59z"/>
+		<path class="st3" d="M608.99,191.53h-14.12l-39.82-42.36h19.08c10.18,0,18.44-8.27,18.44-18.44c0-10.43-8.27-18.7-18.44-18.7
+			h-28.11v79.38h-10.18v-89.55h38.29c15.9,0,28.62,12.98,28.62,28.88c0,14.37-10.56,26.33-24.42,28.37L608.99,191.53z"/>
+		<path class="st3" d="M656.06,112.53v-10.18h75.18v10.18H656.06z M698.67,191.53h-10.18V149.8h10.18V191.53z"/>
+		<path class="st3" d="M791.02,112.4v29.38h55.08v10.3h-55.08v29.26h55.08v10.18h-65.26v-89.3h65.26v10.18H791.02z"/>
+		<path class="st3" d="M975.59,127.8l-33.84,35.87l-33.33-35.87v63.73h-10.18V102.1l43.63,46.56l43.89-46.56v89.42h-10.18V127.8z"/>
+	</g>
+</g>
+</svg>

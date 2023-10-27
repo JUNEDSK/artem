@@ -89,7 +89,7 @@
 @media (min-width: 1200px) {
   .elementor-section.elementor-section-boxed > .elementor-container,
   .container {
-    max-width: 1440px;
+    /* max-width: 1440px; */
   }
   .pbmit-team-single-style-1 .col-md-8,
   .pbmit-sidebar-left #primary {
@@ -357,10 +357,10 @@
   }
 
   .hospitalImgWrap .hosp-02 {
-    top: 10%;
+    top: 0;
   }
   .hospitalImgWrap .hosp-02 img {
-    width: 80%;
+    width: 50%;
   }
   .hospitalImgWrap .hosp-01 {
     top: 20%;
