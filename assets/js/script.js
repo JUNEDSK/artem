@@ -16,6 +16,19 @@ mobileNavCloseBtn.addEventListener("click", function () {
   headerMobile.classList.remove("open");
 });
 
+///////////////////////////////////////////////////////
+// Overview list
+const allOverviewList = document.querySelectorAll(".overview-list");
+
+if (allOverviewList.length !== 0) {
+  allOverviewList.forEach(list => {
+    const items = list.querySelectorAll(".overview-list-item");
+    if (items.length % 2 !== 0) return;
+
+    items[items.length - 2].style.borderBottom = "none";
+  });
+}
+
 //////////////////////////////////////////////////////
 // Home hero animation
 const homeSlides = Array.from(document.querySelectorAll(".home-slide"));
