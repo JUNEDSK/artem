@@ -78,7 +78,7 @@
   --artem-orange-saturation: 94%;
   --artem-orange-lightness: 61%;
   --blue-black: #002246;
-  --blue: #07366a;
+  --blue: rgb(7, 54, 106);
   --blue-light: #00b1ef;
   --white: #fff;
   --orange: #f9a73e;
@@ -266,6 +266,11 @@ video {
 }
 
 /* Bootstrap components overrides */
+.btn-primary {
+  background-color: var(--artem-blue);
+  border-color: var(--artem-blue);
+}
+
 .btn-link {
   text-decoration: none;
   display: flex;
@@ -1251,8 +1256,37 @@ video {
 }
 
 /* Contact page */
+.contact-hero {
+  height: 50vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 54, 106, 0.7),
+      rgba(7, 54, 106, 0.7)
+    ),
+    url("./../images/contact-us/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .section-contact-form {
-  padding-top: 12rem;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  grid-gap: 16px;
+}
+
+.contact-icon {
+  height: 64px;
+  width: 64px;
+  background-color: var(--artem-blue);
+  border-radius: 50%;
+  color: var(--bs-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Arteem verticals page */
@@ -1806,6 +1840,14 @@ video {
   .full-bleed {
     grid-template-columns: 1fr 12px 1320px 12px 1fr;
   }
+}
+
+.h-500 {
+  height: 500px;
+}
+
+.object-fit-cover {
+  object-fit: cover;
 }
 
 /************************************/
