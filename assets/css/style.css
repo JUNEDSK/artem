@@ -1140,6 +1140,28 @@ video {
 /************************************/
 
 /* About us page */
+.section-about-hero {
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 54, 106, 0.7),
+      rgba(7, 54, 106, 0.7)
+    ),
+    url("./../images/about-us/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-us-img-1 {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .about-us-img-1 {
+    height: 500px;
+    width: auto;
+  }
+}
 
 /* Career page */
 .career-hero-media {
@@ -1844,6 +1866,10 @@ video {
 
 .h-500 {
   height: 500px;
+}
+
+.h-700 {
+  height: 700px;
 }
 
 .object-fit-cover {
