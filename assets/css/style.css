@@ -1806,6 +1806,12 @@ video {
   animation-delay: 2.5s !important;
 }
 
+.home-slider-count {
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+}
+
 .fadeInLeft {
   animation: fadeInLeft 1s ease backwards;
 }
