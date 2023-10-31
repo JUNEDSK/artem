@@ -33,146 +33,151 @@ if (allOverviewList.length !== 0) {
 // Home hero animation
 const homeSlides = Array.from(document.querySelectorAll(".home-slide"));
 const numSlides = homeSlides.length;
-const sectionHero = document.querySelector(".section-home-hero");
-const nextBtns = document.querySelectorAll(".slide-next");
-const prevBtns = document.querySelectorAll(".slide-prev");
-const activeSlideDoms = document.querySelectorAll(".active-slide");
-const numSlideDoms = document.querySelectorAll(".num-slides");
 
-// Set height for home hero section
-const homeSlidesHeightArr = homeSlides.map(
-  slide => slide.getBoundingClientRect().height
-);
+if (numSlides > 0) {
+  const sectionHero = document.querySelector(".section-home-hero");
+  const nextBtns = document.querySelectorAll(".slide-next");
+  const prevBtns = document.querySelectorAll(".slide-prev");
+  const activeSlideDoms = document.querySelectorAll(".active-slide");
+  const numSlideDoms = document.querySelectorAll(".num-slides");
 
-const heroHeight = Math.max(...homeSlidesHeightArr);
-
-sectionHero.style.height = heroHeight + "px";
-
-let activeIndex = 0;
-let activeSlide = homeSlides[activeIndex];
-
-const animateSlide = slide => {
-  const imgBox = slide.querySelector(".home-hero-img-box");
-  const subTitle = slide.querySelector(".home-hero-title-box h5");
-  const title = slide.querySelector(".home-hero-title-box h2");
-  const description = slide.querySelector(".home-hero-cta-box p");
-  const videoBtn = slide.querySelector(".video-btn");
-  const contactBtn = slide.querySelector(".contact-btn");
-  const salesBtn = slide.querySelector(".sales-btn");
-
-  imgBox.classList.add("fadeInLeft");
-  subTitle.classList.add("fadeInRight");
-  title.classList.add("fadeInRight");
-  description.classList.add("fadeInRight");
-  videoBtn.classList.add("fadeInRight");
-  contactBtn.classList.add("fadeInUp");
-  salesBtn.classList.add("fadeInUp");
-};
-
-const removeAnimationClasses = () => {
-  document.querySelector(".fadeInLeft").classList.remove("fadeInLeft");
-  document.querySelector(".fadeInRight").classList.remove("fadeInRight");
-  document.querySelector(".fadeInRight").classList.remove("fadeInRight");
-  document.querySelector(".fadeInRight").classList.remove("fadeInRight");
-  document.querySelector(".fadeInRight").classList.remove("fadeInRight");
-  document.querySelector(".fadeInUp").classList.remove("fadeInUp");
-  document.querySelector(".fadeInUp").classList.remove("fadeInUp");
-};
-
-// Updates dom numbers
-const updateSlideNum = (activeIndex, totalSlides) => {
-  activeSlideDoms.forEach(
-    el => (el.textContent = String(activeIndex + 1).padStart(2, "0"))
+  // Set height for home hero section
+  const homeSlidesHeightArr = homeSlides.map(
+    slide => slide.getBoundingClientRect().height
   );
-  numSlideDoms.forEach(
-    el => (el.textContent = String(totalSlides).padStart(2, "0"))
-  );
-};
 
-// Hide all home slides and make first slide visible
-const slideVisible = slide => {
-  homeSlides.forEach(slide => {
-    slide.style.opacity = 0;
-    slide.style.visibility = "hidden";
-  });
+  const heroHeight = Math.max(...homeSlidesHeightArr);
 
-  setTimeout(() => {
-    slide.style.opacity = "1";
-    slide.style.visibility = "visible";
-    animateSlide(activeSlide);
-  }, 1000);
-};
+  sectionHero.style.height = heroHeight + "px";
 
-slideVisible(activeSlide);
+  let activeIndex = 0;
+  let activeSlide = homeSlides[activeIndex];
 
-const slideNext = () => {
-  removeAnimationClasses();
+  const animateSlide = slide => {
+    const imgBox = slide.querySelector(".home-hero-img-box");
+    const subTitle = slide.querySelector(".home-hero-title-box h5");
+    const title = slide.querySelector(".home-hero-title-box h2");
+    const description = slide.querySelector(".home-hero-cta-box p");
+    const videoBtn = slide.querySelector(".video-btn");
+    const contactBtn = slide.querySelector(".contact-btn");
+    const salesBtn = slide.querySelector(".sales-btn");
 
-  if (activeIndex === numSlides - 1) {
-    activeIndex = 0;
-  } else {
-    activeIndex++;
-  }
+    imgBox.classList.add("fadeInLeft");
+    subTitle.classList.add("fadeInRight");
+    title.classList.add("fadeInRight");
+    description.classList.add("fadeInRight");
+    videoBtn.classList.add("fadeInRight");
+    contactBtn.classList.add("fadeInUp");
+    salesBtn.classList.add("fadeInUp");
+  };
 
-  updateSlideNum(activeIndex, numSlides);
+  const removeAnimationClasses = () => {
+    document.querySelector(".fadeInLeft").classList.remove("fadeInLeft");
+    document.querySelector(".fadeInRight").classList.remove("fadeInRight");
+    document.querySelector(".fadeInRight").classList.remove("fadeInRight");
+    document.querySelector(".fadeInRight").classList.remove("fadeInRight");
+    document.querySelector(".fadeInRight").classList.remove("fadeInRight");
+    document.querySelector(".fadeInUp").classList.remove("fadeInUp");
+    document.querySelector(".fadeInUp").classList.remove("fadeInUp");
+  };
 
-  activeSlide = homeSlides[activeIndex];
+  // Updates dom numbers
+  const updateSlideNum = (activeIndex, totalSlides) => {
+    activeSlideDoms.forEach(
+      el => (el.textContent = String(activeIndex + 1).padStart(2, "0"))
+    );
+    numSlideDoms.forEach(
+      el => (el.textContent = String(totalSlides).padStart(2, "0"))
+    );
+  };
+
+  // Hide all home slides and make first slide visible
+  const slideVisible = slide => {
+    homeSlides.forEach(slide => {
+      slide.style.opacity = 0;
+      slide.style.visibility = "hidden";
+    });
+
+    setTimeout(() => {
+      slide.style.opacity = "1";
+      slide.style.visibility = "visible";
+      animateSlide(activeSlide);
+    }, 1000);
+  };
 
   slideVisible(activeSlide);
-};
 
-const slidePrev = () => {
-  removeAnimationClasses();
-  if (activeIndex === 0) {
-    activeIndex = numSlides - 1;
-  } else {
-    activeIndex--;
-  }
+  const slideNext = () => {
+    removeAnimationClasses();
+
+    if (activeIndex === numSlides - 1) {
+      activeIndex = 0;
+    } else {
+      activeIndex++;
+    }
+
+    updateSlideNum(activeIndex, numSlides);
+
+    activeSlide = homeSlides[activeIndex];
+
+    slideVisible(activeSlide);
+  };
+
+  const slidePrev = () => {
+    removeAnimationClasses();
+    if (activeIndex === 0) {
+      activeIndex = numSlides - 1;
+    } else {
+      activeIndex--;
+    }
+
+    updateSlideNum(activeIndex, numSlides);
+
+    activeSlide = homeSlides[activeIndex];
+
+    slideVisible(activeSlide);
+  };
+
+  const sliderAutoPlay = () => {
+    return setInterval(slideNext, 10000);
+  };
+
+  let sliderAutoPlayClear = sliderAutoPlay();
+
+  nextBtns.forEach(btn =>
+    btn.addEventListener("click", function () {
+      clearInterval(sliderAutoPlayClear);
+      slideNext();
+      sliderAutoPlayClear = sliderAutoPlay();
+    })
+  );
+  prevBtns.forEach(btn =>
+    btn.addEventListener("click", function () {
+      clearInterval(sliderAutoPlayClear);
+      slidePrev();
+      sliderAutoPlayClear = sliderAutoPlay();
+    })
+  );
 
   updateSlideNum(activeIndex, numSlides);
-
-  activeSlide = homeSlides[activeIndex];
-
-  slideVisible(activeSlide);
-};
-
-const sliderAutoPlay = () => {
-  return setInterval(slideNext, 10000);
-};
-
-let sliderAutoPlayClear = sliderAutoPlay();
-
-nextBtns.forEach(btn =>
-  btn.addEventListener("click", function () {
-    clearInterval(sliderAutoPlayClear);
-    slideNext();
-    sliderAutoPlayClear = sliderAutoPlay();
-  })
-);
-prevBtns.forEach(btn =>
-  btn.addEventListener("click", function () {
-    clearInterval(sliderAutoPlayClear);
-    slidePrev();
-    sliderAutoPlayClear = sliderAutoPlay();
-  })
-);
-
-updateSlideNum(activeIndex, numSlides);
+}
 
 //////////////////////////////////////////////////////
 // Modal video play stop functionality
 const videoModal = document.querySelector("#videoModal");
 
-videoModal.addEventListener("show.bs.modal", function () {
-  const video = videoModal.querySelector("video");
-  video.play();
-});
+if (videoModal) {
+  videoModal.addEventListener("show.bs.modal", function () {
+    const video = videoModal.querySelector("video");
+    video.play();
+  });
 
-videoModal.addEventListener("hide.bs.modal", function () {
-  const video = videoModal.querySelector("video");
-  video.pause();
-  video.currentTime = 0;
-});
+  videoModal.addEventListener("hide.bs.modal", function () {
+    const video = videoModal.querySelector("video");
+    video.pause();
+    video.currentTime = 0;
+  });
+}
 
 //////////////////////////////////////////////////////
 // Team swiper functionality
@@ -198,27 +203,4 @@ const swiper = new Swiper(".swiper", {
       spaceBetween: 32,
     },
   },
-});
-
-///////////////////////////////////////////////////
-// Vertcal section animation
-const allImg = document.querySelectorAll(".section-scroll-gallery img");
-const allCards = document.querySelectorAll(".desktop-content .scroll-card");
-
-if (allImg.length > 0) {
-  ScrollTrigger.create({
-    trigger: ".section-scroll-content",
-    start: "top 30%",
-    end: "bottom bottom",
-    pin: ".section-scroll-gallery",
-    pinSpacing: false,
-  });
-}
-
-ScrollTrigger.create({
-  trigger: ".overview",
-  start: "top top",
-  end: "bottom bottom",
-  pin: ".aside",
-  pinSpacing: false,
 });
