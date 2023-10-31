@@ -1768,6 +1768,10 @@ video {
   height: 700px;
 }
 
+.container-lg {
+  max-width: 992px;
+}
+
 .object-fit-cover {
   object-fit: cover;
 }
