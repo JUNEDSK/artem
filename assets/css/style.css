@@ -1430,6 +1430,15 @@ video {
   max-width: 1200px;
 }
 
+.sidebar-height {
+  height: calc(100vh - 40px);
+  overflow-y: scroll;
+}
+
+.sidebar-height::-webkit-scrollbar {
+  width: 0;
+}
+
 .sidebar {
   background-color: var(--artem-dark-blue);
   padding: 2rem;
