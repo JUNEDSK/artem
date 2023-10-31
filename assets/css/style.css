@@ -532,6 +532,7 @@ video {
 .desktop-nav-item:hover .desktop-nav-dropdown-list {
   opacity: 1;
   visibility: visible;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
 }
 
 .desktop-nav-link:link,
