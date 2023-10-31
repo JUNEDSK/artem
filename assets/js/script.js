@@ -54,7 +54,7 @@ if (numSlides > 0) {
   let activeSlide = homeSlides[activeIndex];
 
   const animateSlide = slide => {
-    const imgBox = slide.querySelector(".home-hero-img-box");
+    const imgBox = slide.querySelectorAll(".home-hero-img-box");
     const subTitle = slide.querySelector(".home-hero-title-box h5");
     const title = slide.querySelector(".home-hero-title-box h2");
     const description = slide.querySelector(".home-hero-cta-box p");
@@ -62,7 +62,8 @@ if (numSlides > 0) {
     const contactBtn = slide.querySelector(".contact-btn");
     const salesBtn = slide.querySelector(".sales-btn");
 
-    imgBox.classList.add("fadeInLeft");
+    imgBox[0].classList.add("fadeInLeft");
+    imgBox[1].classList.add("fadeInLeft");
     subTitle.classList.add("fadeInRight");
     title.classList.add("fadeInRight");
     description.classList.add("fadeInRight");
@@ -204,3 +205,17 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+////////////////////////////////////////////////////////
+// Pin sidebar functionality
+const sidebarWrapper = document.querySelector(".sidebar-wrapper");
+const innerPageMain = document.querySelector(".inner-page-main");
+
+if (sidebarWrapper) {
+  ScrollTrigger.create({
+    trigger: innerPageMain,
+    start: "top 20px",
+    end: "bottom bottom",
+    pin: sidebarWrapper,
+  });
+}

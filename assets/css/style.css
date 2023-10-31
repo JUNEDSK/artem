@@ -682,6 +682,7 @@ video {
   grid-template-rows: repeat(3, max-content);
   grid-gap: 2rem;
   min-height: 100dvh;
+  width: 100dvw;
 }
 
 .home-hero-social-nav {
