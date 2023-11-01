@@ -222,18 +222,23 @@ if (sidebarWrapper) {
 
 //////////////////////////////////////////////////////////
 // Journey section animation
-const photos = gsap.utils.toArray(".journey-img-wrapper:not(:first-child)");
 
-gsap.set(photos, { opacity: 0 });
+let mm = gsap.matchMedia();
 
-const animation = gsap.to(photos, { opacity: 1, duration: 0.3, stagger: 1 });
+mm.add("(min-width: 992px)", () => {
+  const photos = gsap.utils.toArray(".journey-img-wrapper:not(:first-child)");
 
-ScrollTrigger.create({
-  trigger: ".journey-cards",
-  start: "top 30%",
-  end: "bottom bottom",
-  pin: ".journey-images",
-  animation: animation,
-  scrub: true,
-  pinSpacing: false,
+  gsap.set(photos, { opacity: 0 });
+
+  const animation = gsap.to(photos, { opacity: 1, duration: 0.3, stagger: 1 });
+
+  ScrollTrigger.create({
+    trigger: ".journey-cards",
+    start: "top 30%",
+    end: "bottom bottom",
+    pin: ".journey-images",
+    animation: animation,
+    scrub: true,
+    pinSpacing: false,
+  });
 });
