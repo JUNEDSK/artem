@@ -1075,14 +1075,19 @@ video {
 }
 
 .service-card-icon {
-  display: inline-block;
-  width: 6rem;
-  height: 6rem;
+  display: flex;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
-  background-color: var(--bs-white);
-  opacity: 0.5;
-  margin-bottom: 1.5rem;
+
+  margin-bottom: 0.5rem;
   transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card-icon img {
+  width: 70%;
 }
 
 .service-card-details {
