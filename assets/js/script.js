@@ -186,21 +186,27 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
 
-  slidesPerView: 1,
+  slidesPerView: 1.7,
   spaceBetween: 32,
 
   breakpoints: {
-    768: {
+    576: {
       slidesPerView: 2,
       spaceBetween: 32,
     },
 
-    992: {
+    768: {
       slidesPerView: 3,
       spaceBetween: 32,
     },
-    1200: {
+
+    992: {
       slidesPerView: 4,
+      spaceBetween: 32,
+    },
+
+    1200: {
+      slidesPerView: 5,
       spaceBetween: 32,
     },
   },
@@ -222,23 +228,28 @@ if (sidebarWrapper) {
 
 //////////////////////////////////////////////////////////
 // Journey section animation
-
 let mm = gsap.matchMedia();
 
-mm.add("(min-width: 992px)", () => {
-  const photos = gsap.utils.toArray(".journey-img-wrapper:not(:first-child)");
+if (document.querySelector(".journey-img-wrapper")) {
+  mm.add("(min-width: 992px)", () => {
+    const photos = gsap.utils.toArray(".journey-img-wrapper:not(:first-child)");
 
-  gsap.set(photos, { opacity: 0 });
+    gsap.set(photos, { opacity: 0 });
 
-  const animation = gsap.to(photos, { opacity: 1, duration: 0.3, stagger: 1 });
+    const animation = gsap.to(photos, {
+      opacity: 1,
+      duration: 0.3,
+      stagger: 1,
+    });
 
-  ScrollTrigger.create({
-    trigger: ".journey-cards",
-    start: "top 30%",
-    end: "bottom bottom",
-    pin: ".journey-images",
-    animation: animation,
-    scrub: true,
-    pinSpacing: false,
+    ScrollTrigger.create({
+      trigger: ".journey-cards",
+      start: "top 30%",
+      end: "bottom bottom",
+      pin: ".journey-images",
+      animation: animation,
+      scrub: true,
+      pinSpacing: false,
+    });
   });
-});
+}

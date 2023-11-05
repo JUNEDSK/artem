@@ -7,7 +7,6 @@
 2. CSS PROPERTIES
    -- Custom properties
    -- Bootstrap properties overrides
-   -- Dark mode specific properties
 3. BASE STYLES
 4. TYPOGRAPHY
 5. COMPONENTS
@@ -17,16 +16,23 @@
    -- Header mobile
    -- Header desktop
 7. FOOTER
-8. SECTION SPECIFIC STYLING
-9. PAGE SPECIFIC STYLING
+8. PAGE SPECIFIC STYLING
+    -- Home page
     -- About us page
     -- Career page
     -- Contact us page
     -- Artem veticlas page
     -- Inner pages
-10. UTILS
-11. ANIMATIONS
-   -- Font weights
+9. UTILS
+    -- Font weight
+    -- Colors
+    -- Background colors
+    -- Padding
+    -- Letter spacing
+    -- Max width
+    -- Layout
+    -- Height
+    -- Miscellaneous
 */
 
 /************************************/
@@ -63,13 +69,13 @@
 /************************************/
 /* 2. CSS PROPERTIES */
 /************************************/
-:root,
-[data-bs-theme="light"] {
+:root {
   /************************************/
   /* Custom properties */
   --font-body: "Ageo", sans-serif;
 
   --artem-blue: #00a4ff;
+  --artem-blue-2: #044282;
   --artem-dark-blue: #002246;
   --artem-dark-blue-2: #002a55;
   --artem-dark-blue-rgb: 0, 34, 70;
@@ -94,17 +100,20 @@
   --bs-body-line-height: 1.7;
 }
 
-[data-bs-theme="dark"] {
-  /************************************/
-  /* Dark mode specific properties */
-}
+/* * {
+  outline: RED 1px solid;
+} */
 
 /************************************/
 /* 3. BASE STYLES */
 /************************************/
-/* ::-webkit-scrollbar {
-  width: 5px;
-} */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--artem-blue-2);
+}
 
 video {
   display: block;
@@ -265,6 +274,38 @@ video {
   justify-content: center;
 }
 
+/* Marquee */
+.marquee {
+  padding: 2rem 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 5rem;
+  animation: move-rtl 26000ms linear infinite;
+}
+
+.marquee-emblem {
+  width: 2rem;
+}
+
+.marquee-text {
+  width: 7rem;
+}
+
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-100%));
+  }
+}
+
+/**************************************/
 /* Bootstrap components overrides */
 .btn-primary {
   background-color: var(--artem-blue);
@@ -295,16 +336,24 @@ video {
   color: var(--artem-dark-blue-2);
 }
 
-@media (min-width: 992px) {
-  .hero {
-    height: calc(100dvh - 63.16px);
-  }
+.container-sm {
+  max-width: 576px;
 }
 
-@media (min-width: 1200px) {
-  .hero {
-    height: calc(100dvh - 5rem);
-  }
+.container-md {
+  max-width: 768px;
+}
+
+.container-lg {
+  max-width: 992px;
+}
+
+.container-xl {
+  max-width: 1200px;
+}
+
+.container-xxl {
+  max-width: 1400px;
 }
 
 /************************************/
@@ -662,9 +711,11 @@ video {
 }
 
 /************************************/
-/* 8. SECTION SPECIFIC STYLING */
+/* 9. PAGE SPECIFIC STYLING */
 /************************************/
 
+/************************************/
+/* Home page styling */
 /* Section hero styling */
 .section-home-hero {
   background-color: var(--artem-dark-blue-2);
@@ -791,6 +842,96 @@ video {
   }
 }
 
+.section-home-hero {
+  position: relative;
+}
+
+.home-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.home-hero-title-box h2 {
+  animation-delay: 0.5s;
+}
+
+.home-hero-cta-box p {
+  animation-delay: 1s;
+}
+
+.video-btn {
+  animation-delay: 1.5s !important;
+}
+
+.contact-btn {
+  animation-delay: 2s !important;
+}
+
+.sales-btn {
+  animation-delay: 2.5s !important;
+}
+
+.home-slider-count {
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+}
+
+.fadeInLeft {
+  animation: fadeInLeft 1s ease backwards;
+}
+
+.fadeInRight {
+  animation: fadeInRight 1s ease backwards;
+}
+
+.fadeInUp {
+  animation: fadeInUp 1s ease backwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    transform: translateX(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    transform: translateX(-2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.modal-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* Section achivement styling */
 .section-achivement {
 }
@@ -812,61 +953,84 @@ video {
 
 .featured-solutions-img {
   width: 100%;
-  max-width: 31.25rem;
+  max-width: 360px;
 }
 
 /* Section national-health styling */
 .section-national-health {
-  background-image: linear-gradient(
-    to bottom,
-    var(--artem-dark-blue-2) 58%,
-    var(--artem-dark-blue) 58%
-  );
+  background-color: #002a55;
 }
 
-@media (min-width: 400px) {
-  .section-national-health {
-    background-image: linear-gradient(
-      to bottom,
-      var(--artem-dark-blue-2) 50%,
-      var(--artem-dark-blue) 50%
-    );
-  }
+.national-health-title,
+.national-health-img,
+.national-health-text {
+  padding-top: clamp(3rem, 1.9615rem + 4.6154vw, 6rem);
+  padding-bottom: clamp(3rem, 1.9615rem + 4.6154vw, 6rem);
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
-@media (min-width: 500px) {
-  .section-national-health {
-    background-image: linear-gradient(
-      to bottom,
-      var(--artem-dark-blue-2) 45%,
-      var(--artem-dark-blue) 45%
-    );
-  }
+.national-health-title {
+  background-color: #002a55;
 }
 
-@media (min-width: 576px) {
-  .section-national-health {
-    background-image: linear-gradient(
-      to bottom,
-      var(--artem-dark-blue-2) 45%,
-      var(--artem-dark-blue) 45%
-    );
-  }
+.national-health-img {
+  background-color: #022243;
+  text-align: center;
+}
+
+.national-health-img img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  margin: auto;
+}
+
+.national-health-text {
+  background-color: #002a55;
 }
 
 @media (min-width: 992px) {
   .section-national-health {
-    background-image: linear-gradient(
-      to right,
-      var(--artem-dark-blue-2) 50%,
-      var(--artem-dark-blue) 50%
-    );
+    display: grid;
+    grid-template-columns: 12px repeat(2, 1fr) 12px;
+    grid-template-rows: repeat(2, max-content);
+  }
+
+  .national-health-title {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    padding-bottom: 32px;
+  }
+
+  .national-health-img {
+    grid-row: 1 / -1;
+    grid-column: 3 / -1;
+  }
+
+  .national-health-text {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    padding-top: 0;
   }
 }
 
-.section-national-health-image {
-  width: 100%;
-  max-width: 480px;
+@media (min-width: 1200px) {
+  .section-national-health {
+    grid-template-columns: 1fr 12px repeat(2, 588px) 12px 1fr;
+  }
+
+  .national-health-title {
+    grid-column: 2 / 4;
+  }
+
+  .national-health-img {
+    grid-column: 4 / -1;
+  }
+
+  .national-health-text {
+    grid-column: 2 / 4;
+  }
 }
 
 /* Section download pdf styling */
@@ -980,6 +1144,26 @@ video {
 
 /* Section features-compliance styling */
 .section-feature-compliance {
+  position: relative;
+  background-image: url("./../images/home-page/compliance-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 992px) {
+  .section-feature-compliance::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 1px;
+    background-color: #fff;
+    opacity: 0.3;
+  }
 }
 
 .features-list {
@@ -1026,7 +1210,7 @@ video {
 }
 
 .team-card {
-  width: 16.25rem;
+  width: 100%;
 }
 
 .team-image-wrapper {
@@ -1070,7 +1254,8 @@ video {
 }
 
 .team-overlay-bio {
-  font-weight: 14px;
+  font-size: 14px;
+  line-height: 1.2;
 }
 
 .team-image-wrapper:hover .team-text {
@@ -1085,32 +1270,13 @@ video {
 .section-certificates {
 }
 
-.certificates-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
 /* Section clients styling */
 .section-clients {
 }
 
-.clients-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
 /* Section testimonial styling */
 .section-testimonials {
-  background-image: linear-gradient(
-      to right,
-      rgba(var(--artem-dark-blue-rgb), 0.8),
-      rgba(var(--artem-dark-blue-rgb), 0.8)
-    ),
-    url("./../images/home-page/testimonial-bg.jpg");
+  background-image: url("./../images/home-page/testimonial-bg.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1138,10 +1304,7 @@ video {
 }
 
 /************************************/
-/* 9. PAGE SPECIFIC STYLING */
-/************************************/
-
-/* About us page */
+/* About us page styling */
 .section-about-hero {
   background-image: linear-gradient(
       to right,
@@ -1165,6 +1328,7 @@ video {
   }
 }
 
+/************************************/
 /* Career page */
 .career-hero-media {
   height: 100%;
@@ -1279,6 +1443,7 @@ video {
   color: var(--bs-gray-600);
 }
 
+/************************************/
 /* Contact page */
 .contact-hero {
   height: 50vh;
@@ -1313,6 +1478,7 @@ video {
   justify-content: center;
 }
 
+/************************************/
 /* Arteem verticals page */
 .artem-verticals-hero-content,
 .state-of-art-content {
@@ -1686,6 +1852,7 @@ video {
 /* 10. UTILS */
 /************************************/
 
+/**************************************/
 /* Font weights */
 .fw-100 {
   font-weight: 100;
@@ -1723,9 +1890,14 @@ video {
   font-weight: 900;
 }
 
+/**************************************/
 /* Colors */
 .text-artem-blue {
   color: var(--artem-blue);
+}
+
+.text-artem-blue-2 {
+  color: var(--artem-blue-2);
 }
 
 .text-artem-dark-blue {
@@ -1733,13 +1905,18 @@ video {
 }
 
 .text-artem-dark-blue-2 {
-  color: var(--artem-dark-blue);
+  color: var(--artem-dark-blue-2);
 }
 
 .text-artem-orange {
   color: var(--artem-orange);
 }
 
+.text-blue-light {
+  color: var(--blue-light);
+}
+
+/**************************************/
 /* Background colors */
 .bg-artem-dark-blue {
   background-color: var(--artem-dark-blue);
@@ -1769,12 +1946,14 @@ video {
   background-color: var(--gray-light);
 }
 
-/* Paddings */
+/**************************************/
+/* Padding */
 .section-padding {
   padding-top: clamp(3rem, 1.9615rem + 4.6154vw, 6rem);
   padding-bottom: clamp(3rem, 1.9615rem + 4.6154vw, 6rem);
 }
 
+/**************************************/
 /* Letter spacing */
 .ls-2 {
   letter-spacing: 2px;
@@ -1784,12 +1963,26 @@ video {
   letter-spacing: 5px;
 }
 
+/**************************************/
 /* Max width */
 .max-w-700 {
   max-width: 700px;
 }
 
-/* Layout */
+/**************************************/
+/* Height */
+@media (min-width: 992px) {
+  .hero {
+    height: calc(100dvh - 63.16px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    height: calc(100dvh - 5rem);
+  }
+}
+
 .full-bleed {
   display: grid;
   grid-template-columns: 12px 1fr 12px;
@@ -1819,165 +2012,58 @@ video {
   }
 }
 
-@media (min-width: 1400px) {
-  .full-bleed {
-    grid-template-columns: 1fr 12px 1320px 12px 1fr;
-  }
+/**************************************/
+/* Height */
+.h-50 {
+  height: 50px !important;
+}
+
+.h-100 {
+  height: 100px !important;
+}
+
+.h-200 {
+  height: 200px !important;
+}
+
+.h-300 {
+  height: 300px !important;
+}
+
+.h-400 {
+  height: 400px !important;
 }
 
 .h-500 {
-  height: 500px;
+  height: 500px !important;
+}
+
+.h-600 {
+  height: 600px !important;
 }
 
 .h-700 {
-  height: 700px;
+  height: 700px !important;
 }
 
-.container-sm {
-  max-width: 576px;
+.h-800 {
+  height: 800px !important;
 }
 
-.container-md {
-  max-width: 768px;
+.h-900 {
+  height: 900px !important;
 }
 
-.container-lg {
-  max-width: 992px;
+.h-1000 {
+  height: 1000px !important;
 }
 
-.container-xl {
-  max-width: 1200px;
+.w-auto {
+  width: auto !important;
 }
 
-.container-xxl {
-  max-width: 1400px;
-}
-
+/**************************************/
+/* Miscellaneous */
 .object-fit-cover {
   object-fit: cover;
-}
-
-/************************************/
-/* 11. ANIMATIONS */
-/************************************/
-/* Following code contains all code related to hero animation */
-.section-home-hero {
-  position: relative;
-}
-
-.home-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.home-hero-title-box h2 {
-  animation-delay: 0.5s;
-}
-
-.home-hero-cta-box p {
-  animation-delay: 1s;
-}
-
-.video-btn {
-  animation-delay: 1.5s !important;
-}
-
-.contact-btn {
-  animation-delay: 2s !important;
-}
-
-.sales-btn {
-  animation-delay: 2.5s !important;
-}
-
-.home-slider-count {
-  position: absolute;
-  right: 0;
-  bottom: 1rem;
-}
-
-.fadeInLeft {
-  animation: fadeInLeft 1s ease backwards;
-}
-
-.fadeInRight {
-  animation: fadeInRight 1s ease backwards;
-}
-
-.fadeInUp {
-  animation: fadeInUp 1s ease backwards;
-}
-
-@keyframes fadeInLeft {
-  0% {
-    transform: translateX(2rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    transform: translateX(-2rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(2rem);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.modal-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Marquee styling and animation */
-.marquee {
-  padding: 2rem 0;
-  width: 100%;
-  overflow: hidden;
-}
-
-.marquee-content {
-  display: flex;
-  gap: 5rem;
-  animation: move-rtl 26000ms linear infinite;
-}
-
-.marquee-emblem {
-  width: 2rem;
-}
-
-.marquee-text {
-  width: 7rem;
-}
-
-@keyframes move-rtl {
-  0% {
-    transform: translateX(0);
-  }
-
-  100% {
-    transform: translateX(calc(-100%));
-  }
 }
