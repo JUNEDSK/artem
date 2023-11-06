@@ -107,6 +107,9 @@
 /************************************/
 /* 3. BASE STYLES */
 /************************************/
+body {
+  color: var(--artem-dark-blue-2);
+}
 h1,
 h2,
 h3,
@@ -1311,6 +1314,7 @@ video {
 /************************************/
 /* About us page styling */
 .section-about-hero {
+  height: 50vh;
   background-image: linear-gradient(
       to right,
       rgba(7, 54, 106, 0.7),
@@ -2019,52 +2023,64 @@ video {
 
 /**************************************/
 /* Height */
-.h-50 {
+.h-50px {
   height: 50px !important;
 }
 
-.h-100 {
+.h-100px {
   height: 100px !important;
 }
 
-.h-200 {
+.h-200px {
   height: 200px !important;
 }
 
-.h-300 {
+.h-300px {
   height: 300px !important;
 }
 
-.h-400 {
+.h-400px {
   height: 400px !important;
 }
 
-.h-500 {
+.h-500px {
   height: 500px !important;
 }
 
-.h-600 {
+.h-600px {
   height: 600px !important;
 }
 
-.h-700 {
+.h-700px {
   height: 700px !important;
 }
 
-.h-800 {
+.h-800px {
   height: 800px !important;
 }
 
-.h-900 {
+.h-900px {
   height: 900px !important;
 }
 
-.h-1000 {
+.h-1000px {
   height: 1000px !important;
 }
 
 .w-auto {
   width: auto !important;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+.w-90 {
+  width: 90%;
 }
 
 /**************************************/
