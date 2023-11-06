@@ -101,7 +101,7 @@
 }
 
 /* * {
-  outline: RED 1px solid;
+  outline: red 1px solid;
 } */
 
 /************************************/
@@ -116,6 +116,10 @@ h3,
 h4,
 h5 {
   color: var(--artem-blue-2);
+}
+
+a {
+  text-decoration: none;
 }
 
 video {
@@ -175,9 +179,16 @@ video {
   position: relative;
   border: none;
   padding: 1rem 2rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   overflow: hidden;
   line-height: 1;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .btn-animated {
+    font-size: 1.25rem;
+  }
 }
 
 .static-layer,
@@ -673,6 +684,7 @@ video {
 
 .footer-logo {
   width: 12rem;
+  margin-bottom: 2rem;
 }
 
 .footer-social-nav-list {
@@ -853,6 +865,16 @@ video {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.slide-para {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .slide-para {
+    font-size: 20px;
+  }
 }
 
 .home-hero-title-box h2 {
@@ -1278,8 +1300,16 @@ video {
 .section-certificates {
 }
 
+.section-certificates img {
+  max-width: 150px;
+}
+
 /* Section clients styling */
 .section-clients {
+}
+
+.section-clients img {
+  max-width: 200px;
 }
 
 /* Section testimonial styling */
