@@ -1384,36 +1384,56 @@ video {
 
 /************************************/
 /* Career page */
-.career-hero-media {
-  height: 100%;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  max-height: 37.5rem;
+.career-hero-img-wrapper {
+  border-top-left-radius: 150px;
+  display: block;
+  margin: auto;
+  max-width: 480px;
+  position: relative;
 }
 
 @media (min-width: 992px) {
-  .career-hero-media::before {
-    content: "";
-    display: inline-block;
-    width: 100%;
-    height: 4rem;
+  .career-hero-img-wrapper {
+    height: calc(100dvh - 150px);
+    max-width: auto;
   }
-
-  .career-hero-media {
-    max-height: auto;
-  }
-}
-
-.career-hero-img-wrapper {
-  overflow: hidden;
-  border-top-left-radius: 10rem;
 }
 
 .career-hero-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
+  border-top-left-radius: 150px;
+}
+
+.career-hero-img-pattern {
+  position: absolute;
+  right: -10rem;
+  top: -2rem;
+}
+
+.career-hero-file-wrapper {
+  position: absolute;
+  flex-direction: column;
+  gap: 16px;
+  left: -86px;
+  bottom: 16px;
+}
+
+.career-hero-file {
+  width: 350px;
+  display: inline-block;
+}
+
+.career-hero-file img {
+  width: 100%;
+}
+
+.career-hero-file-1 {
+}
+
+.career-hero-file-2 {
 }
 
 .job-card {
