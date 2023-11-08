@@ -1785,6 +1785,7 @@ video {
 
 .inner-page-cover-img-wrapper {
   width: 100%;
+  max-width: 600px;
   aspect-ratio: 1 / 1;
 }
 

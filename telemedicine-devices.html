@@ -20,7 +20,7 @@
       rel="shortcut icon"
       type="image/png"
       href="./assets/images/artem-emblem.svg" />
-    <title>Artem | Home</title>
+    <title>Artem | Telemedicine Devices</title>
   </head>
   <body>
     <!------------------------------------------>
@@ -126,7 +126,7 @@
               <li class="mobile-nav-item">
                 <a
                   href="#"
-                  class="mobile-nav-link d-flex justify-content-between align-items-center"
+                  class="mobile-nav-link d-flex justify-content-between align-items-center active"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#devicesList"
@@ -138,7 +138,7 @@
                     <li class="mobile-nav-dropdown-item">
                       <a
                         href="./telemedicine-devices.html"
-                        class="mobile-nav-link border-0"
+                        class="mobile-nav-link border-0 active"
                         >Tele Medicine Devices</a
                       >
                     </li>
@@ -370,7 +370,7 @@
               <!-- Desktop solutions dropdown list end -->
             </li>
             <li class="desktop-nav-item">
-              <a href="#" class="desktop-nav-link"
+              <a href="#" class="desktop-nav-link active"
                 >Devices <i class="fa-solid fa-angle-down"></i
               ></a>
 
@@ -379,7 +379,7 @@
                 <li class="desktop-nav-dropdown-item">
                   <a
                     href="./telemedicine-devices.html"
-                    class="desktop-nav-dropdown-link"
+                    class="desktop-nav-dropdown-link active"
                     >Tele Medicine Devices</a
                   >
                 </li>
@@ -506,6 +506,54 @@
     <!------------------------------------------>
 
     <main>
+      <!------------------------------------------>
+      <!-- Hero start -->
+      <!------------------------------------------>
+      <section class="hero inner-page-hero">
+        <div class="container h-100">
+          <div class="row align-items-lg-center h-100">
+            <div class="col-lg-6">
+              <div class="text-center text-lg-start">
+                <span class="inner-page-tag mb-3"> e-his </span>
+                <h1 class="display-3 fw-500 text-artem-dark-blue mb-5 mb-lg-3">
+                  Pharmacy Management Reinvented
+                </h1>
+                <p class="text-muted lead d-none d-lg-block">
+                  From Procurement to Patient Portal: A New Era of Efficiency
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img
+                class="inner-page-hero-img"
+                src="./assets/images/inner-pages/inner-pages-hero.png"
+                alt="" />
+              <p class="text-muted lead my-4 d-lg-none">
+                From Procurement to Patient Portal: A New Era of Efficiency
+              </p>
+              <div class="d-flex flex-column gap-3 d-lg-none">
+                <button class="btn-animated btn-animated-blue">
+                  <span class="static-layer d-inline-block">
+                    Contact Sales
+                  </span>
+                  <span class="overlay"></span>
+                  <span class="dynamic-layer"> Contact Sales </span>
+                </button>
+                <button class="btn-animated btn-animated-blue-outline">
+                  <span class="static-layer d-inline-block">
+                    Download Brochure</span
+                  >
+                  <span class="overlay"></span>
+                  <span class="dynamic-layer"> Download Brochure</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------>
+      <!-- Hero end -->
+      <!------------------------------------------>
       <div class="section-padding">
         <div class="container overflow-hidden inner-container">
           <div class="row g-5">
@@ -517,92 +565,133 @@
                   <!------------------------------------------>
                   <aside class="sidebar mb-3">
                     <nav class="side-nav mb-3">
-                      <a href="#" class="side-nav-title"
-                        ><h6 class="h6">E-HIS Solutions</h6></a
-                      >
+                      <h6 class="h6 side-nav-title">E-HIS Solutions</h6>
                       <ul class="side-nav-list">
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">HMIS</a>
+                          <a href="./e-his.html#hims" class="side-nav-link"
+                            >HIMS</a
+                          >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">LIMS</a>
+                          <a href="./e-his.html#lims" class="side-nav-link"
+                            >LIMS</a
+                          >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">RIMS</a>
+                          <a href="./e-his.html#rims" class="side-nav-link"
+                            >RIMS</a
+                          >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">CMS(Clinic)</a>
+                          <a href="./e-his.html#cms" class="side-nav-link"
+                            >CMS(Clinic)</a
+                          >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">Pharmacy</a>
+                          <a href="./e-pharmacy.html" class="side-nav-link"
+                            >Pharmacy</a
+                          >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">Tele-Medicine</a>
+                          <a
+                            href="./telemedicine-platform.html"
+                            class="side-nav-link"
+                            >Tele-Medicine</a
+                          >
                         </li>
                       </ul>
                     </nav>
                     <nav class="side-nav mb-3">
-                      <a href="#" class="side-nav-title"
-                        ><h6 class="h6">Tele-Medicine Devices</h6></a
-                      >
+                      <h6 class="h6 side-nav-title">Devices</h6>
                       <ul class="side-nav-list">
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">12 Lead ECG</a>
+                          <a
+                            href="./telemedicine-devices.html"
+                            class="side-nav-link active"
+                            >Telemedicine Devices</a
+                          >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link"
+                          <a
+                            href="./telemedicine-ecg.html"
+                            class="side-nav-link"
+                            >12 Lead ECG</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a
+                            href="./multi-vitals-monitor.html"
+                            class="side-nav-link"
                             >Multipara Vitals Monitor</a
                           >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">Digitizer</a>
+                          <a href="./digitizer.html" class="side-nav-link"
+                            >Digitizer</a
+                          >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">Health Kiosk</a>
+                          <a href="./health-kiosk.html" class="side-nav-link"
+                            >Health Kiosk</a
+                          >
                         </li>
                       </ul>
                     </nav>
                     <nav class="side-nav mb-3">
-                      <a href="#" class="side-nav-title"
-                        ><h6 class="h6">Tele-Medicine Services</h6></a
-                      >
+                      <h6 class="h6 side-nav-title">Tele-Medicine Services</h6>
                       <ul class="side-nav-list">
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link"
+                          <a
+                            href="./tele-consultation.html"
+                            class="side-nav-link"
                             >Tele Consultation</a
                           >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">Tele Radiology</a>
+                          <a href="./tele-radiology.html" class="side-nav-link"
+                            >Tele Radiology</a
+                          >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">Tele Cardiology</a>
+                          <a href="./tele-cardiology.html" class="side-nav-link"
+                            >Tele Cardiology</a
+                          >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">Tele Pathology</a>
+                          <a href="./tele-pathology.html" class="side-nav-link"
+                            >Tele Pathology</a
+                          >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link">Tele Fundascopy</a>
+                          <a href="./tele-fundoscopy.html" class="side-nav-link"
+                            >Tele Fundascopy</a
+                          >
                         </li>
                       </ul>
                     </nav>
                     <nav class="side-nav">
-                      <a href="#" class="side-nav-title"
-                        ><h6 class="h6">Specialized Healthcare Services</h6></a
-                      >
+                      <h6 class="h6 side-nav-title">
+                        Specialized Healthcare Services
+                      </h6>
                       <ul class="side-nav-list">
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link"
+                          <a
+                            href="./express-cardiac-care.html"
+                            class="side-nav-link"
                             >Express Cardiac Care</a
                           >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link"
+                          <a
+                            href="./artem-smart-clinic.html"
+                            class="side-nav-link"
                             >Artem Smart Clinic</a
                           >
                         </li>
                         <li class="side-nav-item">
-                          <a href="#" class="side-nav-link"
+                          <a
+                            href="./artem-diagnostics.html"
+                            class="side-nav-link"
                             >Artem Diagonostics</a
                           >
                         </li>
@@ -873,7 +962,7 @@
               <h5 class="h5 fw-600 mt-lg-5 pt-lg-5">TELELMEDICINE DEVICES</h5>
               <h2 class="display-4 fw-600">Use Cases</h2>
               <ul
-                class="overview-list overview-list-none-res p-3 mb-5 bg-gray-light text-blue">
+                class="overview-list overview-list-none-res p-3 bg-gray-light text-blue">
                 <li class="overview-list-item py-3">
                   <h5 class="h5">&nbsp;</h5>
                   <span>
