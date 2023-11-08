@@ -1752,16 +1752,8 @@ video {
 .side-nav {
 }
 
-.side-nav-title:link,
-.side-nav-title:visited {
+.side-nav-title {
   color: var(--artem-blue);
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
-
-.side-nav-title:hover,
-.side-nav-title:active {
-  color: var(--artem-orange);
 }
 
 .side-nav-list {
@@ -1781,9 +1773,14 @@ video {
   transition: all 0.3s ease;
 }
 
+.side-nav-link.active,
 .side-nav-link:hover,
 .side-nav-link:active {
   color: var(--artem-orange);
+}
+
+.inner-page-main {
+  padding-bottom: 20px;
 }
 
 .inner-page-cover-img-wrapper {
@@ -1845,7 +1842,7 @@ video {
 }
 
 @media (min-width: 768px) {
-  .overview-list-item:last-child {
+  .overview-list-item:nth-of-type(odd):last-child {
     border-right: 1px solid var(--bs-gray-300);
   }
 
