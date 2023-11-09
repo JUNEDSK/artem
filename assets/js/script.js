@@ -220,7 +220,7 @@ const innerPageMain = document.querySelector(".inner-page-main");
 if (sidebarWrapper) {
   ScrollTrigger.create({
     trigger: innerPageMain,
-    start: "top 20px",
+    start: "top",
     end: "bottom bottom",
     pin: sidebarWrapper,
   });
