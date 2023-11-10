@@ -1740,8 +1740,9 @@ video {
   overflow-y: scroll;
 }
 
-.sidebar-height button {
+.side-cta a {
   font-size: 16px;
+  text-align: center;
 }
 
 .sidebar-height::-webkit-scrollbar {
