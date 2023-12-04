@@ -40,28 +40,28 @@
 /************************************/
 @font-face {
   font-family: Ageo;
-  src: url("./../fonts/Ageo-Regular.woff");
+  src: url('./../fonts/Ageo-Regular.woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: Ageo;
-  src: url("./../fonts/Ageo-Medium.woff");
+  src: url('./../fonts/Ageo-Medium.woff');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: Ageo;
-  src: url("./../fonts/Ageo-SemiBold.woff");
+  src: url('./../fonts/Ageo-SemiBold.woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: Ageo;
-  src: url("./../fonts/Ageo-ExtraBold.woff");
+  src: url('./../fonts/Ageo-ExtraBold.woff');
   font-weight: 800;
   font-style: normal;
 }
@@ -72,7 +72,7 @@
 :root {
   /************************************/
   /* Custom properties */
-  --font-body: "Ageo", sans-serif;
+  --font-body: 'Ageo', sans-serif;
 
   --artem-blue: #00a4ff;
   --artem-blue-2: #044282;
@@ -501,7 +501,7 @@ video {
 
 .mobile-nav-open-btn-icon::after,
 .mobile-nav-open-btn-icon::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
 }
@@ -544,7 +544,7 @@ video {
 }
 
 .mobile-nav-close-btn-icon::before {
-  content: "";
+  content: '';
   transform: rotate(90deg);
 }
 
@@ -680,7 +680,7 @@ video {
 }
 
 .desktop-nav-dropdown-link::before {
-  content: "";
+  content: '';
   display: inline-block;
   background-color: var(--artem-blue);
   height: 1px;
@@ -790,7 +790,7 @@ video {
         rgba(var(--artem-dark-blue-rgb), 0.8),
         rgba(var(--artem-dark-blue-rgb), 0.8)
       ),
-      url("./../images/home-page/home-hero-bg.jpg");
+      url('./../images/home-page/home-hero-bg.jpg');
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -1089,7 +1089,7 @@ video {
 
 .service-card::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
   background-color: var(--artem-dark-blue-2);
@@ -1156,41 +1156,41 @@ video {
 }
 
 .service-card-1 {
-  background-image: url("./../images/home-page/services/service-01.jpg");
+  background-image: url('./../images/home-page/services/service-01.jpg');
 }
 
 .service-card-2 {
-  background-image: url("./../images/home-page/services/service-02.jpg");
+  background-image: url('./../images/home-page/services/service-02.jpg');
 }
 
 .service-card-3 {
-  background-image: url("./../images/home-page/services/service-03.jpg");
+  background-image: url('./../images/home-page/services/service-03.jpg');
 }
 
 .service-card-4 {
-  background-image: url("./../images/home-page/services/service-04.jpg");
+  background-image: url('./../images/home-page/services/service-04.jpg');
 }
 
 .service-card-5 {
-  background-image: url("./../images/home-page/services/service-05.jpg");
+  background-image: url('./../images/home-page/services/service-05.jpg');
 }
 
 .service-card-6 {
-  background-image: url("./../images/home-page/services/service-06.jpg");
+  background-image: url('./../images/home-page/services/service-06.jpg');
 }
 
 .service-card-7 {
-  background-image: url("./../images/home-page/services/service-07.jpg");
+  background-image: url('./../images/home-page/services/service-07.jpg');
 }
 
 .service-card-8 {
-  background-image: url("./../images/home-page/services/service-08.jpg");
+  background-image: url('./../images/home-page/services/service-08.jpg');
 }
 
 /* Section features-compliance styling */
 .section-feature-compliance {
   position: relative;
-  background-image: url("./../images/home-page/compliance-bg.jpg");
+  background-image: url('./../images/home-page/compliance-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1198,7 +1198,7 @@ video {
 
 @media (min-width: 992px) {
   .section-feature-compliance::after {
-    content: "";
+    content: '';
     display: inline-block;
     position: absolute;
     top: 50%;
@@ -1329,7 +1329,7 @@ video {
 
 /* Section testimonial styling */
 .section-testimonials {
-  background-image: url("./../images/home-page/testimonial-bg.jpg");
+  background-image: url('./../images/home-page/testimonial-bg.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1345,7 +1345,7 @@ video {
   }
 
   .testimonial-row::before {
-    content: "";
+    content: '';
     display: block;
     position: absolute;
     top: 0;
@@ -1365,7 +1365,7 @@ video {
       rgba(7, 54, 106, 0.7),
       rgba(7, 54, 106, 0.7)
     ),
-    url("./../images/about-us/hero.jpg");
+    url('./../images/about-us/hero.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1461,7 +1461,7 @@ video {
 .job-dropdown-icon::before,
 .job-dropdown-icon::after {
   display: inline-block;
-  content: "";
+  content: '';
   height: 1.9px;
   background-color: var(--bs-gray-600);
   width: 0.8rem;
@@ -1526,7 +1526,7 @@ video {
       rgba(7, 54, 106, 0.7),
       rgba(7, 54, 106, 0.7)
     ),
-    url("./../images/contact-us/hero.jpg");
+    url('./../images/contact-us/hero.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1888,10 +1888,10 @@ video {
 }
 
 .overview-list-item h5::before {
-  content: "";
+  content: '';
   height: 20px;
   width: 20px;
-  background-image: url("./../images/inner-pages/check.png");
+  background-image: url('./../images/inner-pages/check.png');
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -2177,4 +2177,8 @@ video {
 /* Miscellaneous */
 .object-fit-cover {
   object-fit: cover;
+}
+
+.text-justify {
+  text-align: justify;
 }
