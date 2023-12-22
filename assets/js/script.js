@@ -322,3 +322,27 @@ window.onload = function () {
   // Attach the beforeunload event to handle leaving the page
   window.addEventListener('beforeunload', handleBeforeUnload);
 };
+
+//////////////////////////////////////////////////////////
+// Scroll to top functionality
+const scrollButton = document.querySelector('.scroll-top');
+
+// Add scroll event listener to the window
+window.addEventListener('scroll', function () {
+  // Check if the scroll position is greater than or equal to 100vh
+  if (window.scrollY >= window.innerHeight) {
+    // Remove the "scale-none" class
+    scrollButton.classList.remove('scale-none');
+  } else {
+    // Add the "scale-none" class if scroll position is less than 100vh
+    scrollButton.classList.add('scale-none');
+  }
+});
+
+scrollButton.addEventListener('click', function () {
+  // Scrolling to the top of the page
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth', // Optional: adds smooth scrolling animation
+  });
+});

@@ -324,6 +324,33 @@ video {
   }
 }
 
+/* Scroll to top button */
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border: none;
+  background-color: var(--artem-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  z-index: 50;
+}
+
+.scroll-top:hover {
+  background-color: #0083cc;
+}
+
+.scroll-top:active {
+  background-color: #006299;
+}
+
 /**************************************/
 /* Bootstrap components overrides */
 .btn-primary {
@@ -2181,4 +2208,8 @@ video {
 
 .text-justify {
   text-align: justify;
+}
+
+.scale-none {
+  transform: scale(0);
 }
