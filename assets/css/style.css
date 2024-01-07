@@ -1480,7 +1480,7 @@ video {
 }
 
 .faq-dropdown p {
-  padding-left: 2.4rem !important;
+  padding-left: 36px !important;
 }
 
 @media (min-width: 768px) {
