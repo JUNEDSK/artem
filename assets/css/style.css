@@ -1476,7 +1476,17 @@ video {
   border: none;
   border-bottom: 1px solid var(--bs-gray-300);
   border-radius: 0;
-  padding: 2rem;
+  padding: 2rem 0;
+}
+
+@media (min-width: 768px) {
+  .faq-dropdown {
+    padding: 2rem;
+  }
+}
+
+.faq-dropdown:last-child {
+  border-bottom: none;
 }
 
 .job-dropdown-button {
