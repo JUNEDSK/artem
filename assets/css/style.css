@@ -1564,6 +1564,21 @@ video {
 }
 
 /************************************/
+/* FAQ page */
+.faq-hero {
+  height: 50vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 54, 106, 0.7),
+      rgba(7, 54, 106, 0.7)
+    ),
+    url('./../images/faq/hero.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/************************************/
 /* Contact page */
 .contact-hero {
   height: 50vh;
