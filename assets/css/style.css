@@ -1472,17 +1472,31 @@ video {
   border: 1px solid var(--bs-gray-300);
 }
 
+.faq-dropdown {
+  border: none;
+  border-bottom: 1px solid var(--bs-gray-300);
+  border-radius: 0;
+  padding: 2rem;
+}
+
 .job-dropdown-button {
   cursor: pointer;
 }
 
 .job-dropdown-icon {
   display: inline;
-  width: 1.5rem;
+  flex: 1 0 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   border: 2px solid var(--bs-gray-600);
   position: relative;
+}
+
+.faq-dropdown-icon {
+  background-color: var(--artem-blue);
+  border: none;
+  flex: 1 0 2rem;
+  height: 2rem;
 }
 
 .job-dropdown-icon::before,
@@ -1498,6 +1512,11 @@ video {
   border-radius: 2rem;
   transition: all 0.3s ease;
   transform: translate(-50%, -50%);
+}
+
+.faq-dropdown-icon::before,
+.faq-dropdown-icon::after {
+  background-color: var(--white);
 }
 
 .job-dropdown-button.collapsed .job-dropdown-icon::after {
