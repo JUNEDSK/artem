@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/images/artem-emblem.svg" />
+    <title>Artem | E-HIS Solutions</title>
+  </head>
+  <body>
+    <!------------------------------------------>
+    <!-- Mobile Header start -->
+    <!------------------------------------------>
+    <header class="header-mobile d-xl-none close">
+      <div class="container">
+        <nav class="mobile-nav d-flex">
+          <a href="/" class="mobile-nav-brand">
+            <img
+              src="./assets/images/artem-logo.svg"
+              alt="Artem logo"
+              class="mobile-nav-brand-logo" />
+          </a>
+          <span class="mobile-nav-list-backdrop">&nbsp;</span>
+          <div class="mobile-nav-list-wrapper">
+            <ul class="mobile-nav-list">
+              <li class="d-flex">
+                <button class="mobile-nav-close-btn">
+                  <span class="mobile-nav-close-btn-icon">&nbsp;</span>
+                </button>
+              </li>
+              <li class="mobile-nav-item">
+                <a href="/" class="mobile-nav-link">Home</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a href="./about-us.html" class="mobile-nav-link">About Us</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a
+                  href="#"
+                  class="mobile-nav-link d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#informationList"
+                  >Information <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+                <!-- Mobile information dropdown list start -->
+                <div id="informationList" class="collapse">
+                  <ul class="mobile-nav-dropdown-list">
+                    <li class="mobile-nav-dropdown-item">
+                      <a href="./artem-verticals.html" class="mobile-nav-link"
+                        >Artem Verticals</a
+                      >
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a href="./faq.html" class="mobile-nav-link">FAQ</a>
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a href="./contact-us.html" class="mobile-nav-link"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Mobile information dropdown list end -->
+              </li>
+
+              <li class="mobile-nav-item">
+                <a
+                  href="#"
+                  class="mobile-nav-link d-flex justify-content-between align-items-center active"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#solutionsList"
+                  >Solutions <i class="fa-solid fa-angle-down"></i
+                ></a>
+
+                <!-- Mobile solutions dropdown list start -->
+                <div id="solutionsList" class="collapse">
+                  <ul class="mobile-nav-dropdown-list">
+                    <li class="mobile-nav-dropdown-item">
+                      <a href="./e-his.html" class="mobile-nav-link active"
+                        >E-HIS</a
+                      >
+                      <ul class="fs-sm list-unstyled ps-4">
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./e-his.html#hims"
+                            class="mobile-nav-link border-0"
+                            >HIMS</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./e-his.html#lims"
+                            class="mobile-nav-link border-0"
+                            >LIMS</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./e-his.html#rims"
+                            class="mobile-nav-link border-0"
+                            >RIMS</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./e-his.html#cms"
+                            class="mobile-nav-link border-0"
+                            >CMS(Clinic)</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a href="./e-pharmacy.html" class="mobile-nav-link"
+                        >E-Pharmacy</a
+                      >
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./telemedicine-platform.html"
+                        class="mobile-nav-link"
+                        >Telemedicine Platform</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Mobile solutions dropdown list end -->
+              </li>
+
+              <li class="mobile-nav-item">
+                <a
+                  href="#"
+                  class="mobile-nav-link d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#devicesList"
+                  >Devices <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <!-- Mobile devices dropdown list start -->
+                <div id="devicesList" class="collapse">
+                  <ul class="mobile-nav-dropdown-list">
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./telemedicine-ecg.html"
+                        class="mobile-nav-link border-0"
+                        >Telemedicine & 12-Lead ECG</a
+                      >
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./multi-vitals-monitor.html"
+                        class="mobile-nav-link border-0"
+                        >Multi Vitals Monitor</a
+                      >
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./digitizer.html"
+                        class="mobile-nav-link border-0"
+                        >Digitizer</a
+                      >
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./health-kiosk.html"
+                        class="mobile-nav-link border-0"
+                        >Health Kiosk</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Mobile devices dropdown list end -->
+              </li>
+
+              <li class="mobile-nav-item">
+                <a
+                  href="#"
+                  class="mobile-nav-link d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#servicesList"
+                  >Services <i class="fa-solid fa-angle-down"></i
+                ></a>
+
+                <!-- Mobile sevices dropdown list start -->
+                <div id="servicesList" class="collapse">
+                  <ul class="mobile-nav-dropdown-list">
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./telemedicine-services.html"
+                        class="mobile-nav-link border-0"
+                        >Telemedicine Services</a
+                      >
+                      <ul class="fs-sm list-unstyled ps-4">
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./tele-consultation.html"
+                            class="mobile-nav-link border-0"
+                            >Tele Consultation</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./tele-radiology.html"
+                            class="mobile-nav-link border-0"
+                            >Tele Radiology</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./tele-cardiology.html"
+                            class="mobile-nav-link border-0"
+                            >Tele Cardiology</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./tele-pathology.html"
+                            class="mobile-nav-link border-0"
+                            >Tele Pathology</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./tele-fundoscopy.html"
+                            class="mobile-nav-link border-0"
+                            >Tele Fundoscopy</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./specialized-healthcare-services.html"
+                        class="mobile-nav-link border-0"
+                        >Specialized Healthcare Services</a
+                      >
+                      <ul class="fs-sm list-unstyled ps-4">
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./express-cardiac-care.html"
+                            class="mobile-nav-link border-0"
+                            >Express Cardiac Care</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./artem-smart-clinic.html"
+                            class="mobile-nav-link border-0"
+                            >Artem Smart Clinic</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./artem-diagnostics.html"
+                            class="mobile-nav-link border-0"
+                            >Artem Diagnostics</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Mobile sevices dropdown list end -->
+              </li>
+            </ul>
+          </div>
+
+          <a
+            href="./contact-us.html"
+            class="btn btn-sm btn-artem-orange fw-800 rounded-0 ms-auto me-3 me-lg-5">
+            Book Now
+          </a>
+
+          <button class="mobile-nav-open-btn">
+            <span class="mobile-nav-open-btn-icon">&nbsp;</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!------------------------------------------>
+    <!-- Mobile Header end -->
+    <!------------------------------------------>
+
+    <!------------------------------------------>
+    <!-- Desktop Header start -->
+    <!------------------------------------------>
+    <header class="header-desktop d-none d-xl-block">
+      <div class="container">
+        <nav class="desktop-nav">
+          <a href="/" class="desktop-nav-brand">
+            <img
+              src="./assets/images/artem-logo.svg"
+              alt="Artem logo"
+              class="desktop-nav-brand-logo" />
+          </a>
+          <ul class="desktop-nav-list">
+            <li class="desktop-nav-item">
+              <a href="/" class="desktop-nav-link">Home</a>
+            </li>
+            <li class="desktop-nav-item">
+              <a href="./about-us.html" class="desktop-nav-link">About Us</a>
+            </li>
+            <li class="desktop-nav-item">
+              <a href="#" class="desktop-nav-link" type="button"
+                >Information <i class="fa-solid fa-angle-down"></i
+              ></a>
+
+              <!-- Desktop information dropdown list start -->
+              <ul class="desktop-nav-dropdown-list">
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./artem-verticals.html"
+                    class="desktop-nav-dropdown-link"
+                    >Artem Verticals</a
+                  >
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a href="./faq.html" class="desktop-nav-dropdown-link">FAQ</a>
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a href="./contact-us.html" class="desktop-nav-dropdown-link"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+              <!-- Desktop information dropdown list end -->
+            </li>
+            <li class="desktop-nav-item">
+              <a href="#" class="desktop-nav-link active"
+                >Solutions <i class="fa-solid fa-angle-down"></i
+              ></a>
+
+              <!-- Desktop solutions dropdown list start -->
+              <ul class="desktop-nav-dropdown-list">
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./e-his.html"
+                    class="desktop-nav-dropdown-link active"
+                    >E-HIS</a
+                  >
+                  <ul class="fs-sm list-unstyled ps-4">
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./e-his.html#hims"
+                        class="desktop-nav-dropdown-link border-0"
+                        >HIMS</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./e-his.html#lims"
+                        class="desktop-nav-dropdown-link border-0"
+                        >LIMS</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./e-his.html#rims"
+                        class="desktop-nav-dropdown-link border-0"
+                        >RIMS</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./e-his.html#cms"
+                        class="desktop-nav-dropdown-link border-0"
+                        >CMS(Clinic)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a href="./e-pharmacy.html" class="desktop-nav-dropdown-link"
+                    >E-Pharmacy</a
+                  >
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./telemedicine-platform.html"
+                    class="desktop-nav-dropdown-link"
+                    >Telemedicine Platform</a
+                  >
+                </li>
+              </ul>
+              <!-- Desktop solutions dropdown list end -->
+            </li>
+            <li class="desktop-nav-item">
+              <a href="#" class="desktop-nav-link"
+                >Devices <i class="fa-solid fa-angle-down"></i
+              ></a>
+
+              <!-- Desktop devices dropdown list start -->
+              <ul class="desktop-nav-dropdown-list">
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./telemedicine-ecg.html"
+                    class="desktop-nav-dropdown-link"
+                    >Telemedicine & 12-Lead ECG</a
+                  >
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./multi-vitals-monitor.html"
+                    class="desktop-nav-dropdown-link"
+                    >Multi Vitals Monitor</a
+                  >
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a href="./digitizer.html" class="desktop-nav-dropdown-link"
+                    >Digitizer</a
+                  >
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./health-kiosk.html"
+                    class="desktop-nav-dropdown-link"
+                    >Health Kiosk</a
+                  >
+                </li>
+              </ul>
+              <!-- Desktop devices dropdown list end -->
+            </li>
+            <li class="desktop-nav-item">
+              <a href="#" class="desktop-nav-link"
+                >Services <i class="fa-solid fa-angle-down"></i
+              ></a>
+
+              <!-- Desktop services dropdown list start -->
+              <ul class="desktop-nav-dropdown-list">
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./telemedicine-services.html"
+                    class="desktop-nav-dropdown-link"
+                    >Telemedicine Services</a
+                  >
+                  <ul class="fs-sm list-unstyled ps-4">
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./tele-consultation.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Tele Consultation</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./tele-radiology.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Tele Radiology</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./tele-cardiology.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Tele Cardiology</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./tele-pathology.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Tele Pathology</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./tele-fundoscopy.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Tele Fundoscopy</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a href="#" class="desktop-nav-dropdown-link"
+                    >Specialized Healthcare Services</a
+                  >
+                  <ul class="fs-sm list-unstyled ps-4">
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./express-cardiac-care.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Express Cardiac Care</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./artem-smart-clinic.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Artem Smart Clinic</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./artem-diagnostics.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Artem Diagnostics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- Desktop services dropdown list end -->
+            </li>
+          </ul>
+
+          <a
+            href="./contact-us.html"
+            class="btn btn-artem-orange fw-800 rounded-0 align-self-center">
+            Book Now
+          </a>
+        </nav>
+      </div>
+    </header>
+    <!------------------------------------------>
+    <!-- Desktop Header end -->
+    <!------------------------------------------>
+
+    <main>
+      <!------------------------------------------>
+      <!-- Hero start -->
+      <!------------------------------------------>
+      <section class="hero inner-page-hero">
+        <div class="container h-100">
+          <div class="row align-items-lg-center h-100">
+            <div class="col-lg-6">
+              <div class="text-center text-lg-start">
+                <span class="inner-page-tag mb-3"> artem vertical </span>
+                <h1 class="display-3 fw-500 text-artem-dark-blue mb-5 mb-lg-3">
+                  Revolutionary E-HIS Solutions
+                </h1>
+                <p class="text-muted lead d-none d-lg-block">
+                  Efficient, Customizable, and Compliant Healthcare Integration.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6 text-center">
+              <img
+                class="inner-page-hero-img"
+                src="./assets/images/inner-pages/inner-pages-hero.png"
+                alt="" />
+              <p class="text-muted lead my-4 d-lg-none">
+                Efficient, Customizable, and Compliant Healthcare Integration.
+              </p>
+              <div class="d-flex flex-column gap-3 d-lg-none">
+                <button class="btn-animated btn-animated-blue">
+                  <span class="static-layer d-inline-block">
+                    Contact Sales
+                  </span>
+                  <span class="overlay"></span>
+                  <span class="dynamic-layer"> Contact Sales </span>
+                </button>
+                <button class="btn-animated btn-animated-blue-outline">
+                  <span class="static-layer d-inline-block">
+                    Download Brochure</span
+                  >
+                  <span class="overlay"></span>
+                  <span class="dynamic-layer"> Download Brochure</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------>
+      <!-- Hero end -->
+      <!------------------------------------------>
+      <div class="section-padding">
+        <div class="container overflow-hidden inner-container">
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <div class="sidebar-wrapper d-none d-lg-block">
+                <div class="sidebar-height">
+                  <!------------------------------------------>
+                  <!-- Side bar start -->
+                  <!------------------------------------------>
+                  <aside class="sidebar">
+                    <nav class="side-nav mb-3">
+                      <h6 class="h6 side-nav-title">E-HIS Solutions</h6>
+                      <ul class="side-nav-list">
+                        <li class="side-nav-item">
+                          <a href="#hims" class="side-nav-link">HIMS</a>
+                        </li>
+                        <li class="side-nav-item">
+                          <a href="#lims" class="side-nav-link">LIMS</a>
+                        </li>
+                        <li class="side-nav-item">
+                          <a href="#rims" class="side-nav-link">RIMS</a>
+                        </li>
+                        <li class="side-nav-item">
+                          <a href="#cms" class="side-nav-link">CMS(Clinic)</a>
+                        </li>
+                        <li class="side-nav-item">
+                          <a href="./e-pharmacy.html" class="side-nav-link"
+                            >Pharmacy</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a
+                            href="./telemedicine-platform.html"
+                            class="side-nav-link"
+                            >Tele-Medicine</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav class="side-nav mb-3">
+                      <h6 class="h6 side-nav-title">Telemedicine Devices</h6>
+                      <ul class="side-nav-list">
+                        <li class="side-nav-item">
+                          <a
+                            href="./telemedicine-ecg.html"
+                            class="side-nav-link"
+                            >12 Lead ECG</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a
+                            href="./multi-vitals-monitor.html"
+                            class="side-nav-link"
+                            >Multipara Vitals Monitor</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a href="./digitizer.html" class="side-nav-link"
+                            >Digitizer</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a href="./health-kiosk.html" class="side-nav-link"
+                            >Health Kiosk</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav class="side-nav mb-3">
+                      <h6 class="h6 side-nav-title">Tele-Medicine Services</h6>
+                      <ul class="side-nav-list">
+                        <li class="side-nav-item">
+                          <a
+                            href="./tele-consultation.html"
+                            class="side-nav-link"
+                            >Tele Consultation</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a href="./tele-radiology.html" class="side-nav-link"
+                            >Tele Radiology</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a href="./tele-cardiology.html" class="side-nav-link"
+                            >Tele Cardiology</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a href="./tele-pathology.html" class="side-nav-link"
+                            >Tele Pathology</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a href="./tele-fundoscopy.html" class="side-nav-link"
+                            >Tele Fundascopy</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                    <nav class="side-nav">
+                      <h6 class="h6 side-nav-title">
+                        Specialized Healthcare Services
+                      </h6>
+                      <ul class="side-nav-list">
+                        <li class="side-nav-item">
+                          <a
+                            href="./express-cardiac-care.html"
+                            class="side-nav-link"
+                            >Express Cardiac Care</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a
+                            href="./artem-smart-clinic.html"
+                            class="side-nav-link"
+                            >Artem Smart Clinic</a
+                          >
+                        </li>
+                        <li class="side-nav-item">
+                          <a
+                            href="./artem-diagnostics.html"
+                            class="side-nav-link"
+                            >Artem Diagonostics</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </aside>
+                  <!------------------------------------------>
+                  <!-- Side bar end -->
+                  <!------------------------------------------>
+
+                  <!-- Side CTA's -->
+                  <div class="d-flex flex-column gap-2 side-cta">
+                    <a
+                      href="./contact-us.html"
+                      class="btn-animated btn-animated-blue contact-btn">
+                      <span class="static-layer d-inline-block">
+                        Contact Sales
+                      </span>
+                      <span class="overlay"></span>
+                      <span class="dynamic-layer"> Contact Sales </span>
+                    </a>
+                    <a
+                      href="#"
+                      class="btn-animated btn-animated-blue contact-btn">
+                      <span class="static-layer d-inline-block">
+                        Download Brochure</span
+                      >
+                      <span class="overlay"></span>
+                      <span class="dynamic-layer"> Download Brochure</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-8 inner-page-main">
+              <!------------------------------------------>
+              <!-- Main content start -->
+              <!------------------------------------------>
+              <div class="inner-page-featured-img-wrapper mb-5">
+                <img
+                  class="inner-page-featured-img"
+                  src="./assets/images/inner-pages/e-his/e-his-1.png"
+                  alt="" />
+              </div>
+
+              <h5 class="h5 fw-600">E-HIS</h5>
+              <h2 class="display-6 fw-600">Features</h2>
+              <h5 class="h5 mb-3">
+                Unlock Efficiency in Healthcare with Advanced E-HIS Solution
+              </h5>
+
+              <ul class="overview-list">
+                <li class="overview-list-item">
+                  <h5 class="h5">Flexible Deployment Options:</h5>
+                  <span
+                    >Choose from Managed Service, Cloud Hosted, or On-Premises
+                    for seamless deployment.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Customizable:</h5>
+                  <span
+                    >Tailor our modular E-HIS architecture to meet your specific
+                    needs.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Applicability:</h5>
+                  <span
+                    >Accommodate Public, Private, and Community -Based Workflows
+                    effortlessly.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Scalability:</h5>
+                  <span
+                    >Expand to multi-locations, users and scale as you
+                    grow.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Support:</h5>
+                  <span
+                    >24/7 Expert Assistance for uninterrupted operations.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Analytics:</h5>
+                  <span
+                    >Harness the power of MIS, BI, and Advanced Analytics for
+                    actionable insights.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Integration:</h5>
+                  <span
+                    >Seamlessly integrate with Medical Equipment and 3rd party
+                    systems.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Compliance:</h5>
+                  <span
+                    >ABDM, HIPAA, HL7, ICD-10, DICOM,MDDS compliance for data
+                    security.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Open-source Technology:</h5>
+                  <span
+                    >Built on open-source tech for reliability, security, and
+                    continuous innovation.</span
+                  >
+                </li>
+              </ul>
+
+              <div class="inner-page-featured-img-wrapper my-5">
+                <img
+                  class="inner-page-featured-img"
+                  src="./assets/images/inner-pages/e-his/e-his-2.png"
+                  alt="" />
+              </div>
+
+              <h5 class="h5 fw-600">E-HIS</h5>
+              <h2 class="display-6 fw-600">Modules</h2>
+              <h5 class="h5 mb-5">
+                Unlock Efficiency in Healthcare with Advanced E-HIS Solution
+              </h5>
+              <div class="row g-5 mb-5 pb-5">
+                <div class="col-lg-6">
+                  <article
+                    class="card bg-blue-light text-white border-0 rounded-0 h-100">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center gap-4">
+                        <span class="overview-icon">
+                          <img
+                            src="./images/icon-clinical-modules.png"
+                            alt="" />
+                        </span>
+                        <h3 class="h3 fw-600 text-white">
+                          Clinical <br />
+                          Modules
+                        </h3>
+                      </div>
+                      <span class="card-divider my-4"></span>
+                      <ul class="list-unstyled p-0 m-0 fw-600">
+                        <li>OPD Management</li>
+                        <li>IPD Management</li>
+                        <li>Emergency Management</li>
+                        <li>Pathology Laboratory Management</li>
+                        <li>Radiology Management and PACS</li>
+                        <li>Blood Bank</li>
+                        <li>Electronic Health Records</li>
+                        <li>Pharmacy Management</li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-6">
+                  <article
+                    class="card bg-blue text-white border-0 rounded-0 h-100">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center gap-4">
+                        <span class="overview-icon">
+                          <img
+                            src="./images/icon-equipment-interface.png"
+                            alt="" />
+                        </span>
+                        <h3 class="h3 fw-600 text-white">
+                          Equipment <br />
+                          Interface
+                        </h3>
+                      </div>
+                      <span class="card-divider my-4"></span>
+                      <ul class="list-unstyled p-0 m-0 fw-600">
+                        <li>Pathology Analyzers</li>
+                        <li>Imaging Equipment</li>
+                        <li>Monitoring Devices</li>
+                        <li>Barcode / RFID</li>
+                        <li>Biometrics</li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-6">
+                  <article
+                    class="card bg-blue text-white border-0 rounded-0 h-100">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center gap-4">
+                        <span class="overview-icon">
+                          <img
+                            src="./images/icon-administrative-operations.png"
+                            alt="" />
+                        </span>
+                        <h3 class="h3 fw-600 text-white">
+                          Administrative <br />
+                          Operations
+                        </h3>
+                      </div>
+                      <span class="card-divider my-4"></span>
+                      <ul class="list-unstyled p-0 m-0 fw-600">
+                        <li>Storage & Inventory Management</li>
+                        <li>Accounting & Finance Management</li>
+                        <li>HR & Payroll Management</li>
+                        <li>Asset Management & Maintenance</li>
+                        <li>Camps and Marketing</li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-6">
+                  <article
+                    class="card bg-blue-light text-white border-0 rounded-0 h-100">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center gap-4">
+                        <span class="overview-icon">
+                          <img
+                            src="./images/icon-supporting-activities.png"
+                            alt="" />
+                        </span>
+                        <h3 class="h3 fw-600 text-white">
+                          Supporting <br />
+                          Activities
+                        </h3>
+                      </div>
+                      <span class="card-divider my-4"></span>
+                      <ul class="list-unstyled p-0 m-0 fw-600">
+                        <li>Patient Registration</li>
+                        <li>Appointment Management</li>
+                        <li>Patient Billing</li>
+                        <li>Mobile Apps for Doctors, Patients, Technicians</li>
+                        <li>Medical Record Management</li>
+                        <li>Central Sterile Supply Department (CSSD)</li>
+                        <li>Diet & Kitchen Management</li>
+                        <li>Laundry Management</li>
+                        <li>Dashboards & Analytics</li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <h5 id="hims" class="h5 fw-600 mt-lg-5 pt-lg-5">E-HIS</h5>
+              <h2 class="display-4 fw-600">EHIMS</h2>
+              <h5 class="h5 mb-5">Key Features</h5>
+              <ul class="overview-list pb-5 mb-5">
+                <li class="overview-list-item">
+                  <h5 class="h5">Patient Registration and Management:</h5>
+                  <span
+                    >Easily handle patient demographics, contact details,
+                    medical history, and clinical information.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Integrated Information Systems:</h5>
+                  <span
+                    >Seamlessly incorporate laboratory information systems
+                    (LIS),radiology information systems (RIS), and picture
+                    archiving and communication systems (ACS).</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Electronic Health Record (EHR) Management:</h5>
+                  <span
+                    >Efficiently store and manage electronic health records,
+                    including diagnostic reports, lab results, radiology
+                    reports, prescriptions, and treatment history.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Appointment Scheduling and Billing:</h5>
+                  <span
+                    >Streamline appointment scheduling, billing, and payment
+                    processing, including insurance claims.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Inventory Tracking:</h5>
+                  <span
+                    >Track and manage inventory of medical equipment, supplies,
+                    consumables, and pharmaceuticals.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Electronic Prescription:</h5>
+                  <span
+                    >Enable physicians to prescribe medications electronically,
+                    ensuring accuracy and reducing errors.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Real-time Reporting and Analytics:</h5>
+                  <span
+                    >Monitor clinical and operational performance with real-time
+                    reporting and analytics, tracking key performance indicators
+                    (KPIs) for continuous improvement.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Secure and Compliant Platform:</h5>
+                  <span
+                    >Ensure data security with role-based access controls, data
+                    encryption, and compliance with healthcare data privacy
+                    regulations.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Telemedicine Capabilities:</h5>
+                  <span
+                    >Enhance outreach and patient care with built-in
+                    telemedicine solutions.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Queue Management:</h5>
+                  <span
+                    >Optimize patient flow and minimize waiting times by
+                    effectively managing patient queues</span
+                  >
+                </li>
+              </ul>
+
+              <h5 id="lims" class="h5 fw-600 mt-lg-5 pt-lg-5">E-HIS</h5>
+              <h2 class="display-4 fw-600">LIMS</h2>
+              <h5 class="h5 mb-5">Key Features</h5>
+              <ul class="overview-list pb-5 mb-5">
+                <li class="overview-list-item">
+                  <h5 class="h5">Sample Lifecycle Management:</h5>
+                  <span
+                    >Efficiently handle sample tracking, test result tracking,
+                    and sample location management throughout the entire
+                    lifecycle.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Appointment Management:</h5>
+                  <span
+                    >Manage appointments, including home visits and
+                    emergencies.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Test Management:</h5>
+                  <span
+                    >Effectively manage laboratory tests, from test orders to
+                    specimen processing, test result entry, and quality control
+                    management.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Historical Data Comparison:</h5>
+                  <span
+                    >Compare current results with the patient's historical data
+                    to identify trends and patterns.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Workflow Streamlining:</h5>
+                  <span
+                    >Streamline laboratory workflows, including sample routing,
+                    priority settings, and test result routing.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Reporting and Analytics:</h5>
+                  <span
+                    >Generate reports and analytics on laboratory performance,
+                    including test volumes, turnaround time, and error rates.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">EHR Integration:</h5>
+                  <span
+                    >Integrate pathology reports into electronic health records
+                    for comprehensive patient data management.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Inventory Management:</h5>
+                  <span
+                    >Effectively manage laboratory inventory, including
+                    equipment, reagents, consumables, supplies, and asset
+                    maintenance tracking.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Regulatory Compliance:</h5>
+                  <span
+                    >Ensure compliance with quality standards, patient data
+                    privacy laws, and health and safety regulations.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Electronic Signatures:</h5>
+                  <span
+                    >Support electronic signatures for laboratory test results
+                    and reports to enhance data security and traceability.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Interoperability:</h5>
+                  <span
+                    >Enable interoperability with other healthcare systems, such
+                    as electronic health records, laboratory information
+                    exchange, and clinical decision support systems.</span
+                  >
+                </li>
+              </ul>
+
+              <h5 id="rims" class="h5 fw-600 mt-lg-5 pt-lg-5">E-HIS</h5>
+              <h2 class="display-4 fw-600">RIMS</h2>
+              <h5 class="h5 mb-5">Key Features</h5>
+              <ul class="overview-list pb-5 mb-5">
+                <li class="overview-list-item">
+                  <h5 class="h5">Patient Management:</h5>
+                  <span
+                    >Efficiently handle patient records, including personal
+                    details, medical history, diagnoses, and treatment plans.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Scheduling:</h5>
+                  <span
+                    >Simplify radiology appointment scheduling, tracking, and
+                    rescheduling.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Image Management:</h5>
+                  <span
+                    >Seamlessly manage radiology images, including storage,
+                    retrieval, and sharing.
+                  </span>
+                </li>
+
+                <li class="overview-list-item">
+                  <h5 class="h5">Online Reporting:</h5>
+                  <span
+                    >Generate and manage radiology reports, including order
+                    requests, results, and interpretations.
+                  </span>
+                </li>
+
+                <li class="overview-list-item">
+                  <h5 class="h5">Radiologist Interface:</h5>
+                  <span
+                    >Advanced online interface for accurate diagnosis and
+                    measurements.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Technician Interface:</h5>
+                  <span
+                    >Dedicated interface for image capture and uploading to the
+                    PACS system.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">EHR Integration:</h5>
+                  <span
+                    >Integrate radiology reports and images into electronic
+                    health records.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Quality Control:</h5>
+                  <span
+                    >Ensure equipment calibration, result tracking, and error
+                    detection.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Telemedicine Capabilities:</h5>
+                  <span
+                    >Manage radiology equipment and consumables inventory and
+                    track asset maintenance schedules.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Interoperability:</h5>
+                  <span
+                    >Enable seamless integration with other healthcare systems.
+                  </span>
+                </li>
+              </ul>
+
+              <h5 id="cms" class="h5 fw-600 mt-lg-5 pt-lg-5">E-HIS</h5>
+              <h2 class="display-4 fw-600">CMS</h2>
+              <h5 class="h5 mb-5">Key Features</h5>
+              <ul class="overview-list pb-5 mb-5">
+                <li class="overview-list-item">
+                  <h5 class="h5">Patient Registration:</h5>
+                  <span
+                    >Capture and manage essential patient information, such as
+                    name, contact details, and medical history.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Appointment Scheduling:</h5>
+                  <span
+                    >Efficiently schedule and organize appointments with
+                    doctors, nurses, and healthcare providers.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Queue Management:</h5>
+                  <span
+                    >Optimize patient flow and minimize waiting times by
+                    effectively managing patient queues.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Patient Consultation:</h5>
+                  <span
+                    >Record and manage comprehensive patient consultations,
+                    including diagnosis, treatment plans, and medication
+                    prescriptions.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Billing and Claims Management:</h5>
+                  <span
+                    >Streamline financial transactions for outpatient visits,
+                    including billing, invoicing, payment processing, and claims
+                    management.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Reporting and Analytics:</h5>
+                  <span
+                    >Generate insightful reports and analytics on patient
+                    visits, appointment history, billing and claims, and other
+                    relevant metrics.
+                  </span>
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">
+                    Electronic Health Records (EHR) Integration:
+                  </h5>
+                  <span
+                    >Integrate OPD records and data into electronic health
+                    records for seamless patient data management.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Communication and Collaboration:</h5>
+                  <span
+                    >Facilitate seamless communication and collaboration among
+                    healthcare providers, including appointment reminders,
+                    patient alerts, referrals and second opinions.</span
+                  >
+                </li>
+                <li class="overview-list-item">
+                  <h5 class="h5">Security and Compliance:</h5>
+                  <span
+                    >Ensure the security and compliance of patient data and
+                    healthcare operations in accordance with industry standards
+                    and regulations.
+                  </span>
+                </li>
+              </ul>
+
+              <h5 class="h5 fw-600 mt-lg-5 pt-lg-5">E-HIS</h5>
+              <h2 class="display-4 fw-600">Use Cases</h2>
+              <div class="row g-5">
+                <div class="col-lg-6">
+                  <article
+                    class="card bg-gray-light text-blue border-0 rounded-0 h-100">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center gap-4">
+                        <span class="overview-icon">
+                          <img
+                            src="./images/icon-healthcare-entities.png"
+                            alt="" />
+                        </span>
+                        <h3 class="h3 fw-600 text-blue">
+                          Healthcare <br />
+                          Entities
+                        </h3>
+                      </div>
+                      <span class="card-divider bg-orange my-4"></span>
+                      <ul class="list-unstyled p-0 m-0 fw-600">
+                        <li>
+                          Clinics, Hospitals, Diagnostic Centers, Pharmacies,
+                          Institutes, and Others.
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <div class="col-lg-6">
+                  <article
+                    class="card bg-gray-light text-blue border-0 rounded-0 h-100">
+                    <div class="card-body">
+                      <div class="d-flex align-items-center gap-4">
+                        <span class="overview-icon">
+                          <img
+                            src="./images/icon-healthcare-infrastructure.png"
+                            alt="" />
+                        </span>
+                        <h3 class="h3 fw-600 text-blue">
+                          Healthcare <br />
+                          Infrastructure
+                        </h3>
+                      </div>
+                      <span class="card-divider bg-orange my-4"></span>
+                      <ul class="list-unstyled p-0 m-0 fw-600">
+                        <li>
+                          ASHA Workers, Primary Health Centers (PHC), Community
+                          Health Centers (CHC), District Hospitals, Civil
+                          Hospitals, Centers for Excellence and Health Policy
+                          Makers.
+                        </li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <!------------------------------------------>
+              <!-- Main content end -->
+              <!------------------------------------------>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!------------------------------------------>
+    <!-- Footer start -->
+    <!------------------------------------------>
+    <footer class="footer section-padding">
+      <div class="container">
+        <div class="overflow-hidden mb-5">
+          <div class="row g-5">
+            <div class="col-lg-8 col-xxl-7">
+              <a href="./index.html">
+                <img
+                  src="./assets/images/artem-logo-color.svg"
+                  alt="Logo"
+                  class="footer-logo" />
+              </a>
+              <div class="d-flex gap-5 flex-wrap flex-lg-nowrap">
+                <div>
+                  <h4 class="h4 text-artem-blue">Information</h4>
+                  <nav class="footer-nav">
+                    <ul
+                      class="footer-nav-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
+                      <li class="footer-nav-item">
+                        <a href="./about-us.html" class="footer-nav-link"
+                          >About Us</a
+                        >
+                      </li>
+                      <li class="footer-nav-item">
+                        <a href="./privacy-policy.html" class="footer-nav-link"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li class="footer-nav-item">
+                        <a
+                          href="./terms-conditions.html"
+                          class="footer-nav-link"
+                          >Terms & Conditions</a
+                        >
+                      </li>
+                      <li class="footer-nav-item">
+                        <a href="./faq.html" class="footer-nav-link">FAQ</a>
+                      </li>
+                      <li class="footer-nav-item">
+                        <a href="./contact-us.html" class="footer-nav-link"
+                          >Franchise With Us</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div>
+                  <h4 class="h4 text-artem-blue">Solutions</h4>
+                  <nav class="footer-nav">
+                    <ul
+                      class="footer-nav-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
+                      <li class="footer-nav-item">
+                        <a href="./e-his.html" class="footer-nav-link">E-HIS</a>
+                      </li>
+                      <li class="footer-nav-item">
+                        <a
+                          href="./telemedicine-services.html"
+                          class="footer-nav-link"
+                          >Telemedicine Services</a
+                        >
+                      </li>
+                      <li class="footer-nav-item">
+                        <a
+                          href="./telemedicine-ecg.html"
+                          class="footer-nav-link"
+                          >Telemedicine Devices</a
+                        >
+                      </li>
+                      <li class="footer-nav-item">
+                        <a
+                          href="./express-cardiac-care.html"
+                          class="footer-nav-link"
+                          >Specialized Healthcare Services</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div>
+                  <h4 class="h4 text-artem-blue">Contact</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <a
+                      class="text-decoration-none text-muted"
+                      href="mailto:info@artemhealthtech.com"
+                      >info@artemhealthtech.com</a
+                    >
+                    <a
+                      class="text-decoration-none text-muted"
+                      href="tel:+916359693050"
+                      >+91-635 969 3050</a
+                    >
+                    <address>
+                      419, D-Wing, Times Square Grand, <br />
+                      Sindhu Bhavan Road, Thaltej <br />
+                      Ahmedabad,Gujarat - 380059
+                    </address>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xxl-5">
+              <nav
+                class="footer-social-nav d-lg-flex justify-content-between align-items-center mb-3 mb-lg-5">
+                <ul
+                  class="footer-social-nav-list list-unstyled m-0 p-0 d-flex gap-3 gap-lg-5">
+                  <li class="footer-social-nav-item">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="footer-social-nav-link">
+                      <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="footer-social-nav-item">
+                    <a
+                      href="https://www.instagram.com/"
+                      target="_blank"
+                      class="footer-social-nav-link">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="footer-social-nav-item">
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="footer-social-nav-link">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <h2 class="display-4 fw-500 text-artem-dark-blue">
+                Redefining Care
+              </h2>
+              <p class="lead text-muted mb-5">Let's Stay in Touch</p>
+              <form action="#" class="d-flex">
+                <input
+                  class="form-control rounded-0 footer-input"
+                  type="email"
+                  placeholder="Enter your Email" />
+                <button
+                  class="btn-artem-orange btn rounded-0 btn-lg"
+                  type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="mt-5 text-muted">
+          &copy; 2023 Copyright Artem, All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!------------------------------------------>
+    <!-- Footer end -->
+    <!------------------------------------------>
+
+    <!------------------------------------------>
+    <!-- Scroll to top button start -->
+    <!------------------------------------------>
+    <button class="scroll-top scale-none">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!------------------------------------------>
+    <!-- Scroll to top button end -->
+    <!------------------------------------------>
+
+    <!-- GSP -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+    <!-- Scroll Trigger -->
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
