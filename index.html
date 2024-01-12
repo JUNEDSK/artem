@@ -1629,8 +1629,8 @@
             class="testimonials-logo mb-3" />
           <h2 class="display-3 fw-500 mb-5 text-white">Testimonials</h2>
           <div class="overflow-hidden">
-            <div class="row g-5 testimonial-row">
-              <div class="col-lg-6 pe-lg-5">
+            <div class="row g-5 testimonial-row" id="testimonial-section-container">
+              <!-- <div class="col-lg-6 pe-lg-5">
                 <div class="pe-lg-5">
                   <h3 class="h3 fw-500 text-artem-orange mb-4">
                     Extremely pleased!
@@ -1670,7 +1670,7 @@
                     Proprietor- B.S Diagnostic Center, Howarh
                   </p>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -1889,5 +1889,133 @@
 
     <!-- Custom JS -->
     <script src="./assets/js/script.js"></script>
+     <!-- extra js -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="./js/add-to-newsletter.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+      
+      function getTeamMembers() {
+
+         // Send the data to the server using AJAX
+         $.ajax({
+          type: 'POST',
+          url: 'http://ap-artem.elloweb.com/web/teammember/list', // Replace with the actual URL to your controller
+          dataType:"json",
+          success: function (response) {
+            // Handle the success response from the server
+            if(response.status == true && response.data) {
+
+              const teamMembers = response.data;
+              const parentElement = document.getElementsByName('team-members-container')[0];
+
+              for (const member of teamMembers) {
+
+                const newElement = document.createElement('div');
+                newElement.className="swiper-slide";
+                newElement.innerHTML = `
+                
+                  <!-- Team card start -->
+                  <article class="team-card">
+                    <div class="team-image-wrapper">
+                      <img
+                        src="${member.tm_image}"
+                        alt="${member.tm_name}"
+                        class="team-image" />
+                      <div class="team-overlay"></div>
+                      <div class="team-text">
+                        <span class="team-overlay-name">${member.tm_name}</span>
+                        <p class="m-0 team-overlay-bio">${member.tm_bio}</p>
+                      </div>
+                    </div>
+                    <h5 class="h5 text-uppercase">${member.tm_name}</h5>
+                    <p>
+                      ${member.tm_position}
+                    </p>
+                  </article>
+                  <!-- Team card end -->
+                
+              `;
+
+              parentElement.appendChild(newElement);
+
+              }
+              
+            }
+
+            else {
+                //we will hide the default one in case of api error make them visible.
+            }
+          },
+          error: function () {
+            // Handle errors, if any
+            //we will show default incase of issue with api.
+          },
+        });
+
+      }
+
+      function getTestimonials() {
+        // Send the data to the server using AJAX
+        $.ajax({
+          type: 'POST',
+          url: 'http://ap-artem.elloweb.com/web/testimonial/list', // Replace with the actual URL to your controller
+          dataType:"json",
+          success: function (response) {
+            // Handle the success response from the server
+            createDynamicTestimonial(response.data[0],'right');
+            createDynamicTestimonial(response.data[1],'left');
+          },
+          error: function () {
+            // Handle errors, if any
+            //we will show default incase of issue with api.
+          },
+        });
+
+      }
+      // Function to create the dynamic content
+      function createDynamicTestimonial(testimonialData,position) {
+        
+        // Create a new <div> element for the section
+        var sectionDiv = document.createElement("div");
+        if(position == 'right') { sectionDiv.className = "col-lg-6 pe-lg-5";}
+        if(position == 'left') { sectionDiv.className = "col-lg-6 ps-lg-5";}
+        
+        // Create the <h3> element for the section title
+        var titleElement = document.createElement("h3");
+        titleElement.className = "h3 fw-500 text-artem-orange mb-4";
+        titleElement.textContent = testimonialData.t_header;
+
+        // Create the <p> element for the section content
+        var contentElement = document.createElement("p");
+        contentElement.textContent = testimonialData.t_content;
+
+        var contentElement2  = document.createElement("p");
+        contentElement2.className = "fw-500 m-0 text-artem-blue";
+        contentElement2.textContent = testimonialData.t_person_name;
+        
+        var contentElement3  = document.createElement("p");
+        contentElement3.className = "fw-500 m-0 text-artem-blue";
+        contentElement3.textContent = testimonialData.t_person_position;
+
+        // Append the title and content to the section <div>
+        sectionDiv.appendChild(titleElement);
+        sectionDiv.appendChild(contentElement);
+        sectionDiv.appendChild(contentElement2);
+        sectionDiv.appendChild(contentElement3);
+
+        // Append the section <div> to the container with the id "dynamic-section-container"
+        var container = document.getElementById("testimonial-section-container");
+        container.appendChild(sectionDiv);
+      }
+
+      //Call the funcction to create the dynamic section of teammmembers
+      //getTeamMembers();
+      // Call the function to create the dynamic section of testimonial
+      getTestimonials();
+
+      });
+    </script>
   </body>
 </html>
+
