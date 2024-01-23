@@ -1318,6 +1318,22 @@ video {
 .team-text {
   height: 100%;
   transform: translateY(calc(100% + 1.5rem));
+  overflow-y: scroll;
+}
+
+.team-text::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.team-text::-webkit-scrollbar-track {
+  background: var(--artem-blue);
+}
+
+/* Handle */
+.team-text::-webkit-scrollbar-thumb {
+  background: var(--artem-dark-blue-2);
+  border-radius: 100px;
 }
 
 .team-overlay-name {
