@@ -1849,20 +1849,16 @@ video {
 .side-nav {
 }
 
-.side-nav-title {
-  color: var(--artem-blue);
-}
-
-.side-nav-title-link:link,
-.side-nav-title-link:visited {
+.side-nav-title:link,
+.side-nav-title:visited {
   text-decoration: none;
   color: var(--artem-blue);
   transition: all 0.3s ease;
 }
 
-.side-nav-title-link.active,
-.side-nav-title-link:hover,
-.side-nav-title-link:active {
+.side-nav-title.active,
+.side-nav-title:hover,
+.side-nav-title:active {
   color: var(--artem-orange);
 }
 
