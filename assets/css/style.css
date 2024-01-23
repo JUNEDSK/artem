@@ -1853,6 +1853,19 @@ video {
   color: var(--artem-blue);
 }
 
+.side-nav-title-link:link,
+.side-nav-title-link:visited {
+  text-decoration: none;
+  color: var(--artem-blue);
+  transition: all 0.3s ease;
+}
+
+.side-nav-title-link.active,
+.side-nav-title-link:hover,
+.side-nav-title-link:active {
+  color: var(--artem-orange);
+}
+
 .side-nav-list {
   list-style: none;
   margin: 0;
