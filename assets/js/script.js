@@ -1,21 +1,5 @@
 'use strict';
 
-//////////////////////////////////////////////////////
-// Mobile header open & close functionality
-const headerMobile = document.querySelector('.header-mobile');
-const mobileNavOpenBtn = document.querySelector('.mobile-nav-open-btn');
-const mobileNavCloseBtn = document.querySelector('.mobile-nav-close-btn');
-
-mobileNavOpenBtn.addEventListener('click', function () {
-  headerMobile.classList.remove('close');
-  headerMobile.classList.add('open');
-});
-
-mobileNavCloseBtn.addEventListener('click', function () {
-  headerMobile.classList.add('close');
-  headerMobile.classList.remove('open');
-});
-
 ///////////////////////////////////////////////////////
 // Overview list
 const allOverviewList = document.querySelectorAll('.overview-list');
