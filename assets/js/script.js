@@ -1,6 +1,37 @@
 'use strict';
 
 ///////////////////////////////////////////////////////
+// Loader
+const loader = document.querySelector('.loader');
+const loaderContainer = document.querySelector('.loader-container');
+const loaderProgress = document.querySelector('.loader-progress');
+const loaderValue = document.querySelector('.loader-value');
+
+let loaderValueTracker = 0;
+
+if (loader) {
+  const loaderInterval = setInterval(() => {
+    loaderValueTracker++;
+    if (loaderValueTracker <= 90) {
+      console.log(loaderValueTracker);
+      loaderProgress.style.width = loaderValueTracker + '%';
+      loaderValue.textContent = loaderValueTracker + '%';
+    }
+  }, 500);
+
+  window.addEventListener('load', function () {
+    clearInterval(loaderInterval);
+    loaderValueTracker = 100;
+    loaderProgress.style.width = loaderValueTracker + '%';
+    loaderValue.textContent = loaderValueTracker + ' ' + '%';
+    this.setTimeout(() => {
+      loaderContainer.classList.add('opacity-0');
+      loader.style.transform = 'scaleY(0)';
+    }, 1000);
+  });
+}
+
+///////////////////////////////////////////////////////
 // Overview list
 const allOverviewList = document.querySelectorAll('.overview-list');
 
