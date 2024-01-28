@@ -1558,8 +1558,8 @@ video {
 }
 
 .job-dropdown-icon {
-  display: inline;
-  flex: 1 0 1.5rem;
+  display: inline-block;
+  width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   border: 2px solid var(--bs-gray-600);
@@ -1567,9 +1567,10 @@ video {
 }
 
 .faq-dropdown-icon {
+  display: inline-block;
   background-color: var(--artem-blue);
   border: none;
-  flex: 1 0 2rem;
+  width: 2rem;
   height: 2rem;
 }
 
