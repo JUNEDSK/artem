@@ -89,7 +89,7 @@ if (numSlides > 0) {
     const subTitle = slide.querySelector('.home-hero-title-box h5');
     const title = slide.querySelector('.home-hero-title-box h2');
     const description = slide.querySelector('.home-hero-cta-box p');
-    const videoBtn = slide.querySelector('.video-btn');
+    // const videoBtn = slide.querySelector('.video-btn');
     const contactBtn = slide.querySelector('.contact-btn');
     const salesBtn = slide.querySelector('.sales-btn');
 
@@ -98,7 +98,7 @@ if (numSlides > 0) {
     subTitle.classList.add('fadeInRight');
     title.classList.add('fadeInRight');
     description.classList.add('fadeInRight');
-    videoBtn.classList.add('fadeInRight');
+    // videoBtn.classList.add('fadeInRight');
     contactBtn.classList.add('fadeInUp');
     salesBtn.classList.add('fadeInUp');
   };
@@ -107,7 +107,7 @@ if (numSlides > 0) {
     document.querySelector('.fadeInLeft').classList.remove('fadeInLeft');
     document.querySelector('.fadeInRight').classList.remove('fadeInRight');
     document.querySelector('.fadeInRight').classList.remove('fadeInRight');
-    document.querySelector('.fadeInRight').classList.remove('fadeInRight');
+    // document.querySelector('.fadeInRight').classList.remove('fadeInRight');
     document.querySelector('.fadeInRight').classList.remove('fadeInRight');
     document.querySelector('.fadeInUp').classList.remove('fadeInUp');
     document.querySelector('.fadeInUp').classList.remove('fadeInUp');
@@ -196,20 +196,20 @@ if (numSlides > 0) {
 
 //////////////////////////////////////////////////////
 // Modal video play stop functionality
-const videoModal = document.querySelector('#videoModal');
+// const videoModal = document.querySelector('#videoModal');
 
-if (videoModal) {
-  videoModal.addEventListener('show.bs.modal', function () {
-    const video = videoModal.querySelector('video');
-    video.play();
-  });
+// if (videoModal) {
+//   videoModal.addEventListener('show.bs.modal', function () {
+//     const video = videoModal.querySelector('video');
+//     video.play();
+//   });
 
-  videoModal.addEventListener('hide.bs.modal', function () {
-    const video = videoModal.querySelector('video');
-    video.pause();
-    video.currentTime = 0;
-  });
-}
+//   videoModal.addEventListener('hide.bs.modal', function () {
+//     const video = videoModal.querySelector('video');
+//     video.pause();
+//     video.currentTime = 0;
+//   });
+// }
 
 //////////////////////////////////////////////////////
 // Team swiper functionality
