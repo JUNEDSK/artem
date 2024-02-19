@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./assets/images/artem-emblem.svg" />
+    <title>Artem | Search Result</title>
+  </head>
+  <body>
+    <!------------------------------------------>
+    <!-- Mobile Header start -->
+    <!------------------------------------------>
+    <header class="header-mobile d-xl-none close">
+      <div class="container">
+        <nav class="mobile-nav d-flex">
+          <a href="/" class="mobile-nav-brand">
+            <img
+              src="./assets/images/artem-logo.svg"
+              alt="Artem logo"
+              class="mobile-nav-brand-logo" />
+          </a>
+          <span class="mobile-nav-list-backdrop">&nbsp;</span>
+          <div class="mobile-nav-list-wrapper">
+            <ul class="mobile-nav-list">
+              <li class="d-flex">
+                <button class="mobile-nav-close-btn">
+                  <span class="mobile-nav-close-btn-icon">&nbsp;</span>
+                </button>
+              </li>
+              <li class="mobile-nav-item">
+                <a href="/" class="mobile-nav-link">Home</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a href="./about-us.html" class="mobile-nav-link">About Us</a>
+              </li>
+              <li class="mobile-nav-item">
+                <a
+                  href="#"
+                  class="mobile-nav-link d-flex justify-content-between align-items-center active"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#informationList"
+                  >Information <i class="fa-solid fa-angle-down"></i>
+                </a>
+
+                <!-- Mobile information dropdown list start -->
+                <div id="informationList" class="collapse">
+                  <ul class="mobile-nav-dropdown-list">
+                    <li class="mobile-nav-dropdown-item">
+                      <a href="./artem-verticals.html" class="mobile-nav-link"
+                        >Artem Verticals</a
+                      >
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a href="./faq.html" class="mobile-nav-link">FAQ</a>
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a href="./contact-us.html" class="mobile-nav-link active"
+                        >Contact Us</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Mobile information dropdown list end -->
+              </li>
+
+              <li class="mobile-nav-item">
+                <a
+                  href="#"
+                  class="mobile-nav-link d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#solutionsList"
+                  >Solutions <i class="fa-solid fa-angle-down"></i
+                ></a>
+
+                <!-- Mobile solutions dropdown list start -->
+                <div id="solutionsList" class="collapse">
+                  <ul class="mobile-nav-dropdown-list">
+                    <li class="mobile-nav-dropdown-item">
+                      <a href="./e-his.html" class="mobile-nav-link">E-HIS</a>
+                      <ul class="fs-sm list-unstyled ps-4">
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./e-his.html#hims"
+                            class="mobile-nav-link border-0"
+                            >HIMS</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./e-his.html#lims"
+                            class="mobile-nav-link border-0"
+                            >LIMS</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./e-his.html#rims"
+                            class="mobile-nav-link border-0"
+                            >RIMS</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./e-his.html#cms"
+                            class="mobile-nav-link border-0"
+                            >CMS(Clinic)</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a href="./e-pharmacy.html" class="mobile-nav-link"
+                        >E-Pharmacy</a
+                      >
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./telemedicine-platform.html"
+                        class="mobile-nav-link"
+                        >Telemedicine Platform</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Mobile solutions dropdown list end -->
+              </li>
+
+              <li class="mobile-nav-item">
+                <a
+                  href="#"
+                  class="mobile-nav-link d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#devicesList"
+                  >Devices <i class="fa-solid fa-angle-down"></i
+                ></a>
+                <!-- Mobile devices dropdown list start -->
+                <div id="devicesList" class="collapse">
+                  <ul class="mobile-nav-dropdown-list">
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./telemedicine-ecg.html"
+                        class="mobile-nav-link border-0"
+                        >Telemedicine & 12-Lead ECG</a
+                      >
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./multi-vitals-monitor.html"
+                        class="mobile-nav-link border-0"
+                        >Multi Vitals Monitor</a
+                      >
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./digitizer.html"
+                        class="mobile-nav-link border-0"
+                        >Digitizer</a
+                      >
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./health-kiosk.html"
+                        class="mobile-nav-link border-0"
+                        >Health Kiosk</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- Mobile devices dropdown list end -->
+              </li>
+
+              <li class="mobile-nav-item">
+                <a
+                  href="#"
+                  class="mobile-nav-link d-flex justify-content-between align-items-center"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#servicesList"
+                  >Services <i class="fa-solid fa-angle-down"></i
+                ></a>
+
+                <!-- Mobile sevices dropdown list start -->
+                <div id="servicesList" class="collapse">
+                  <ul class="mobile-nav-dropdown-list">
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./telemedicine-services.html"
+                        class="mobile-nav-link border-0"
+                        >Telemedicine Services</a
+                      >
+                      <ul class="fs-sm list-unstyled ps-4">
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./tele-consultation.html"
+                            class="mobile-nav-link border-0"
+                            >Tele Consultation</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./tele-radiology.html"
+                            class="mobile-nav-link border-0"
+                            >Tele Radiology</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./tele-cardiology.html"
+                            class="mobile-nav-link border-0"
+                            >Tele Cardiology</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./tele-pathology.html"
+                            class="mobile-nav-link border-0"
+                            >Tele Pathology</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./tele-fundoscopy.html"
+                            class="mobile-nav-link border-0"
+                            >Tele Fundoscopy</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="mobile-nav-dropdown-item">
+                      <a
+                        href="./specialized-healthcare-services.html"
+                        class="mobile-nav-link border-0"
+                        >Specialized Healthcare Services</a
+                      >
+                      <ul class="fs-sm list-unstyled ps-4">
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./express-cardiac-care.html"
+                            class="mobile-nav-link border-0"
+                            >Express Cardiac Care</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./artem-smart-clinic.html"
+                            class="mobile-nav-link border-0"
+                            >Artem Smart Clinic</a
+                          >
+                        </li>
+                        <li class="mobile-nav-dropdown-item">
+                          <a
+                            href="./artem-diagnostics.html"
+                            class="mobile-nav-link border-0"
+                            >Artem Diagnostics</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Mobile sevices dropdown list end -->
+              </li>
+            </ul>
+          </div>
+
+          <div class="ms-auto me-3 me-lg-5">
+            <button
+              class="btn btn-transparent p-0 text-white show-search-modal me-3 mt-1">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a
+              href="./contact-us.html"
+              class="btn btn-sm btn-artem-orange fw-800 rounded-0">
+              Demo
+            </a>
+          </div>
+
+          <button class="mobile-nav-open-btn">
+            <span class="mobile-nav-open-btn-icon">&nbsp;</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <!------------------------------------------>
+    <!-- Mobile Header end -->
+    <!------------------------------------------>
+
+    <!------------------------------------------>
+    <!-- Desktop Header start -->
+    <!------------------------------------------>
+    <header class="header-desktop d-none d-xl-block">
+      <div class="container">
+        <nav class="desktop-nav">
+          <a href="/" class="desktop-nav-brand">
+            <img
+              src="./assets/images/artem-logo.svg"
+              alt="Artem logo"
+              class="desktop-nav-brand-logo" />
+          </a>
+          <ul class="desktop-nav-list">
+            <li class="desktop-nav-item">
+              <a href="/" class="desktop-nav-link">Home</a>
+            </li>
+            <li class="desktop-nav-item">
+              <a href="./about-us.html" class="desktop-nav-link">About Us</a>
+            </li>
+            <li class="desktop-nav-item">
+              <a href="#" class="desktop-nav-link active" type="button"
+                >Information <i class="fa-solid fa-angle-down"></i
+              ></a>
+
+              <!-- Desktop information dropdown list start -->
+              <ul class="desktop-nav-dropdown-list">
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./artem-verticals.html"
+                    class="desktop-nav-dropdown-link"
+                    >Artem Verticals</a
+                  >
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a href="./faq.html" class="desktop-nav-dropdown-link">FAQ</a>
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./contact-us.html"
+                    class="desktop-nav-dropdown-link active"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+              <!-- Desktop information dropdown list end -->
+            </li>
+            <li class="desktop-nav-item">
+              <a href="#" class="desktop-nav-link"
+                >Solutions <i class="fa-solid fa-angle-down"></i
+              ></a>
+
+              <!-- Desktop solutions dropdown list start -->
+              <ul class="desktop-nav-dropdown-list">
+                <li class="desktop-nav-dropdown-item">
+                  <a href="./e-his.html" class="desktop-nav-dropdown-link"
+                    >E-HIS</a
+                  >
+                  <ul class="fs-sm list-unstyled ps-4">
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./e-his.html#hims"
+                        class="desktop-nav-dropdown-link border-0"
+                        >HIMS</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./e-his.html#lims"
+                        class="desktop-nav-dropdown-link border-0"
+                        >LIMS</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./e-his.html#rims"
+                        class="desktop-nav-dropdown-link border-0"
+                        >RIMS</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./e-his.html#cms"
+                        class="desktop-nav-dropdown-link border-0"
+                        >CMS(Clinic)</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a href="./e-pharmacy.html" class="desktop-nav-dropdown-link"
+                    >E-Pharmacy</a
+                  >
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./telemedicine-platform.html"
+                    class="desktop-nav-dropdown-link"
+                    >Telemedicine Platform</a
+                  >
+                </li>
+              </ul>
+              <!-- Desktop solutions dropdown list end -->
+            </li>
+            <li class="desktop-nav-item">
+              <a href="#" class="desktop-nav-link"
+                >Devices <i class="fa-solid fa-angle-down"></i
+              ></a>
+
+              <!-- Desktop devices dropdown list start -->
+              <ul class="desktop-nav-dropdown-list">
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./telemedicine-ecg.html"
+                    class="desktop-nav-dropdown-link"
+                    >Telemedicine & 12-Lead ECG</a
+                  >
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./multi-vitals-monitor.html"
+                    class="desktop-nav-dropdown-link"
+                    >Multi Vitals Monitor</a
+                  >
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a href="./digitizer.html" class="desktop-nav-dropdown-link"
+                    >Digitizer</a
+                  >
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./health-kiosk.html"
+                    class="desktop-nav-dropdown-link"
+                    >Health Kiosk</a
+                  >
+                </li>
+              </ul>
+              <!-- Desktop devices dropdown list end -->
+            </li>
+            <li class="desktop-nav-item">
+              <a href="#" class="desktop-nav-link"
+                >Services <i class="fa-solid fa-angle-down"></i
+              ></a>
+
+              <!-- Desktop services dropdown list start -->
+              <ul class="desktop-nav-dropdown-list">
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./telemedicine-services.html"
+                    class="desktop-nav-dropdown-link"
+                    >Telemedicine Services</a
+                  >
+                  <ul class="fs-sm list-unstyled ps-4">
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./tele-consultation.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Tele Consultation</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./tele-radiology.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Tele Radiology</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./tele-cardiology.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Tele Cardiology</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./tele-pathology.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Tele Pathology</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./tele-fundoscopy.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Tele Fundoscopy</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="desktop-nav-dropdown-item">
+                  <a
+                    href="./specialized-healthcare-services.html"
+                    class="desktop-nav-dropdown-link"
+                    >Specialized Healthcare Services</a
+                  >
+                  <ul class="fs-sm list-unstyled ps-4">
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./express-cardiac-care.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Express Cardiac Care</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./artem-smart-clinic.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Artem Smart Clinic</a
+                      >
+                    </li>
+                    <li class="desktop-nav-dropdown-item">
+                      <a
+                        href="./artem-diagnostics.html"
+                        class="desktop-nav-dropdown-link border-0"
+                        >Artem Diagnostics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <!-- Desktop services dropdown list end -->
+            </li>
+          </ul>
+
+          <div class="h-100 d-flex align-items-center">
+            <button
+              class="btn btn-transparent fs-5 me-4 text-white show-search-modal">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a
+              href="./contact-us.html"
+              class="btn btn-artem-orange fw-800 rounded-0 align-self-center">
+              Demo
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!------------------------------------------>
+    <!-- Desktop Header end -->
+    <!------------------------------------------>
+    <main>
+      <!------------------------------------------>
+      <!-- Hero section start -->
+      <!------------------------------------------>
+      <section
+        class="search-hero d-flex align-items-center justify-content-center flex-column">
+        <div class="container-xl">
+          <h1 class="display-5 fw-500 text-artem-orange text-center">
+            Search results for Lorem ipsum
+          </h1>
+        </div>
+      </section>
+      <!------------------------------------------>
+      <!-- Hero section end -->
+      <!------------------------------------------>
+
+      <!------------------------------------------>
+      <!-- Section search results start -->
+      <!------------------------------------------>
+      <section class="section-padding">
+        <div class="container-xl overflow-hidden">
+          <!-- Results found content start -->
+          <div class="max-w-700 mx-auto d-flex flex-column gap-4">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="display-4 fw-500 text-artem-blue-dark">
+                  Lorem ipsum
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Itaque, quas velit? Laudantium, delectus maxime iure nulla
+                  error beatae quis! Aut...
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="display-4 fw-500 text-artem-blue-dark">
+                  Lorem ipsum
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Itaque, quas velit? Laudantium, delectus maxime iure nulla
+                  error beatae quis! Aut...
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Results found content end -->
+          <!-- No result contnet start -->
+          <div>
+            <h3 class="display-4 fw-500 text-artem-blue-dark text-center">
+              No Results Found
+            </h3>
+            <p class="fs-4 text-center max-w-400 mx-auto">
+              Sorry, but nothing matched your search terms. Please try again
+              with some different keywords.
+            </p>
+          </div>
+          <!-- No result content end -->
+        </div>
+      </section>
+      <!------------------------------------------>
+      <!-- Section search results end -->
+      <!------------------------------------------>
+    </main>
+    <!------------------------------------------>
+    <!-- Footer start -->
+    <!------------------------------------------>
+    <footer class="footer section-padding">
+      <div class="container">
+        <div class="overflow-hidden mb-5">
+          <div class="row g-5">
+            <div class="col-lg-8 col-xxl-7">
+              <a href="./index.html">
+                <img
+                  src="./assets/images/artem-logo-color.svg"
+                  alt="Logo"
+                  class="footer-logo" />
+              </a>
+              <div class="d-flex gap-5 flex-wrap flex-lg-nowrap">
+                <div>
+                  <h4 class="h4 text-artem-blue">Information</h4>
+                  <nav class="footer-nav">
+                    <ul
+                      class="footer-nav-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
+                      <li class="footer-nav-item">
+                        <a href="./about-us.html" class="footer-nav-link"
+                          >About Us</a
+                        >
+                      </li>
+                      <li class="footer-nav-item">
+                        <a href="./privacy-policy.html" class="footer-nav-link"
+                          >Privacy Policy</a
+                        >
+                      </li>
+                      <li class="footer-nav-item">
+                        <a
+                          href="./terms-conditions.html"
+                          class="footer-nav-link"
+                          >Terms & Conditions</a
+                        >
+                      </li>
+                      <li class="footer-nav-item">
+                        <a href="./faq.html" class="footer-nav-link">FAQ</a>
+                      </li>
+                      <li class="footer-nav-item">
+                        <a href="./contact-us.html" class="footer-nav-link"
+                          >Franchise With Us</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div>
+                  <h4 class="h4 text-artem-blue">Solutions</h4>
+                  <nav class="footer-nav">
+                    <ul
+                      class="footer-nav-list list-unstyled m-0 p-0 d-flex flex-column gap-2">
+                      <li class="footer-nav-item">
+                        <a href="./e-his.html" class="footer-nav-link">E-HIS</a>
+                      </li>
+                      <li class="footer-nav-item">
+                        <a
+                          href="./telemedicine-services.html"
+                          class="footer-nav-link"
+                          >Telemedicine Services</a
+                        >
+                      </li>
+                      <li class="footer-nav-item">
+                        <a
+                          href="./telemedicine-ecg.html"
+                          class="footer-nav-link"
+                          >Telemedicine Devices</a
+                        >
+                      </li>
+                      <li class="footer-nav-item">
+                        <a
+                          href="./specialized-healthcare-services.html"
+                          class="footer-nav-link"
+                          >Specialized Healthcare Services</a
+                        >
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+
+                <div>
+                  <h4 class="h4 text-artem-blue">Contact</h4>
+                  <div class="d-flex flex-column gap-2">
+                    <a
+                      class="text-decoration-none text-muted"
+                      href="mailto:info@artemhealthtech.com"
+                      >info@artemhealthtech.com</a
+                    >
+                    <a
+                      class="text-decoration-none text-muted"
+                      href="tel:+916359693050"
+                      >+91-635 969 3050</a
+                    >
+                    <address>
+                      419, D-Wing, Times Square Grand, <br />
+                      Sindhu Bhavan Road, Thaltej <br />
+                      Ahmedabad,Gujarat - 380059
+                    </address>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-xxl-5">
+              <nav
+                class="footer-social-nav d-lg-flex justify-content-between align-items-center mb-3 mb-lg-5">
+                <ul
+                  class="footer-social-nav-list list-unstyled m-0 p-0 d-flex gap-3 gap-lg-5">
+                  <li class="footer-social-nav-item">
+                    <a
+                      href="https://www.facebook.com/artemhealthtech"
+                      target="_blank"
+                      class="footer-social-nav-link">
+                      <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                  </li>
+                  <li class="footer-social-nav-item">
+                    <a
+                      href="https://www.instagram.com/artemhealthtech"
+                      target="_blank"
+                      class="footer-social-nav-link">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li class="footer-social-nav-item">
+                    <a
+                      href="https://www.linkedin.com/company/artemhealthtech/"
+                      target="_blank"
+                      class="footer-social-nav-link">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <h2 class="display-4 fw-500 text-artem-dark-blue">
+                Redefining Care
+              </h2>
+              <p class="lead text-muted mb-5">Let's Stay in Touch</p>
+              <form action="#" class="d-flex">
+                <input
+                  class="form-control rounded-0 footer-input"
+                  type="email"
+                  placeholder="Enter your Email" />
+                <button
+                  class="btn-artem-orange btn rounded-0 btn-lg"
+                  type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="mt-5 text-muted">
+          &copy; 2023 Copyright Artem, All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!------------------------------------------>
+    <!-- Footer end -->
+    <!------------------------------------------>
+
+    <!------------------------------------------>
+    <!-- Search modal start -->
+    <!------------------------------------------>
+    <div class="search-bg">
+      <button class="btn btn-transparent search-modal-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="container">
+        <form action="" class="search-form">
+          <input class="search-input" type="text" placeholder="Search..." />
+          <button class="btn btn-transparent search-submit" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!------------------------------------------>
+    <!-- Search modal end -->
+    <!------------------------------------------>
+
+    <!------------------------------------------>
+    <!-- Scroll to top button start -->
+    <!------------------------------------------>
+    <button class="scroll-top scale-none">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+    <!------------------------------------------>
+    <!-- Scroll to top button end -->
+    <!------------------------------------------>
+
+    <!-- GSP -->
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+
+    <!-- Scroll Trigger -->
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

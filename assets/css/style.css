@@ -1838,6 +1838,20 @@ video {
   }
 }
 
+/* Search results page */
+.search-hero {
+  height: 50vh;
+  background-image: linear-gradient(
+      to right,
+      rgba(7, 54, 106, 0.7),
+      rgba(7, 54, 106, 0.7)
+    ),
+    url('./../images/search/hero.jpg');
+  background-position: center bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* Inner pages */
 .inner-page-hero {
   padding-top: 100px;
@@ -2121,8 +2135,20 @@ video {
   background-color: transparent;
   border: none;
   border-bottom: 2px solid rgb(164, 164, 164);
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .search-input {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search-input {
+    font-size: 32px;
+  }
 }
 
 .search-input:focus {
@@ -2133,10 +2159,25 @@ video {
 .search-modal-close {
   position: absolute;
   color: rgb(196, 196, 196);
-  font-size: 40px;
-  right: 2rem;
-  top: 2rem;
+  font-size: 30px;
+  right: 1rem;
+  top: 1rem;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .search-modal-close {
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search-modal-close {
+    font-size: 40px;
+    right: 2rem;
+    top: 2rem;
+  }
 }
 
 .search-modal-close:hover {
@@ -2146,10 +2187,16 @@ video {
 .search-submit {
   position: absolute;
   height: 48px;
-  font-size: 24px;
+  font-size: 16px;
   color: #fff;
   right: 0;
   bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .search-submit {
+    font-size: 24px;
+  }
 }
 
 .search-submit:hover {
@@ -2275,6 +2322,10 @@ video {
 /* Max width */
 .max-w-700 {
   max-width: 700px;
+}
+
+.max-w-400 {
+  max-width: 400px;
 }
 
 /**************************************/
