@@ -213,12 +213,14 @@ if (numSlides > 0) {
 
 //////////////////////////////////////////////////////
 // Search modal functionality
-const btnShowSearchModal = document.querySelector('.show-search-modal');
+const btnShowSearchModal = document.querySelectorAll('.show-search-modal');
 const btnHideSearchModal = document.querySelector('.search-modal-close');
 const searchModal = document.querySelector('.search-bg');
 
-btnShowSearchModal.addEventListener('click', () => {
-  searchModal.classList.add('show');
+btnShowSearchModal.forEach(btn => {
+  btn.addEventListener('click', () => {
+    searchModal.classList.add('show');
+  });
 });
 
 btnHideSearchModal.addEventListener('click', () => {
