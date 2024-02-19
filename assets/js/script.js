@@ -212,6 +212,20 @@ if (numSlides > 0) {
 // }
 
 //////////////////////////////////////////////////////
+// Search modal functionality
+const btnShowSearchModal = document.querySelector('.show-search-modal');
+const btnHideSearchModal = document.querySelector('.search-modal-close');
+const searchModal = document.querySelector('.search-bg');
+
+btnShowSearchModal.addEventListener('click', () => {
+  searchModal.classList.add('show');
+});
+
+btnHideSearchModal.addEventListener('click', () => {
+  searchModal.classList.remove('show');
+});
+
+//////////////////////////////////////////////////////
 // Team swiper functionality
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',

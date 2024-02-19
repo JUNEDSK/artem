@@ -23,6 +23,7 @@
     -- Contact us page
     -- Artem veticlas page
     -- Inner pages
+    -- Search Modal
 9. UTILS
     -- Font weight
     -- Colors
@@ -397,6 +398,14 @@ video {
 
 /**************************************/
 /* Bootstrap components overrides */
+.btn-transparent:focus,
+.btn-transparent:hover,
+.btn-transparent:active {
+  outline: none !important;
+  border-color: transparent !important;
+  color: #fff !important;
+}
+
 .btn-primary {
   background-color: var(--artem-blue);
   border-color: var(--artem-blue);
@@ -2080,6 +2089,71 @@ video {
   background-color: var(--white);
   height: 1px;
   width: 100%;
+}
+
+/* Search Modal */
+.search-bg.show {
+  height: 70vh;
+}
+
+.search-bg {
+  position: fixed;
+  z-index: 2500;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+  transition: height 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form {
+  position: relative;
+}
+
+.search-input {
+  color: #fff;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(164, 164, 164);
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+.search-modal-close {
+  position: absolute;
+  color: rgb(196, 196, 196);
+  font-size: 40px;
+  right: 2rem;
+  top: 2rem;
+  cursor: pointer;
+}
+
+.search-modal-close:hover {
+  color: #fff;
+}
+
+.search-submit {
+  position: absolute;
+  height: 48px;
+  font-size: 24px;
+  color: #fff;
+  right: 0;
+  bottom: 0;
+}
+
+.search-submit:hover {
+  color: #fff;
 }
 
 /************************************/
