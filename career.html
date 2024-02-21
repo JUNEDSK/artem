@@ -259,10 +259,17 @@
             </ul>
           </div>
 
-          <button
-            class="btn btn-sm btn-artem-orange fw-800 rounded-0 ms-auto me-3 me-lg-5">
-            Book Now
-          </button>
+          <div class="ms-auto me-3 me-lg-5">
+            <button
+              class="btn btn-transparent p-0 text-white show-search-modal me-3 mt-1">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a
+              href="./contact-us.html"
+              class="btn btn-sm btn-artem-orange fw-800 rounded-0">
+              Demo
+            </a>
+          </div>
 
           <button class="mobile-nav-open-btn">
             <span class="mobile-nav-open-btn-icon">&nbsp;</span>
@@ -440,7 +447,9 @@
                   </ul>
                 </li>
                 <li class="desktop-nav-dropdown-item">
-                  <a href="#" class="desktop-nav-dropdown-link"
+                  <a
+                    href="./specialized-healthcare-services.html"
+                    class="desktop-nav-dropdown-link"
                     >Specialized Healthcare Services</a
                   >
                   <ul class="fs-sm list-unstyled ps-4">
@@ -472,10 +481,17 @@
             </li>
           </ul>
 
-          <button
-            class="btn btn-artem-orange fw-800 rounded-0 align-self-center">
-            Book Now
-          </button>
+          <div class="h-100 d-flex align-items-center">
+            <button
+              class="btn btn-transparent fs-5 me-4 text-white show-search-modal">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a
+              href="./contact-us.html"
+              class="btn btn-artem-orange fw-800 rounded-0 align-self-center">
+              Demo
+            </a>
+          </div>
         </nav>
       </div>
     </header>
@@ -565,12 +581,14 @@
             <!-- Job dropdown 1 start -->
             <div class="job-dropdown mb-4">
               <div
-                class="d-flex job-dropdown-button justify-content-between align-items-center collapsed"
+                class="d-flex job-dropdown-button align-items-center collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#design-job-dropdown">
-                <h4 class="h4 m-0 fw-600">Design</h4>
-                <span class="job-dropdown-icon">&nbsp;</span>
+                <h4 class="h4 m-0 fw-600 flex-grow-1">Design</h4>
+                <div>
+                  <span class="job-dropdown-icon">&nbsp;</span>
+                </div>
               </div>
 
               <div class="collapse" id="design-job-dropdown">
@@ -644,12 +662,14 @@
             <!-- Job dropdown 2 satrt -->
             <div class="job-dropdown mb-4">
               <div
-                class="d-flex job-dropdown-button justify-content-between align-items-center collapsed"
+                class="d-flex job-dropdown-button align-items-center collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#software-job-dropdown">
-                <h4 class="h4 m-0 fw-600">Software Development</h4>
-                <span class="job-dropdown-icon">&nbsp;</span>
+                <h4 class="h4 m-0 fw-600 flex-grow-1">Software Development</h4>
+                <div>
+                  <span class="job-dropdown-icon">&nbsp;</span>
+                </div>
               </div>
 
               <div class="collapse" id="software-job-dropdown">
@@ -754,12 +774,14 @@
             <!-- Job dropdown 3 satrt -->
             <div class="job-dropdown">
               <div
-                class="d-flex job-dropdown-button justify-content-between align-items-center collapsed"
+                class="d-flex job-dropdown-button align-items-center collapsed"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#customer-job-dropdown">
-                <h4 class="h4 m-0 fw-600">Customer Success</h4>
-                <span class="job-dropdown-icon">&nbsp;</span>
+                <h4 class="h4 m-0 fw-600 flex-grow-1">Customer Success</h4>
+                <div>
+                  <span class="job-dropdown-icon">&nbsp;</span>
+                </div>
               </div>
 
               <div class="collapse" id="customer-job-dropdown">
@@ -879,7 +901,7 @@
                       </li>
                       <li class="footer-nav-item">
                         <a
-                          href="./express-cardiac-care.html"
+                          href="./specialized-healthcare-services.html"
                           class="footer-nav-link"
                           >Specialized Healthcare Services</a
                         >
@@ -917,7 +939,7 @@
                   class="footer-social-nav-list list-unstyled m-0 p-0 d-flex gap-3 gap-lg-5">
                   <li class="footer-social-nav-item">
                     <a
-                      href="https://www.facebook.com/"
+                      href="https://www.facebook.com/artemhealthtech"
                       target="_blank"
                       class="footer-social-nav-link">
                       <i class="fa-brands fa-square-facebook"></i>
@@ -925,7 +947,7 @@
                   </li>
                   <li class="footer-social-nav-item">
                     <a
-                      href="https://www.instagram.com/"
+                      href="https://www.instagram.com/artemhealthtech"
                       target="_blank"
                       class="footer-social-nav-link">
                       <i class="fa-brands fa-instagram"></i>
@@ -933,7 +955,7 @@
                   </li>
                   <li class="footer-social-nav-item">
                     <a
-                      href="https://www.linkedin.com/"
+                      href="https://www.linkedin.com/company/artemhealthtech/"
                       target="_blank"
                       class="footer-social-nav-link">
                       <i class="fa-brands fa-linkedin"></i>
@@ -967,6 +989,26 @@
     </footer>
     <!------------------------------------------>
     <!-- Footer end -->
+    <!------------------------------------------>
+
+    <!------------------------------------------>
+    <!-- Search modal start -->
+    <!------------------------------------------>
+    <div class="search-bg">
+      <button class="btn btn-transparent search-modal-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="container">
+        <form action="" class="search-form">
+          <input class="search-input" type="text" placeholder="Search..." />
+          <button class="btn btn-transparent search-submit" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!------------------------------------------>
+    <!-- Search modal end -->
     <!------------------------------------------>
 
     <!------------------------------------------>

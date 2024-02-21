@@ -23,6 +23,21 @@
     <title>Artem | About Us</title>
   </head>
   <body>
+    <!-- Loader start -->
+    <div class="loader">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center gap-2 loader-container">
+        <img
+          src="./assets/images/artem-logo.svg"
+          alt="Logo"
+          class="loader-img mb-4" />
+        <div class="loader-progress-bg">
+          <div class="loader-progress"></div>
+        </div>
+        <div class="loader-value">0 %</div>
+      </div>
+    </div>
+    <!-- Loader end -->
     <!------------------------------------------>
     <!-- Mobile Header start -->
     <!------------------------------------------>
@@ -283,12 +298,17 @@
               </li>
             </ul>
           </div>
-
-          <a
-            href="./contact-us.html"
-            class="btn btn-sm btn-artem-orange fw-800 rounded-0 ms-auto me-3 me-lg-5">
-            Book Now
-          </a>
+          <div class="ms-auto me-3 me-lg-5">
+            <button
+              class="btn btn-transparent p-0 text-white show-search-modal me-3 mt-1">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a
+              href="./contact-us.html"
+              class="btn btn-sm btn-artem-orange fw-800 rounded-0">
+              Demo
+            </a>
+          </div>
 
           <button class="mobile-nav-open-btn">
             <span class="mobile-nav-open-btn-icon">&nbsp;</span>
@@ -336,9 +356,7 @@
                   >
                 </li>
                 <li class="desktop-nav-dropdown-item">
-                  <a href="./faq.html.html" class="desktop-nav-dropdown-link"
-                    >FAQ</a
-                  >
+                  <a href="./faq.html" class="desktop-nav-dropdown-link">FAQ</a>
                 </li>
                 <li class="desktop-nav-dropdown-item">
                   <a href="./contact-us.html" class="desktop-nav-dropdown-link"
@@ -493,7 +511,9 @@
                   </ul>
                 </li>
                 <li class="desktop-nav-dropdown-item">
-                  <a href="#" class="desktop-nav-dropdown-link"
+                  <a
+                    href="./specialized-healthcare-services.html"
+                    class="desktop-nav-dropdown-link"
                     >Specialized Healthcare Services</a
                   >
                   <ul class="fs-sm list-unstyled ps-4">
@@ -525,11 +545,17 @@
             </li>
           </ul>
 
-          <a
-            href="./contact-us.html"
-            class="btn btn-artem-orange fw-800 rounded-0 align-self-center">
-            Book Now
-          </a>
+          <div class="h-100 d-flex align-items-center">
+            <button
+              class="btn btn-transparent fs-5 me-4 text-white show-search-modal">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a
+              href="./contact-us.html"
+              class="btn btn-artem-orange fw-800 rounded-0 align-self-center">
+              Demo
+            </a>
+          </div>
         </nav>
       </div>
     </header>
@@ -543,9 +569,7 @@
       <!------------------------------------------>
       <section class="section-about-hero">
         <div
-          class="container h-100 d-flex align-items-center justify-content-center flex-column">
-          <h6 class="h6 fw-600 text-white">Artem HealthTech</h6>
-        </div>
+          class="container h-100 d-flex align-items-center justify-content-center flex-column"></div>
       </section>
       <!------------------------------------------>
       <!-- About hero end -->
@@ -614,7 +638,7 @@
       <!------------------------------------------>
       <section class="section-mission section-padding">
         <div class="container-xl overflow-hidden">
-          <div class="row g-5">
+          <div class="row g-5 align-items-center">
             <div class="col-md-6">
               <div class="h-500px w-md-85 mx-auto m-md-0">
                 <img
@@ -629,28 +653,12 @@
                 Shaping a Compassionate Tech-Infused Future
               </h3>
               <p class="mb-5">
-                To enhance healthcare outcomes and drive cost-efficiency by
-                leveraging artificial intelligence and machine learning. Artem
-                HealthTech is committed to making healthcare accessible and
+                To enhance healthcare outcomes and drive cost-efficiency, Artem
+                HealthTech leverages artificial intelligence and machine
+                learning. Our commitment is to make healthcare accessible and
                 affordable for everyone, bridging gaps between rural and urban
                 communities through advanced technology.
               </p>
-              <div
-                class="d-flex flex-column align-items-start flex-md-row gap-3">
-                <a
-                  href="./contact-us.html"
-                  class="btn-animated btn-animated-blue">
-                  <span class="static-layer"> Contact Sales </span>
-                  <span class="overlay"></span>
-                  <span class="dynamic-layer"> Contact Sales </span>
-                </a>
-
-                <button class="btn-animated btn-animated-blue-outline">
-                  <span class="static-layer"> Learn More </span>
-                  <span class="overlay"></span>
-                  <span class="dynamic-layer"> Learn More </span>
-                </button>
-              </div>
             </div>
           </div>
         </div>
@@ -664,12 +672,10 @@
       <!------------------------------------------>
       <section class="section-mission section-padding bg-light">
         <div class="container-xl overflow-hidden">
-          <div class="row g-5">
+          <div class="row g-5 align-items-center text-artem-blue-2">
             <div class="col-md-6">
-              <small class="fw-600 text-artem-dark-blue-2 text-white fs-5"
-                >VISION</small
-              >
-              <h3 class="display-6 fw-600 text-artem-blue">
+              <small class="fw-600 fs-5">VISION</small>
+              <h3 class="display-6 fw-600">
                 Pioneering Future -Ready Healthcare
               </h3>
               <p class="mb-5">
@@ -679,22 +685,6 @@
                 to create a world where healthcare is redefined, enabling better
                 and more efficient care for all.
               </p>
-              <div
-                class="d-flex flex-column align-items-start flex-md-row gap-3">
-                <a
-                  href="./contact-us.html"
-                  class="btn-animated btn-animated-blue">
-                  <span class="static-layer"> Contact Sales </span>
-                  <span class="overlay"></span>
-                  <span class="dynamic-layer"> Contact Sales </span>
-                </a>
-
-                <button class="btn-animated btn-animated-blue-outline">
-                  <span class="static-layer"> Learn More </span>
-                  <span class="overlay"></span>
-                  <span class="dynamic-layer"> Learn More </span>
-                </button>
-              </div>
             </div>
 
             <div class="col-md-6">
@@ -813,6 +803,7 @@
           <div class="section-team-content">
             <!-- Slider main container -->
             <div class="swiper team-swiper">
+
               <div class="swiper-wrapper" name="team-members-container">
                
               </div>
@@ -898,7 +889,7 @@
                       </li>
                       <li class="footer-nav-item">
                         <a
-                          href="./express-cardiac-care.html"
+                          href="./specialized-healthcare-services.html"
                           class="footer-nav-link"
                           >Specialized Healthcare Services</a
                         >
@@ -936,7 +927,7 @@
                   class="footer-social-nav-list list-unstyled m-0 p-0 d-flex gap-3 gap-lg-5">
                   <li class="footer-social-nav-item">
                     <a
-                      href="https://www.facebook.com/"
+                      href="https://www.facebook.com/artemhealthtech"
                       target="_blank"
                       class="footer-social-nav-link">
                       <i class="fa-brands fa-square-facebook"></i>
@@ -944,7 +935,7 @@
                   </li>
                   <li class="footer-social-nav-item">
                     <a
-                      href="https://www.instagram.com/"
+                      href="https://www.instagram.com/artemhealthtech"
                       target="_blank"
                       class="footer-social-nav-link">
                       <i class="fa-brands fa-instagram"></i>
@@ -952,7 +943,7 @@
                   </li>
                   <li class="footer-social-nav-item">
                     <a
-                      href="https://www.linkedin.com/"
+                      href="https://www.linkedin.com/company/artemhealthtech/"
                       target="_blank"
                       class="footer-social-nav-link">
                       <i class="fa-brands fa-linkedin"></i>
@@ -986,6 +977,26 @@
     </footer>
     <!------------------------------------------>
     <!-- Footer end -->
+    <!------------------------------------------>
+
+    <!------------------------------------------>
+    <!-- Search modal start -->
+    <!------------------------------------------>
+    <div class="search-bg">
+      <button class="btn btn-transparent search-modal-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="container">
+        <form action="" class="search-form">
+          <input class="search-input" type="text" placeholder="Search..." />
+          <button class="btn btn-transparent search-submit" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!------------------------------------------>
+    <!-- Search modal end -->
     <!------------------------------------------>
 
     <!------------------------------------------>

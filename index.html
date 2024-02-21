@@ -24,6 +24,21 @@
     <title>Artem | Home</title>
   </head>
   <body>
+    <!-- Loader start -->
+    <div class="loader">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center gap-2 loader-container">
+        <img
+          src="./assets/images/artem-logo.svg"
+          alt="Logo"
+          class="loader-img mb-4" />
+        <div class="loader-progress-bg">
+          <div class="loader-progress"></div>
+        </div>
+        <div class="loader-value">0 %</div>
+      </div>
+    </div>
+    <!-- Loader end -->
     <!------------------------------------------>
     <!-- Mobile Header start -->
     <!------------------------------------------>
@@ -283,11 +298,17 @@
             </ul>
           </div>
 
-          <a
-            href="./contact-us.html"
-            class="btn btn-sm btn-artem-orange fw-800 rounded-0 ms-auto me-3 me-lg-5">
-            Book Now
-          </a>
+          <div class="ms-auto me-3 me-lg-5">
+            <button
+              class="btn btn-transparent p-0 text-white show-search-modal me-3 mt-1">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a
+              href="./contact-us.html"
+              class="btn btn-sm btn-artem-orange fw-800 rounded-0">
+              Demo
+            </a>
+          </div>
 
           <button class="mobile-nav-open-btn">
             <span class="mobile-nav-open-btn-icon">&nbsp;</span>
@@ -488,7 +509,9 @@
                   </ul>
                 </li>
                 <li class="desktop-nav-dropdown-item">
-                  <a href="#" class="desktop-nav-dropdown-link"
+                  <a
+                    href="./specialized-healthcare-services.html"
+                    class="desktop-nav-dropdown-link"
                     >Specialized Healthcare Services</a
                   >
                   <ul class="fs-sm list-unstyled ps-4">
@@ -520,11 +543,17 @@
             </li>
           </ul>
 
-          <a
-            href="./contact-us.html"
-            class="btn btn-artem-orange fw-800 rounded-0 align-self-center">
-            Book Now
-          </a>
+          <div class="h-100 d-flex align-items-center">
+            <button
+              class="btn btn-transparent fs-5 me-4 text-white show-search-modal">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a
+              href="./contact-us.html"
+              class="btn btn-artem-orange fw-800 rounded-0 align-self-center">
+              Demo
+            </a>
+          </div>
         </nav>
       </div>
     </header>
@@ -543,17 +572,26 @@
             <nav class="home-hero-social-nav text-white">
               <ul class="list-unstyled m-0 p-0 home-hero-social-nav-list">
                 <li>
-                  <a class="home-hero-social-nav-link" href="#"
+                  <a
+                    target="_blank"
+                    class="home-hero-social-nav-link"
+                    href="https://www.facebook.com/artemhealthtech"
                     ><i class="fa-brands fa-square-facebook"></i
                   ></a>
                 </li>
                 <li>
-                  <a class="home-hero-social-nav-link" href="#">
+                  <a
+                    target="_blank"
+                    class="home-hero-social-nav-link"
+                    href="https://www.instagram.com/artemhealthtech">
                     <i class="fa-brands fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a class="home-hero-social-nav-link" href="#"
+                  <a
+                    target="_blank"
+                    class="home-hero-social-nav-link"
+                    href="https://www.linkedin.com/company/artemhealthtech/"
                     ><i class="fa-brands fa-linkedin"></i
                   ></a>
                 </li>
@@ -584,7 +622,7 @@
                 Efficient, Customizable and <br />
                 Compliant Healthcare Integration.
               </p>
-              <div class="d-flex align-items-center gap-3 mb-4 video-btn">
+              <!-- <div class="d-flex align-items-center gap-3 mb-4 video-btn">
                 <button
                   class="btn btn-light btn-circle text-artem-blue fs-5"
                   data-bs-toggle="modal"
@@ -592,7 +630,7 @@
                   <i class="fa-solid fa-play"></i>
                 </button>
                 <span class="text-artem-orange fs-5">See our video</span>
-              </div>
+              </div> -->
               <div
                 class="d-flex justify-content-between align-items-end flex-lg-column align-items-lg-start">
                 <div
@@ -644,17 +682,26 @@
             <nav class="home-hero-social-nav text-white">
               <ul class="list-unstyled m-0 p-0 home-hero-social-nav-list">
                 <li>
-                  <a class="home-hero-social-nav-link" href="#"
+                  <a
+                    target="_blank"
+                    class="home-hero-social-nav-link"
+                    href="https://www.facebook.com/artemhealthtech"
                     ><i class="fa-brands fa-square-facebook"></i
                   ></a>
                 </li>
                 <li>
-                  <a class="home-hero-social-nav-link" href="#">
+                  <a
+                    target="_blank"
+                    class="home-hero-social-nav-link"
+                    href="https://www.instagram.com/artemhealthtech">
                     <i class="fa-brands fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a class="home-hero-social-nav-link" href="#"
+                  <a
+                    target="_blank"
+                    class="home-hero-social-nav-link"
+                    href="https://www.linkedin.com/company/artemhealthtech/"
                     ><i class="fa-brands fa-linkedin"></i
                   ></a>
                 </li>
@@ -665,7 +712,7 @@
               <h2 class="display-3 fw-500 text-white">
                 Artem's Devices:
                 <br />
-                Bridging Gap
+                Bridging the Gap
               </h2>
             </div>
             <div class="home-hero-img-box d-md-none">
@@ -685,7 +732,7 @@
                 Seamless, secure, and intuitive devices <br />
                 for revolutionary healthcare
               </p>
-              <div class="d-flex align-items-center gap-3 mb-4 video-btn">
+              <!-- <div class="d-flex align-items-center gap-3 mb-4 video-btn">
                 <button
                   class="btn btn-light btn-circle text-artem-blue fs-5"
                   data-bs-toggle="modal"
@@ -693,7 +740,7 @@
                   <i class="fa-solid fa-play"></i>
                 </button>
                 <span class="text-artem-orange fs-5">See our video</span>
-              </div>
+              </div> -->
               <div
                 class="d-flex justify-content-between align-items-end flex-lg-column align-items-lg-start">
                 <div
@@ -745,17 +792,26 @@
             <nav class="home-hero-social-nav text-white">
               <ul class="list-unstyled m-0 p-0 home-hero-social-nav-list">
                 <li>
-                  <a class="home-hero-social-nav-link" href="#"
+                  <a
+                    target="_blank"
+                    class="home-hero-social-nav-link"
+                    href="https://www.facebook.com/artemhealthtech"
                     ><i class="fa-brands fa-square-facebook"></i
                   ></a>
                 </li>
                 <li>
-                  <a class="home-hero-social-nav-link" href="#">
+                  <a
+                    target="_blank"
+                    class="home-hero-social-nav-link"
+                    href="https://www.instagram.com/artemhealthtech">
                     <i class="fa-brands fa-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a class="home-hero-social-nav-link" href="#"
+                  <a
+                    target="_blank"
+                    class="home-hero-social-nav-link"
+                    href="https://www.linkedin.com/company/artemhealthtech/"
                     ><i class="fa-brands fa-linkedin"></i
                   ></a>
                 </li>
@@ -786,7 +842,7 @@
                 Unparalleled Access, Security & <br />
                 Technological Integration in Healthcare.
               </p>
-              <div class="d-flex align-items-center gap-3 mb-4 video-btn">
+              <!-- <div class="d-flex align-items-center gap-3 mb-4 video-btn">
                 <button
                   class="btn btn-light btn-circle text-artem-blue fs-5"
                   data-bs-toggle="modal"
@@ -794,7 +850,7 @@
                   <i class="fa-solid fa-play"></i>
                 </button>
                 <span class="text-artem-orange fs-5">See our video</span>
-              </div>
+              </div> -->
               <div
                 class="d-flex justify-content-between align-items-end flex-lg-column align-items-lg-start">
                 <div
@@ -858,42 +914,30 @@
             </div>
             <div class="col-lg-6">
               <h6 class="h6 text-uppercase ls-5">hospitals</h6>
-              <h3 class="display-4 fw-500 text-artem-blue-2">
+              <h3 class="display-4 fw-500 text-artem-blue">
                 Maximizing hospital efficiency with
                 <span class="text-artem-orange">innovative solutions.</span>
               </h3>
-              <p class="mb-lg-5 text-artem-dark-blue-2 text-justify">
-                Artem is committed to ensuring that hospitals unlock the full
-                potential of our inventive solutions.Our extensive selection of
-                products and services is tailor-made to support hospitals,
-                clinics, and healthcare practitioners in digitizingt their
-                entire workflow. Additionally, we integrate modern telemedicine
-                concepts to create a more streamlined and productive healthcare
-                environment.
+              <p class="text-artem-dark-blue-2 text-justify">
+                Artem is dedicated to make healthcare organizations benefit with
+                our customized solutions. Our diverse range of products and
+                services are specially crafted to help hospitals, clinics and
+                healthcare professionals to benefit with our modern day
+                technology which is at par with today’s digitalized world.
+              </p>
+              <p class="mb-lg-5">
+                Furthermore, we also incorporate modern tele-medicine ideas to
+                make healthcare systems more efficient and organized.
               </p>
 
               <div
                 class="d-flex flex-column align-items-start flex-md-row gap-3">
                 <a
-                  href="./contact-us.html"
-                  class="btn-animated btn-animated-blue">
-                  <span class="static-layer">
-                    Contact Sales
-                    <i class="fa-solid fa-angle-right"></i>
-                  </span>
-                  <span class="overlay"></span>
-                  <span class="dynamic-layer">
-                    Contact Sales
-                    <i class="fa-solid fa-angle-right"></i>
-                  </span>
-                </a>
-
-                <a
                   href="./artem-verticals.html"
                   class="btn-animated btn-animated-blue-outline">
-                  <span class="static-layer"> Learn More </span>
+                  <span class="static-layer"> Artem Verticals </span>
                   <span class="overlay"></span>
-                  <span class="dynamic-layer"> Learn More </span>
+                  <span class="dynamic-layer"> Artem Verticals </span>
                 </a>
               </div>
             </div>
@@ -1038,21 +1082,24 @@
           <div class="row g-3 align-items-center">
             <div class="col-lg-6">
               <h3 class="display-4 fw-500 text-artem-blue">
-                We have you covered.
+                Artem covers it all
               </h3>
               <p class="text-artem-dark-blue-2">
-                The modular and open-ended nature of tour solutions make them
+                The modular and open-ended nature of our solutions make them
                 easily deployable for any type of healthcare environment having
                 operations of any scale.
               </p>
             </div>
 
             <div class="col-lg-6 text-lg-end">
-              <button class="btn-animated btn-animated-blue">
+              <a
+                href="./assets/pdf/artem-brochure.pdf"
+                download
+                class="btn-animated btn-animated-blue">
                 <span class="static-layer"> Download PDF </span>
                 <span class="overlay"></span>
                 <span class="dynamic-layer"> Download PDF </span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1080,9 +1127,9 @@
                   <p class="m-0">
                     Our culture nurtures and strives to achieve...
                   </p>
-                  <a type="btn" href="#" class="btn btn-link mx-auto"
+                  <!-- <a type="btn" href="#" class="btn btn-link mx-auto"
                     >Learn more <i class="fa-solid fa-angle-right"></i
-                  ></a>
+                  ></a> -->
                 </div>
               </div>
             </article>
@@ -1102,9 +1149,9 @@
                   <p class="m-0">
                     Our culture nurtures and strives to achieve...
                   </p>
-                  <a type="btn" href="#" class="btn btn-link mx-auto"
+                  <!-- <a type="btn" href="#" class="btn btn-link mx-auto"
                     >Learn more <i class="fa-solid fa-angle-right"></i
-                  ></a>
+                  ></a> -->
                 </div>
               </div>
             </article>
@@ -1127,9 +1174,9 @@
                   <p class="m-0">
                     Our culture nurtures and strives to achieve...
                   </p>
-                  <a type="btn" href="#" class="btn btn-link mx-auto"
+                  <!-- <a type="btn" href="#" class="btn btn-link mx-auto"
                     >Learn more <i class="fa-solid fa-angle-right"></i
-                  ></a>
+                  ></a> -->
                 </div>
               </div>
             </article>
@@ -1149,9 +1196,9 @@
                   <p class="m-0">
                     Our culture nurtures and strives to achieve...
                   </p>
-                  <a type="btn" href="#" class="btn btn-link mx-auto"
+                  <!-- <a type="btn" href="#" class="btn btn-link mx-auto"
                     >Learn more <i class="fa-solid fa-angle-right"></i
-                  ></a>
+                  ></a> -->
                 </div>
               </div>
             </article>
@@ -1171,9 +1218,9 @@
                   <p class="m-0">
                     Our culture nurtures and strives to achieve...
                   </p>
-                  <a type="btn" href="#" class="btn btn-link mx-auto"
+                  <!-- <a type="btn" href="#" class="btn btn-link mx-auto"
                     >Learn more <i class="fa-solid fa-angle-right"></i
-                  ></a>
+                  ></a> -->
                 </div>
               </div>
             </article>
@@ -1194,9 +1241,9 @@
                   <p class="m-0">
                     Our culture nurtures and strives to achieve...
                   </p>
-                  <a type="btn" href="#" class="btn btn-link mx-auto"
+                  <!-- <a type="btn" href="#" class="btn btn-link mx-auto"
                     >Learn more <i class="fa-solid fa-angle-right"></i
-                  ></a>
+                  ></a> -->
                 </div>
               </div>
             </article>
@@ -1219,9 +1266,9 @@
                   <p class="m-0">
                     Our culture nurtures and strives to achieve...
                   </p>
-                  <a type="btn" href="#" class="btn btn-link mx-auto"
+                  <!-- <a type="btn" href="#" class="btn btn-link mx-auto"
                     >Learn more <i class="fa-solid fa-angle-right"></i
-                  ></a>
+                  ></a> -->
                 </div>
               </div>
             </article>
@@ -1241,9 +1288,9 @@
                   <p class="m-0">
                     Our culture nurtures and strives to achieve...
                   </p>
-                  <a type="btn" href="#" class="btn btn-link mx-auto"
+                  <!-- <a type="btn" href="#" class="btn btn-link mx-auto"
                     >Learn more <i class="fa-solid fa-angle-right"></i
-                  ></a>
+                  ></a> -->
                 </div>
               </div>
             </article>
@@ -1349,7 +1396,7 @@
                 <div>
                   <span
                     class="text-uppercase fw-500 ls-2 text-artem-orange mb-3 d-inline-block"
-                    >artem healthtake</span
+                    >artem Healthtech</span
                   >
                   <h3 class="display-4 fw-500">
                     <span class="text-white">Features &</span>
@@ -1612,6 +1659,94 @@
                   alt="Client 12" />
               </div>
             </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-13.png"
+                  alt="Client 13" />
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-14.png"
+                  alt="Client 14" />
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-15.png"
+                  alt="Client 15" />
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-16.png"
+                  alt="Client 16" />
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-17.png"
+                  alt="Client 17" />
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-18.png"
+                  alt="Client 18" />
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-19.png"
+                  alt="Client 19" />
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-20.png"
+                  alt="Client 20" />
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-21.png"
+                  alt="Client 21" />
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-22.png"
+                  alt="Client 22" />
+              </div>
+            </div>
+            <div class="col-6 col-sm-4 col-md-3">
+              <div class="py-3 d-flex align-items-center">
+                <img
+                  class="w-100 w-md-75 mx-auto"
+                  src="./assets/images/home-page/clients/client-23.png"
+                  alt="Client 23" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1634,20 +1769,16 @@
               <!-- <div class="col-lg-6 pe-lg-5">
                 <div class="pe-lg-5">
                   <h3 class="h3 fw-500 text-artem-orange mb-4">
-                    Extremely pleased!
+                    Become more scientific
                   </h3>
                   <p>
-                    "Our patients have benefitted from Tricog's ECG
-                    notifications, which have been prompt for over two years. We
-                    are extremely pleased with the timely reporting and the
-                    increase in referrals from peripheral centers. Through the
-                    installation of Tricog machines in our referral centers, we
-                    have been able to increase our visibility and improve our
-                    relationships with them."
+                    "Express ECG is not just technology, but it is a care in
+                    hand going along with technology, with the introduction of
+                    Express ECG era things have become more scientific."
                   </p>
-                  <p class="fw-500 m-0 text-artem-blue">Saghir Siddiqui</p>
+                  <p class="fw-500 m-0 text-artem-blue">Dr. Asma Vohra</p>
                   <p class="fw-500 text-artem-blue">
-                    Regional COO-KMC,Mangalore
+                    Lifecare Khanpur, Gujarat
                   </p>
                 </div>
               </div>
@@ -1655,20 +1786,16 @@
               <div class="col-lg-6 ps-lg-5">
                 <div class="ps-lg-5">
                   <h3 class="h3 fw-500 text-artem-orange mb-4">
-                    Excellent choice!
+                    First-rate care
                   </h3>
                   <p>
-                    "Tricog is an excellent choice for diagnostic centers. We
-                    have been using Tricog's Insta ECG solution since August
-                    2017. With its accuracy in interpretation services,
-                    turnaround time, and quality of reports, it is an excellent
-                    choice for diagnostic centers. Also, Tricog's after-sales
-                    support is top-notch, providing everything we need to keep
-                    our system running smoothly."
+                    "I should say how pleased we are with this collaboration and
+                    that your group is now a part of our practice, because we
+                    know our patients will continue to receive first-rate care."
                   </p>
-                  <p class="fw-500 m-0 text-artem-blue">Biswanath Saha</p>
+                  <p class="fw-500 m-0 text-artem-blue">Dr. Hasmukhbhai Soni</p>
                   <p class="fw-500 text-artem-blue">
-                    Proprietor- B.S Diagnostic Center, Howarh
+                    Indian Red Cross Society, Himmatnagar, Gujarat
                   </p>
                 </div>
               </div> -->
@@ -1754,7 +1881,7 @@
                       </li>
                       <li class="footer-nav-item">
                         <a
-                          href="./express-cardiac-care.html"
+                          href="./specialized-healthcare-services.html"
                           class="footer-nav-link"
                           >Specialized Healthcare Services</a
                         >
@@ -1792,7 +1919,7 @@
                   class="footer-social-nav-list list-unstyled m-0 p-0 d-flex gap-3 gap-lg-5">
                   <li class="footer-social-nav-item">
                     <a
-                      href="https://www.facebook.com/"
+                      href="https://www.facebook.com/artemhealthtech"
                       target="_blank"
                       class="footer-social-nav-link">
                       <i class="fa-brands fa-square-facebook"></i>
@@ -1800,7 +1927,7 @@
                   </li>
                   <li class="footer-social-nav-item">
                     <a
-                      href="https://www.instagram.com/"
+                      href="https://www.instagram.com/artemhealthtech"
                       target="_blank"
                       class="footer-social-nav-link">
                       <i class="fa-brands fa-instagram"></i>
@@ -1808,7 +1935,7 @@
                   </li>
                   <li class="footer-social-nav-item">
                     <a
-                      href="https://www.linkedin.com/"
+                      href="https://www.linkedin.com/company/artemhealthtech/"
                       target="_blank"
                       class="footer-social-nav-link">
                       <i class="fa-brands fa-linkedin"></i>
@@ -1842,6 +1969,26 @@
     </footer>
     <!------------------------------------------>
     <!-- Footer end -->
+    <!------------------------------------------>
+
+    <!------------------------------------------>
+    <!-- Search modal start -->
+    <!------------------------------------------>
+    <div class="search-bg">
+      <button class="btn btn-transparent search-modal-close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="container">
+        <form action="" class="search-form">
+          <input class="search-input" type="text" placeholder="Search..." />
+          <button class="btn btn-transparent search-submit" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!------------------------------------------>
+    <!-- Search modal end -->
     <!------------------------------------------>
 
     <!------------------------------------------>
