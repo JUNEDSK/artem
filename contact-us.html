@@ -2,8 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Swiper CSS -->
+    <?php include('./include/seo.php'); ?>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -303,7 +305,6 @@
     <!------------------------------------------>
     <!-- Mobile Header end -->
     <!------------------------------------------>
-
     <!------------------------------------------>
     <!-- Desktop Header start -->
     <!------------------------------------------>
@@ -334,8 +335,7 @@
                   <a
                     href="./artem-verticals.html"
                     class="desktop-nav-dropdown-link"
-                    >Artem Verticals</a
-                  >
+                    >Artem Verticals</a>
                 </li>
                 <li class="desktop-nav-dropdown-item">
                   <a href="./faq.html" class="desktop-nav-dropdown-link">FAQ</a>
@@ -642,7 +642,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <form action="">
+              <form action="" id="contact-us-form">
                 <div class="mb-3">
                   <label for="first-name" class="mb-1"
                     ><small class="fw-600">First name</small></label
@@ -651,7 +651,7 @@
                     class="form-control rounded-0"
                     id="first-name"
                     type="text"
-                    placeholder="First name" />
+                    placeholder="First name" required/>
                 </div>
 
                 <div class="mb-3">
@@ -662,7 +662,7 @@
                     class="form-control rounded-0"
                     id="last-name"
                     type="text"
-                    placeholder="Last name" />
+                    placeholder="Last name" required/>
                 </div>
 
                 <div class="mb-3">
@@ -673,7 +673,7 @@
                     class="form-control rounded-0"
                     id="email"
                     type="text"
-                    placeholder="your@company.com" />
+                    placeholder="your@company.com" required/>
                 </div>
 
                 <div class="mb-3">
@@ -685,6 +685,7 @@
                     id="phone"
                     type="text"
                     placeholder="+91 00000-00000" />
+
                 </div>
 
                 <div class="mb-3">
@@ -785,7 +786,7 @@
                     id="message"
                     rows="5"
                     class="form-control rounded-0"
-                    placeholder="Type your message..."></textarea>
+                    placeholder="Type your message..." required></textarea>
                 </div>
                 <div class="mb-3">
                   <input id="privacy" type="checkbox" />
@@ -796,7 +797,7 @@
                     ></label
                   >
                 </div>
-                <div class="btn btn-primary w-100 rounded-0">Submit</div>
+                <div id="contact-us-form-button" class="btn btn-primary w-100 rounded-0">Submit</div>
               </form>
             </div>
           </div>
@@ -1012,6 +1013,69 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="./assets/js/script.js"></script>
-  </body>
+<script src="./assets/js/script.js"></script>
+<!-- extra js -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="./js/add-to-newsletter.js"></script> error is due to selection will move to common-->
+<script>
+  $(document).ready(function () {
+
+    $("#contact-us-form-button").click(function() {
+        // Trigger the form submit when the div is clicked
+        $("#contact-us-form").submit();
+      });
+
+      $('#contact-us-form').submit(function (event) {
+        event.preventDefault(); // Prevent the default form submission
+        let checkedBoxValue = $('input[name="describe"]:checked').val();
+        
+        if (checkedBoxValue == undefined || checkedBoxValue == null) {
+          // checkedBoxValue has a value and is not undefined or null
+          alert("Please select what describe you best");
+          return false;
+        }
+        // Get the form data, including the selected radio button value
+        var formData = {
+          first_name: $('#first-name').val(),
+          last_name: $('#last-name').val(),
+          email: $('#email').val(),
+          phone: $('#phone').val(),
+          topic: $('#topic').val(),
+          // Get the selected radio button value
+          describe: $('input[name="describe"]:checked').val(),
+          // Add more fields as needed
+          message: $('#message').val()
+        };
+
+
+        for (var key in formData) {
+        
+            if(!formData[key]){
+
+              alert("The value for "+key+" is required");
+              return false;
+            }
+        }
+        // Send the data to the server using AJAX
+        $.ajax({
+          type: 'POST',
+          url: 'http://ap-artem.elloweb.com/web/contactus/insert', // Replace with the actual URL to your controller
+          data: formData,
+          success: function (response) {
+            // Handle the success response from the server
+            //$('.success-message-4').show();
+            alert("Successfull Submitted");
+            $('#contact-us-form')[0].reset();
+          },
+          error: function () {
+            // Handle errors, if any
+            //$('.error-message-4').show();
+            alert("Error While Submitting request");
+          },
+        });
+      });
+    });
+</script>
+</body>
+  
 </html>
